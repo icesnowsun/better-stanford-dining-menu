@@ -1,0 +1,124 @@
+name: Upstream hours
+
+# config/halls.json -- every hall's hours, closures and holiday exceptions -- is
+# typed in by hand from R&DE's hours page, and the project this site was forked
+# from (NeilMin/better-stanford-dining-menu) keeps doing that: Thanksgiving,
+# winter break, a new quarter. A fork does not get those by itself. This looks at
+# upstream's copy once a day and, when it differs from ours, opens a pull request
+# with it, tests already run against it, so taking it is one click: merging
+# publishes the site. The hours snapshot comes along, so hours upstream has
+# already checked against the page also quiet the nightly hours check.
+#
+# One pull request per version of upstream's files: one closed unmerged is not
+# proposed again, and a newer version closes the one it supersedes. Opening it
+# needs Settings > Actions > General > "Allow GitHub Actions to create and
+# approve pull requests"; without that the run goes red instead, with the diff.
+on:
+  schedule:
+    - cron: "41 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: upstream-hours
+  cancel-in-progress: false
+
+env:
+  UPSTREAM: https://github.com/NeilMin/better-stanford-dining-menu.git
+  FILES: config/halls.json data/hours_snapshot.json
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compare with upstream
+        id: up
+        run: |
+          git fetch -q --depth=1 "$UPSTREAM" main
+          changed=""
+          for f in $FILES; do
+            if ! git diff --quiet HEAD FETCH_HEAD -- "$f"; then changed="$changed $f"; fi
+          done
+          if [ -z "$changed" ]; then
+            echo "Our hours match upstream's."
+            exit 0
+          fi
+          git diff --stat HEAD FETCH_HEAD -- $changed
+          git diff HEAD FETCH_HEAD -- config/halls.json
+          version=$(for f in $changed; do git rev-parse "FETCH_HEAD:$f"; done | sha1sum | cut -c1-10)
+          echo "changed=${changed# }" >> "$GITHUB_OUTPUT"
+          echo "branch=upstream-hours-$version" >> "$GITHUB_OUTPUT"
+
+      - name: Proposed before?
+        id: seen
+        if: steps.up.outputs.changed != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.up.outputs.branch }}
+        run: |
+          n=$(gh pr list --head "$BRANCH" --state all --json number --jq length)
+          if [ "$n" != "0" ]; then
+            echo "This version of upstream's hours has been proposed already ($BRANCH)."
+            echo "seen=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "seen=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: astral-sh/setup-uv@v5
+        if: steps.seen.outputs.seen == 'false'
+        with:
+          enable-cache: true
+
+      - name: Run the tests with upstream's hours
+        id: test
+        if: steps.seen.outputs.seen == 'false'
+        continue-on-error: true
+        env:
+          CHANGED: ${{ steps.up.outputs.changed }}
+        run: |
+          git checkout FETCH_HEAD -- $CHANGED
+          uv run pytest -q > "$RUNNER_TEMP/pytest.txt" 2>&1 && status=0 || status=$?
+          tail -n 15 "$RUNNER_TEMP/pytest.txt" | tee "$RUNNER_TEMP/pytest-tail.txt"
+          exit $status
+
+      - name: Open the pull request
+        if: steps.seen.outputs.seen == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.up.outputs.branch }}
+          CHANGED: ${{ steps.up.outputs.changed }}
+          TESTS: ${{ steps.test.outcome }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -q -c "$BRANCH"
+          git commit -qm "config: hours from upstream (NeilMin/better-stanford-dining-menu)" -- $CHANGED
+          git push -q -f origin "$BRANCH"
+          {
+            echo "The project this site was forked from (NeilMin/better-stanford-dining-menu) has changed: $CHANGED"
+            echo
+            echo "These are the dining hall hours, typed in by hand from R&DE's hours page -- usually a holiday or a new quarter. Check the diff against https://rde.stanford.edu/dining-hospitality/dining-locations-hours, then **merge to publish it**. Close this to keep ours instead: it will not be proposed again until upstream changes the files again."
+            echo
+            if [ "$TESTS" = "success" ]; then
+              echo "Tests with these hours: passed."
+            else
+              echo "Tests with these hours: **failed** -- do not merge as it is."
+              echo
+              echo '```'
+              cat "$RUNNER_TEMP/pytest-tail.txt"
+              echo '```'
+            fi
+          } > "$RUNNER_TEMP/body.md"
+          if ! gh pr create --head "$BRANCH" --base main --title "Hours from upstream" --body-file "$RUNNER_TEMP/body.md"; then
+            echo "::error::Upstream has new hours, but GitHub Actions may not open pull requests in this repository. Tick Settings > Actions > General > 'Allow GitHub Actions to create and approve pull requests', or open one yourself from the $BRANCH branch."
+            exit 1
+          fi
+          # A newer version supersedes an older proposal still open.
+          gh pr list --state open --json number,headRefName \
+            --jq '.[] | select(.headRefName | startswith("upstream-hours-")) | select(.headRefName != env.BRANCH) | .number' \
+            | xargs -r -I{} gh pr close {} --delete-branch --comment "Superseded by a newer version from upstream."
