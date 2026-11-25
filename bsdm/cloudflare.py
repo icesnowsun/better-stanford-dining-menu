@@ -107,11 +107,12 @@ class CloudflareClient:
         system_prompt: str,
         rules: str,
         model: str = DEFAULT_TRANSLATION_MODEL,
+        target: str = "Simplified Chinese",
     ) -> dict[str, str]:
         prompt = (
             f"{rules}\n\n"
             "Reply ONLY with a single JSON object mapping each input string below, exactly as given, "
-            "to its Simplified Chinese translation. Do not wrap in markdown fences or include explanations.\n\n"
+            f"to its {target} translation. Do not wrap in markdown fences or include explanations.\n\n"
             + json.dumps(items, ensure_ascii=False, indent=0)
         )
         payload = {
