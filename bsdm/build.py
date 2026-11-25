@@ -309,8 +309,18 @@ def build_payload(root: Path) -> dict:
                 out["late_night_logo"] = ln_entry
         return out
 
+    # When the menus on the board were last fetched from R&DE: the newest
+    # scraped_at among the days on it. A day's file is only rewritten once its
+    # own scrape has gone through, so a run that fails, or never starts, leaves
+    # this where it was -- it is the age of the data, not of this build and not
+    # of the last workflow run. A day with every hall shut still counts: over a
+    # break, "nothing is served" is what the fetch found.
+    fetched = [d["scraped_at"] for d in days if d.get("scraped_at")]
+    fetched_at = max(fetched, key=datetime.fromisoformat) if fetched else None
+
     now = datetime.now(TZ)
     return {
+        "fetched_at": fetched_at,
         "generated_at": now.strftime("%b %-d, %Y at %-I:%M %p %Z"),
         "generated_at_zh": now.strftime("%Y年%-m月%-d日 %H:%M"),
         "generated_at_es": now.strftime("%-d/%-m/%Y, %H:%M"),

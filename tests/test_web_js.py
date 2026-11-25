@@ -840,6 +840,44 @@ class TestTheHallsClock:
         assert got == ["open", "open", "open", "soon"]
 
 
+    def test_only_a_reader_on_another_clock_is_told_whose_hours_they_are(self, tmp_path):
+        """Vancouver keeps California's clock, so its readers need no note."""
+        got = call(["HALL_TZ", "HALL_CLOCK", "readerIsAway"],
+                   "return INPUT.map((zone) => "
+                   "readerIsAway(new Date('2026-10-15T17:30:00-07:00'), zone));",
+                   payload=["America/Los_Angeles", "America/Vancouver",
+                            "America/New_York", "Asia/Shanghai"],
+                   tmp_path=tmp_path)
+        assert got == [False, False, True, True]
+
+
+class TestFreshness:
+    """The board says how old its menus are: when they were last fetched from
+    R&DE, not when the site was built or when a workflow last ran."""
+
+    def test_a_day_and_a_half_without_a_fetch_is_stale(self, tmp_path):
+        fetched = "2026-11-25T01:53:54-08:00"
+        got = call(["STALE_AFTER_HOURS", "freshness"],
+                   "return INPUT.map(([at, now]) => freshness(at, Date.parse(now)));",
+                   payload=[[fetched, "2026-11-25T09:00:00-08:00"],
+                            [fetched, "2026-11-26T13:00:00-08:00"],
+                            [fetched, "2026-11-26T14:30:00-08:00"],
+                            [None, "2026-11-25T09:00:00-08:00"],
+                            ["garbage", "2026-11-25T09:00:00-08:00"]],
+                   tmp_path=tmp_path)
+        assert got == ["fresh", "fresh", "stale", "unknown", "unknown"]
+
+    def test_the_time_is_given_on_the_halls_clock_in_each_language(self, tmp_path):
+        """09:53 UTC is 1:53am at Stanford in November, wherever it is read."""
+        got = call(["HALL_TZ", "UI"],
+                   "return ['en', 'zh', 'es'].map((l) => "
+                   "UI[l].fetchedAt(new Date(INPUT)).replace(/\\s/g, ' '));",
+                   payload="2026-11-25T09:53:54Z", tmp_path=tmp_path)
+        assert got == ["Nov 25, 2026, 1:53 AM PST",
+                       "2026年11月25日 01:53（加州时间）",
+                       "25 nov 2026, 01:53 (hora de California)"]
+
+
 UPCOMING_PRELUDE = (
     "const MEALS = ['Breakfast', 'Lunch', 'Dinner'];\n"
     "const TODAY = '2026-10-15'; const TOMORROW = '2026-10-16'; const YESTERDAY = '2026-10-14';\n"

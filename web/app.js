@@ -131,6 +131,19 @@
       pager: (dir) => (dir < 0 ? "Previous hall" : "Next hall"),
       hallTitle: (name) => `${name} Menu · Stanford Dining, Side by Side`,
       footHalls: "Each hall on its own page",
+      hallTime: "Pacific time",
+      fetchedAt: (at) => at.toLocaleString("en-US", { timeZone: HALL_TZ, month: "short", day: "numeric",
+        year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" }),
+      freshOk: "Menu data up to date",
+      freshAt: (when) => `Last successful update: ${when}`,
+      staleTitle: "Menu data may be outdated",
+      staleBody: (a, when) => [
+        "Showing the most recently available menu",
+        when ? ` (last successful update: ${when})` : "",
+        ". Please check ",
+        a("https://rdeapps.stanford.edu/dininghallmenu/", "Stanford's official dining website"),
+        " for the latest information.",
+      ],
       shareWhen: (meal, day) => `${day.toLocaleDateString(undefined, { weekday: "long" })} ` +
         `${meal.toLowerCase()}, ${day.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`,
       shareHalls: (n) => `${n} halls`,
@@ -222,6 +235,19 @@
       pager: (dir) => (dir < 0 ? "上一个食堂" : "下一个食堂"),
       hallTitle: (name) => `${name} 菜单 · 舌尖上的斯坦福`,
       footHalls: "各食堂单独页面",
+      hallTime: "加州时间",
+      fetchedAt: (at) => at.toLocaleString("zh-CN", { timeZone: HALL_TZ, year: "numeric", month: "long",
+        day: "numeric", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }) + "（加州时间）",
+      freshOk: "菜单数据已是最新",
+      freshAt: (when) => `最近一次成功更新：${when}`,
+      staleTitle: "菜单数据可能已过期",
+      staleBody: (a, when) => [
+        "当前显示的是最近一次获取到的菜单",
+        when ? `（最近一次成功更新：${when}）` : "",
+        "。最新信息请查看",
+        a("https://rdeapps.stanford.edu/dininghallmenu/", "斯坦福官方食堂菜单"),
+        "。",
+      ],
       shareWhen: (meal, day) => `${day.toLocaleDateString("zh-CN", { month: "long", day: "numeric" })}` +
         `（${day.toLocaleDateString("zh-CN", { weekday: "short" })}）${meal}`,
       shareHalls: (n) => `${n} 家食堂`,
@@ -318,6 +344,19 @@
       pager: (dir) => (dir < 0 ? "Comedor anterior" : "Comedor siguiente"),
       hallTitle: (name) => `Menú de ${name} · Comedores de Stanford, lado a lado`,
       footHalls: "Cada comedor en su propia página",
+      hallTime: "hora de California",
+      fetchedAt: (at) => at.toLocaleString("es", { timeZone: HALL_TZ, day: "numeric", month: "short",
+        year: "numeric", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }) + " (hora de California)",
+      freshOk: "Menús al día",
+      freshAt: (when) => `Última actualización correcta: ${when}`,
+      staleTitle: "Los menús pueden estar desactualizados",
+      staleBody: (a, when) => [
+        "Se muestra el menú más reciente disponible",
+        when ? ` (última actualización correcta: ${when})` : "",
+        ". Consulta el ",
+        a("https://rdeapps.stanford.edu/dininghallmenu/", "sitio oficial de comedores de Stanford"),
+        " para ver la información más reciente.",
+      ],
       shareWhen: (meal, day) => `${meal} del ${day.toLocaleDateString("es", { weekday: "long" })}, ` +
         `${day.toLocaleDateString("es", { day: "numeric", month: "short" })}`,
       shareHalls: (n) => `${n} comedores`,
@@ -415,6 +454,34 @@
   // A late night belongs to the evening it opens on, so the one being served
   // at 1am is yesterday's.
   const YESTERDAY = shiftDay(TODAY, -1);
+
+  /** Whether a clock -- the reader's own, unless a zone is named -- reads other
+   *  than the halls' at a moment. Vancouver keeps California's time; New York
+   *  and Shanghai do not, and are told whose the hours are. */
+  function readerIsAway(at = new Date(), zone = undefined) {
+    const local = new Intl.DateTimeFormat("en-CA", {
+      timeZone: zone, year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    });
+    return local.format(at) !== HALL_CLOCK.format(at);
+  }
+  const READER_AWAY = readerIsAway();
+
+  // ---------- how fresh the menus are ----------
+  //
+  // DATA.fetched_at is when the menus on the board were last fetched from R&DE
+  // (bsdm/build.py: the newest scraped_at among the days shown) -- not when the
+  // site was rebuilt, and not when a workflow last ran, since a run can fail
+  // and still publish. The fetch runs once a day and GitHub sometimes starts it
+  // hours late, so a day and a half without one means at least one was missed.
+  const STALE_AFTER_HOURS = 36;
+
+  /** "fresh", "stale", or "unknown" when the build recorded no fetch at all. */
+  function freshness(fetchedAt, now = Date.now()) {
+    const at = Date.parse(fetchedAt || "");
+    if (Number.isNaN(at)) return "unknown";
+    return now - at > STALE_AFTER_HOURS * 3600000 ? "stale" : "fresh";
+  }
 
   // ---------- preferences ----------
 
@@ -1401,6 +1468,28 @@
     return { spread, serving };
   }
 
+  /** How old the menus on the board are, said above them: a quiet line while
+   *  the daily fetch is going through, a box with the way to R&DE's own site
+   *  once it has stopped. */
+  function freshnessNote() {
+    const fresh = freshness(DATA.fetched_at);
+    const when = fresh === "unknown" ? null : t("fetchedAt", new Date(DATA.fetched_at));
+    if (fresh === "fresh") {
+      return el("p", { className: "freshness" }, [
+        el("span", { className: "freshness-ok", textContent: t("freshOk") }),
+        el("span", { textContent: t("freshAt", when) }),
+      ]);
+    }
+    const link = (href, text) =>
+      el("a", { href, target: "_blank", rel: "noopener", textContent: text });
+    const box = el("div", { className: "notice notice-stale" }, [
+      el("p", { className: "notice-stale-title", textContent: t("staleTitle") }),
+      el("p", {}, t("staleBody", link, when)),
+    ]);
+    box.setAttribute("role", "status");
+    return box;
+  }
+
   /** Whatever the specials calendar says to the whole campus at once, and the
    *  one thing the line of counts over the board used to say that nothing else
    *  does: that the halls picked are serving exactly the same menu, so there is
@@ -1408,7 +1497,7 @@
   function renderNotices(spread, servingCount) {
     const node = document.getElementById("notices");
     const notes = noticesFor(state.date);
-    node.replaceChildren(...notes.map((text) => {
+    node.replaceChildren(freshnessNote(), ...notes.map((text) => {
       const zh = zhSpecial(text);
       const line = el("p", { className: "notice" }, [
         el("span", { className: "special-tag", textContent: t("special") }),
@@ -1512,10 +1601,13 @@
     // Two lines, each read across the headers: when it serves, then what it has.
     const when = el("p", { className: "col-when" });
     if (span) {
-      when.append(el("span", {
+      const hours = el("span", {
         className: "hours",
         textContent: `${fmtTime(span[0])} – ${fmtTime(span[1])}`,
-      }));
+      });
+      // The hours are Stanford's; said so only to a reader whose clock is not.
+      if (READER_AWAY) hours.append(el("span", { className: "hours-tz", textContent: t("hallTime") }));
+      when.append(hours);
     }
     if (status) {
       when.append(el("span", {
@@ -1937,7 +2029,10 @@
 
     const link = (href, text) =>
       el("a", { href, target: "_blank", rel: "noopener", textContent: text });
-    const built = (state.lang !== "en" && DATA[`generated_at_${state.lang}`]) || DATA.generated_at;
+    // "Updated" is when the menus were fetched, as over the board; the build's
+    // own time is only the fallback for a build that recorded no fetch.
+    const built = DATA.fetched_at ? t("fetchedAt", new Date(DATA.fetched_at))
+      : (state.lang !== "en" && DATA[`generated_at_${state.lang}`]) || DATA.generated_at;
     document.getElementById("foot-feedback").replaceChildren(
       ...t("footerFeedback", (text) => reportLink("footer", text)));
     document.getElementById("foot-note").textContent = t("footerNote");

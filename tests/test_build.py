@@ -498,6 +498,25 @@ class TestSpanish:
         assert payload["es_terms"] == {} and payload["es_specials"] == {}
 
 
+class TestFreshness:
+    """fetched_at is the age of the data: when the menus were last scraped, not
+    when the site was built."""
+
+    def test_it_is_the_newest_scrape_on_the_board(self, site):
+        site.write_menu("2026-09-18", {"wilbur": {"Dinner": [dish("Roast Chicken", "chicken")]}})
+        assert buildlib.build_payload(site.root)["fetched_at"] == "2026-09-18T23:20:00-07:00"
+
+    def test_building_again_is_not_fetching_again(self, site):
+        first = buildlib.build_payload(site.root)
+        again = buildlib.build_payload(site.root)
+        assert first["fetched_at"] == again["fetched_at"] == "2026-09-17T23:20:00-07:00"
+
+    def test_a_week_with_every_hall_shut_was_still_fetched(self, site):
+        """Over a break the fetch finds nothing served, and that is news, not staleness."""
+        site.write_menu("2026-09-18", {})
+        assert buildlib.build_payload(site.root)["fetched_at"] == "2026-09-18T23:20:00-07:00"
+
+
 class TestRender:
     def test_the_page_is_one_self_contained_file(self, site, tmp_path):
         site.with_web()

@@ -682,6 +682,34 @@ main { margin: 0; padding: 32px var(--gutter) 96px; }
   font-size: 15px;
 }
 
+/* How old the menus are, over the board. While the daily fetch goes through it
+   is a quiet line; once it has stopped it is a box, because the board under it
+   may then be wrong. */
+.freshness {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.freshness > * { position: relative; }
+.freshness > * + *::before {
+  content: "·";
+  position: absolute;
+  left: -11px;
+  color: var(--ink-3);
+}
+.freshness-ok {
+  padding-left: 12px;
+  color: var(--open);
+  background: radial-gradient(circle at 4px 50%, currentColor 3.5px, transparent 4px) no-repeat;
+}
+.notice-stale { border: 1px solid var(--soon); background: none; }
+.notice-stale p { margin: 0; }
+.notice-stale-title { font-weight: 600; color: var(--soon); }
+.notice-stale a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
 .special-tag { margin-right: 8px; font-weight: 600; color: var(--cardinal); }
 
 /* Same rule as a dish name: the Chinese is what you read, the English under it
@@ -887,6 +915,10 @@ main { margin: 0; padding: 32px var(--gutter) 96px; }
 }
 
 .hours { color: var(--ink); font-variant-numeric: tabular-nums; }
+/* Said only to a reader whose own clock is not the halls': from New York or
+   Shanghai, "7:30am" would otherwise read as their own morning. */
+.hours-tz { margin-left: 4px; font-size: 13px; color: var(--ink-2); }
+html:lang(zh) .hours-tz { font-family: var(--cjk), var(--sans); }
 
 .status {
   padding-left: 12px;
