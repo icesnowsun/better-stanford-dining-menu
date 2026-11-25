@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill in the Chinese translations data/zh.json is still missing.
+"""Fill in the translations data/zh.json (Chinese) or data/es.json (Spanish) still lacks.
 
 The engine is Gemma on the Gemini API's free tier (GEMINI_API_KEY), on the laptop
 and in the nightly job alike, right after the scrape. The Claude Code CLI in
@@ -14,6 +14,7 @@ lists it.
     make translate                                   # everything missing
     uv run python scripts/translate.py --dry-run     # what would be sent
     uv run python scripts/translate.py --only tofu --force   # redo a few dishes
+    uv run python scripts/translate.py --lang es             # the Spanish, into data/es.json
 """
 
 from __future__ import annotations
@@ -72,6 +73,53 @@ RULES = {
 - Keep announcements as announcements: "Closed for Winter Break" -> 寒假期间关闭.""",
 }
 
+# Spanish, for the Spanish-speaking students and staff who eat in the same halls.
+# Same sections and the same JSON contract as the Chinese; only the target
+# language and the house style differ.
+SYSTEM_ES = (
+    "You translate the menus of a US university dining hall into Spanish, for "
+    "Spanish-speaking students reading the menu before they decide where to eat. "
+    "Write neutral Latin American Spanish. You reply with one JSON object and "
+    "nothing else: no prose, no explanation, no markdown fence."
+)
+
+RULES_ES = {
+    "dishes": """These are dish names from a dining hall menu board.
+- Translate as a dish name a Spanish-speaking diner would recognise: "Teriyaki Chicken Thigh" -> Muslo de pollo teriyaki.
+- Keep them short. These are menu names, not descriptions, and they are read in a narrow column.
+- Use sentence case, as a Spanish menu does: only the first word and proper names take a capital.
+- Keep a cuisine or a place when the name turns on it: "Jamaican Jerk Chicken" -> Pollo jerk jamaiquino.
+- Keep brand names, chef names and Stanford dining hall names in English: "Panini Station (Branner)" -> Estación de paninis (Branner).
+- A name that is a serving station rather than a dish stays one: "Allergen Friendly Pizza Station" -> Estación de pizza sin alérgenos.
+- "Plant-Forward" or "Plant Powered" means plant-based: translate as "vegetal" or "a base de plantas", never word for word (e.g. "Plant-Forward Tenders" -> Tiras vegetales).""",
+
+    "terms": """These are ingredient-label terms, the kind printed on a packet.
+- Use the everyday word, the one on a supermarket label or in a home kitchen: harina, tomate, caldo.
+- Write them in lower case, as they stand in an ingredient list, unless the term is a brand or a proper name.
+- "Plant-forward" means plant-based: translate as "a base de plantas", never word for word.
+- For additives and processing aids use the standard Spanish additive name. Keep letter codes and brand names as they are: "BHT", "A-1 steak sauce", "FD&C yellow no.5".
+- One translation per term, no alternatives, no explanation.
+- A term that is a whole sentence is translated as a sentence.""",
+
+    "halls": """These are one-line descriptions of a Stanford dining hall's concept, shown under the hall's name on the page.
+- Keep the restaurant concept name and any chef's name in English: "Star Ginger, inspired by Chef Mai Pham" -> Star Ginger, inspirado en la chef Mai Pham.
+- Write it the way a restaurant would describe itself in Spanish, not word for word.
+- A dining hall is a "comedor".""",
+
+    "specials": """These are limited-time dinner specials off a dining hall's fortnightly calendar. Unlike a menu name, a special is often a short list of what comes with it.
+- Keep the structure of the original: a list stays a list, separated by commas.
+- Translate as food, not as prose: "Jerk Pork Belly, Rasta Pasta, Ripe Fried Plantains" -> Panceta de cerdo jerk, Rasta Pasta, plátanos maduros fritos.
+- Use the name a Spanish-language menu already uses for a foreign dish rather than translating its words literally. "Jerk" is a Jamaican spice rub; "ginger beer" is a soft drink, cerveza de jengibre.
+- Keep a dish's own proper name as it is when Spanish alone would not identify it: "Poul Nan Sos" -> Poul Nan Sos (pollo guisado haitiano).
+- Keep announcements as announcements: "Closed for Winter Break" -> Cerrado por las vacaciones de invierno.""",
+}
+
+# {lang: (system prompt, rules, the language the reply is asked for in)}.
+PROMPTS = {
+    "zh": (SYSTEM, RULES, "Simplified Chinese"),
+    "es": (SYSTEM_ES, RULES_ES, "Spanish"),
+}
+
 BATCH = {"dishes": 40, "terms": 40, "halls": 20, "specials": 25}
 
 
@@ -79,11 +127,12 @@ class TranslateError(RuntimeError):
     pass
 
 
-def request(items: list[str], section: str) -> str:
+def request(items: list[str], section: str, lang: str = "zh") -> str:
+    _, rules, target = PROMPTS[lang]
     return (
-        f"{RULES[section]}\n\n"
+        f"{rules[section]}\n\n"
         "Reply with a JSON object mapping every input string below, copied "
-        "exactly as given, to its Simplified Chinese translation.\n\n"
+        f"exactly as given, to its {target} translation.\n\n"
         + json.dumps(items, ensure_ascii=False, indent=0)
     )
 
@@ -116,13 +165,14 @@ def read_answer(text: str, items: list[str]) -> dict[str, str]:
 
 def ask(items: list[str], section: str, args) -> dict[str, str]:
     """One model call: a list of English strings in, a JSON object out."""
+    lang = getattr(args, "lang", "zh")
     cmd = [args.claude_bin, "-p", "--model", args.model,
-           "--system-prompt", SYSTEM, "--strict-mcp-config", "--restricted"]
+           "--system-prompt", PROMPTS[lang][0], "--strict-mcp-config", "--restricted"]
     try:
         # Run outside the repo: the translator wants none of the project's
         # context, and loading it would be paid for on every batch.
         done = subprocess.run(
-            cmd + [request(items, section)], capture_output=True, text=True,
+            cmd + [request(items, section, lang)], capture_output=True, text=True,
             timeout=args.timeout, cwd=tempfile.gettempdir(),
         )
     except subprocess.TimeoutExpired:
@@ -132,19 +182,23 @@ def ask(items: list[str], section: str, args) -> dict[str, str]:
     return read_answer(done.stdout, items)
 
 
-def ask_gemini(items: list[str], section: str, client: Gemini) -> dict[str, str]:
+def ask_gemini(items: list[str], section: str, client: Gemini, lang: str = "zh") -> dict[str, str]:
     """One model call via the Gemini API's free tier (Gemma), for CI."""
     try:
-        return read_answer(client.ask(request(items, section), system=SYSTEM), items)
+        return read_answer(client.ask(request(items, section, lang), system=PROMPTS[lang][0]), items)
     except Unavailable:
         raise
     except LLMError as exc:
         raise TranslateError(str(exc))
 
 
-def ask_cloudflare(items: list[str], section: str, client: CloudflareClient) -> dict[str, str]:
+def ask_cloudflare(items: list[str], section: str, client: CloudflareClient,
+                   lang: str = "zh") -> dict[str, str]:
     """One model call via Cloudflare Workers AI."""
-    return client.translate(items, section, SYSTEM, RULES[section])
+    if lang == "zh":
+        return client.translate(items, section, SYSTEM, RULES[section])
+    system, rules, target = PROMPTS[lang]
+    return client.translate(items, section, system, rules[section], target=target)
 
 
 def settle(items: list[str], ask_one) -> tuple[dict[str, str], list[tuple[str, str]]]:
@@ -180,6 +234,8 @@ def main(argv: list[str] | None = None) -> int:
                          "named (default: auto)")
     ap.add_argument("--model", default="sonnet", help="model alias passed to claude (default sonnet)")
     ap.add_argument("--claude-bin", default="claude", help="path to the Claude Code CLI")
+    ap.add_argument("--lang", choices=sorted(zhlib.LANGS), default="zh",
+                    help="zh: Chinese, into data/zh.json (default); es: Spanish, into data/es.json")
     ap.add_argument("--section", choices=sorted(zhlib.SECTIONS), action="append",
                     help="limit to dish names, ingredient terms, hall concepts or specials")
     ap.add_argument("--only", help="substring match on the English source")
@@ -208,7 +264,7 @@ def main(argv: list[str] | None = None) -> int:
     backend_name = {"cloudflare": "Cloudflare Workers AI", "gemini": gemini.name,
                     "claude": f"claude ({args.model})"}[backend]
 
-    table = zhlib.load(ROOT)
+    table = zhlib.load(ROOT, args.lang)
     want = zhlib.wanted(ROOT)
     sections = args.section or ["dishes", "terms", "halls", "specials"]
 
@@ -216,7 +272,7 @@ def main(argv: list[str] | None = None) -> int:
     for section in sections:
         items = {
             key: english for key, english in want[section].items()
-            if (args.force or not zhlib.get(table, section, key))
+            if (args.force or not zhlib.get(table, section, key, args.lang))
             and (not args.only or args.only.lower() in english.lower())
         }
         if args.limit:
@@ -225,7 +281,7 @@ def main(argv: list[str] | None = None) -> int:
             todo[section] = items
 
     if not todo:
-        print(zhlib.summarize(ROOT))
+        print(zhlib.summarize(ROOT, args.lang))
         print("Nothing to translate.")
         return 0
 
@@ -242,6 +298,9 @@ def main(argv: list[str] | None = None) -> int:
     started = time.monotonic()
     done_count = failed = 0
     quota_exceeded = False
+    # Only a language other than the default is named to the askers, so a
+    # stand-in with the old three-argument shape still answers for Chinese.
+    lang_kw = {} if args.lang == "zh" else {"lang": args.lang}
 
     for section, items in todo.items():
         size = args.batch or BATCH[section]
@@ -256,10 +315,10 @@ def main(argv: list[str] | None = None) -> int:
 
         if backend == "cloudflare":
             def ask_one(batch, section=section):
-                return ask_cloudflare(batch, section, cf_client)
+                return ask_cloudflare(batch, section, cf_client, **lang_kw)
         elif backend == "gemini":
             def ask_one(batch, section=section):
-                return ask_gemini(batch, section, gemini)
+                return ask_gemini(batch, section, gemini, **lang_kw)
         else:
             def ask_one(batch, section=section):
                 return ask(batch, section, args)
@@ -289,7 +348,7 @@ def main(argv: list[str] | None = None) -> int:
                 }
                 # Written per batch, not at the end: a long first run must
                 # survive a Ctrl-C with everything it has already translated.
-                zhlib.merge(ROOT, section, pairs)
+                zhlib.merge(ROOT, section, pairs, args.lang)
                 done_count += len(pairs)
                 dropped = len(batch) - len(answer)
                 note = f", {dropped} not answered" if dropped else ""
@@ -301,7 +360,7 @@ def main(argv: list[str] | None = None) -> int:
             break
 
     print(f"\nTranslated {done_count} items in {(time.monotonic() - started) / 60:.1f} min")
-    print(zhlib.summarize(ROOT))
+    print(zhlib.summarize(ROOT, args.lang))
     if quota_exceeded:
         return 0
     return 1 if failed and not done_count else 0
