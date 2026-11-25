@@ -11,11 +11,16 @@
   const STORE = "bsdm.prefs.v5";
 
   const DIET = [
-    { key: "vegetarian", label: "Vegetarian", zh: "素食", cls: "badge-v", short: "Veg", shortZh: "素" },
-    { key: "vegan", label: "Vegan", zh: "纯素", cls: "badge-vgn", short: "Vegan", shortZh: "纯素" },
-    { key: "gluten-free", label: "Gluten-free", zh: "无麸质", cls: "badge-gf", short: "GF", shortZh: "无麸质" },
-    { key: "halal", label: "Halal", zh: "清真", cls: "badge-halal", short: "Halal", shortZh: "清真" },
-    { key: "kosher", label: "Kosher", zh: "犹太洁食", cls: "badge-kosher", short: "Kosher", shortZh: "洁食" },
+    { key: "vegetarian", label: "Vegetarian", zh: "素食", es: "Vegetariano", cls: "badge-v",
+      short: "Veg", shortZh: "素", shortEs: "Veg" },
+    { key: "vegan", label: "Vegan", zh: "纯素", es: "Vegano", cls: "badge-vgn",
+      short: "Vegan", shortZh: "纯素", shortEs: "Vegano" },
+    { key: "gluten-free", label: "Gluten-free", zh: "无麸质", es: "Sin gluten", cls: "badge-gf",
+      short: "GF", shortZh: "无麸质", shortEs: "Sin gluten" },
+    { key: "halal", label: "Halal", zh: "清真", es: "Halal", cls: "badge-halal",
+      short: "Halal", shortZh: "清真", shortEs: "Halal" },
+    { key: "kosher", label: "Kosher", zh: "犹太洁食", es: "Kosher", cls: "badge-kosher",
+      short: "Kosher", shortZh: "洁食", shortEs: "Kosher" },
   ];
 
   const PROTEIN = {
@@ -25,7 +30,12 @@
     beef: "牛肉", pork: "猪肉", poultry: "禽肉", seafood: "海鲜", lamb: "羊肉",
   };
 
+  const PROTEIN_ES = {
+    beef: "Res", pork: "Cerdo", poultry: "Aves", seafood: "Mariscos", lamb: "Cordero",
+  };
+
   const MEAL_ZH = { Breakfast: "早餐", Lunch: "午餐", Dinner: "晚餐", Brunch: "早午餐", "Late Night": "夜宵" };
+  const MEAL_ES = { Breakfast: "Desayuno", Lunch: "Almuerzo", Dinner: "Cena", Brunch: "Brunch", "Late Night": "Nocturno" };
 
   // R&DE's allergen codes, spelt the way R&DE spells them: the nuts are plural.
   // Anything not listed shows as it came, which is how PEANUTS and TREENUTS went
@@ -40,6 +50,11 @@
     MILK: "乳制品", EGG: "蛋类", WHEAT: "小麦", SOY: "大豆", FISH: "鱼类", SHELLFISH: "甲壳贝类",
     SESAME: "芝麻", COCONUT: "椰子", PEANUTS: "花生", TREENUTS: "坚果",
     TRACEALLERGENS: "微量过敏原",
+  };
+  const ALLERGEN_ES = {
+    MILK: "Leche", EGG: "Huevo", WHEAT: "Trigo", SOY: "Soya", FISH: "Pescado", SHELLFISH: "Mariscos",
+    SESAME: "Ajonjolí", COCONUT: "Coco", PEANUTS: "Cacahuates", TREENUTS: "Nueces",
+    TRACEALLERGENS: "Trazas de alérgenos",
   };
 
   const ICONS = {
@@ -56,9 +71,11 @@
   // sign to match against, so those are replaced outright.
   const UI = {
     en: {
-      langChip: "中文",
+      // The switch opens a menu of all three; its label names the language a
+      // reader of this page is most likely to be looking for.
+      langChip: "中文 · ES",
       langShort: "中文",
-      langLabel: "切换到中文",
+      langLabel: "Language · 语言 · Idioma",
       docTitle: "Stanford Dining Hall Menus, Side by Side",
       brandA: "Stanford Dining Hall Menus, ",
       brandB: "Side by Side",
@@ -129,7 +146,7 @@
       tourShare: ["Send it to a friend",
         "Share sends the day, the meal and these halls, so a friend opens exactly this view. Nothing else of yours goes along."],
       // 语言 in the title so a Chinese reader spots the stop meant for them.
-      tourLang: ["Language · 语言", "Switch to another language here."],
+      tourLang: ["Language · 语言 · Idioma", "Switch to another language here."],
       tourTheme: ["Theme", "Switch between auto, light, and dark mode here."],
       tourNext: "Next", tourDone: "Got it", tourSkip: "Skip",
       lateNightTip: [
@@ -158,7 +175,7 @@
       // What a phone shows instead: "English" left the Chinese masthead too
       // little room at 360 px.
       langShort: "EN",
-      langLabel: "Switch to English",
+      langLabel: "语言 · Language · Idioma",
       docTitle: "舌尖上的斯坦福，一站式食堂菜单",
       brandA: "舌尖上的斯坦福，",
       brandB: "一站式食堂菜单",
@@ -240,11 +257,113 @@
       // Dish names and ingredients are translated offline into data/zh.json;
       // anything that run has not reached yet stays English on the page.
     },
+    // Spanish works the way Chinese does: the dish name in Spanish with the
+    // English kept under it for the sign at the counter, everything else
+    // replaced. Its table is data/es.json.
+    es: {
+      langChip: "English",
+      langShort: "EN",
+      langLabel: "Idioma · Language · 语言",
+      docTitle: "Menús de los comedores de Stanford, lado a lado",
+      brandA: "Menús de Stanford, ",
+      brandB: "lado a lado",
+      lblDay: "Día", lblMeal: "Comida", lblHalls: "Comedores", lblFilter: "Filtro",
+      today: "Hoy", tomorrow: "Mañana",
+      tomorrowShort: (weekday) => weekday,
+      meal: (m) => MEAL_ES[m] || m,
+      diet: (d) => d.es,
+      dietShort: (d) => d.shortEs,
+      protein: (c) => PROTEIN_ES[c] || PROTEIN[c],
+      onlyHere: "Solo aquí",
+      meatFirst: "Carne primero", photos: "Mostrar fotos", reset: "Restablecer",
+      theme: (mode) => ({ auto: "Auto", light: "Claro", dark: "Oscuro" }[mode]),
+      status: (s) => ({ open: "Abierto", soon: "Abre pronto", shut: "Cerrado" }[s]),
+      count: (n) => `${n} en el menú`,
+      onlyCount: (n) => `${n} solo aquí`,
+      map: "Mapa",
+      special: "Especial",
+      specialBadge: "Especial",
+      specialTip: (meal) => `Especial de ${meal.toLowerCase()}, del calendario de especiales de R&DE`,
+      specialNote: "Sin lista de ingredientes: pregunta en el mostrador.",
+      alwaysHere: "Siempre aquí",
+      toggle: (shown) => (shown ? "Ocultar" : "Mostrar"),
+      stationBadge: "Estación",
+      stationOptions: (n) => (n === 1 ? "1 opción disponible" : `${n} opciones disponibles`),
+      allergens: "Alérgenos: ",
+      allergenList: (list) => list.map((a) => ALLERGEN_ES[a] || a).join(", "),
+      ingredients: "Ingredientes",
+      traces: (list) => "Equipo compartido con: " + list.map((a) => ALLERGEN_ES[a] || a).join(", "),
+      varies: "Cambia cada día: pregunta en el mostrador.",
+      variesShort: "Cambia a diario",
+      variesTip: "Este plato cambia cada día, así que a propósito no lleva imagen.",
+      pending: "Imagen pendiente",
+      pendingTip: "Este plato todavía no tiene imagen.",
+      viewLargePhoto: "Haz clic para ver la foto completa",
+      noService: (meal, day) => {
+        const m = (MEAL_ES[meal] || meal).toLowerCase();
+        return day === "Hoy" || day === "Mañana"
+          ? `${day} no hay ${m} aquí.`
+          : `El ${day} no hay ${m} aquí.`;
+      },
+      closedDay: (day) => (day === "Hoy" || day === "Mañana"
+        ? `Cerrado ${day.toLowerCase()}.`
+        : `Cerrado el ${day}.`),
+      unreleased: "Cerrado, o el menú aún no se ha publicado.",
+      noMatch: "Nada de este menú coincide con los filtros.",
+      noneListed: "No hay platos específicos para esta comida.",
+      allShut: "Todos los comedores están cerrados esta semana.",
+      identical: "Estos menús son idénticos: ve al que te quede más cerca.",
+      share: "Compartir",
+      shareTip: "Comparte este día, esta comida y estos comedores",
+      pager: (dir) => (dir < 0 ? "Comedor anterior" : "Comedor siguiente"),
+      hallTitle: (name) => `Menú de ${name} · Comedores de Stanford, lado a lado`,
+      footHalls: "Cada comedor en su propia página",
+      shareWhen: (meal, day) => `${meal} del ${day.toLocaleDateString("es", { weekday: "long" })}, ` +
+        `${day.toLocaleDateString("es", { day: "numeric", month: "short" })}`,
+      shareHalls: (n) => `${n} comedores`,
+      shareSpecial: (hall, dish) => `Especial en ${hall}: ${dish}`,
+      shareOnly: (n) => (n === 1 ? "1 plato en uno solo de ellos" : `${n} platos en uno solo de ellos`),
+      copied: "Enlace copiado: pégalo en un chat",
+      tourDay: ["Elige un día",
+        "Los menús se publican con una semana de antelación. Toca un día o usa ← → en el teclado. La página siempre abre en el día de hoy."],
+      tourMeal: ["Elige una comida",
+        "Desayuno, almuerzo o cena. Una comida en gris es una que ninguno de tus comedores sirve ese día."],
+      tourHalls: ["Elige tus comedores",
+        "Toca un comedor para añadirlo o quitarlo; cada uno tiene su columna, lado a lado. Se recuerdan tus comedores, la comida, el idioma y el tema."],
+      tourShare: ["Envíaselo a un amigo",
+        "Compartir envía el día, la comida y estos comedores, para que tu amigo abra exactamente esta vista. No se envía nada más tuyo."],
+      tourLang: ["Idioma · Language · 语言", "Cambia a otro idioma aquí."],
+      tourTheme: ["Tema", "Cambia aquí entre el modo automático, claro y oscuro."],
+      tourNext: "Siguiente", tourDone: "Entendido", tourSkip: "Omitir",
+      lateNightTip: [
+        "Nuevo: comedores nocturnos",
+        "¡Ya están Arrillaga Nights y Lakeside Late Night! Toca aquí para ver los horarios nocturnos, los menús y los batidos Shake Smart.",
+      ],
+      lateNightTipAction: "Ver el servicio nocturno",
+      footerFeedback: (a) => ["¿Algo está mal? ", a("Avísame aquí"), "."],
+      reportDish: "¿Algo está mal con este plato? Avísame aquí",
+      footerSrc: (a, built) => [
+        "Menús del ",
+        a("https://rdeapps.stanford.edu/dininghallmenu/", "R&DE Dining Hall Menu"),
+        ", horarios de ",
+        a("https://rde.stanford.edu/dining-hospitality/dining-locations-hours",
+          "Dining Locations & Hours"),
+        `. Actualizado el ${built}. `,
+        a("https://github.com/NeilMin/better-stanford-dining-menu", "Código en GitHub"),
+        ".",
+      ],
+      footerNote: "Las imágenes de los platos están generadas por IA a partir del nombre y los " +
+        "ingredientes: muestran cómo suele verse un plato, no lo que se sirve. Los alérgenos y los " +
+        "ingredientes vienen de R&DE y pueden cambiar; si tienes alguna alergia, confírmalo en el comedor.",
+      // Dish names and ingredients are translated offline into data/es.json.
+    },
   };
 
   /** A string from the table for the current language; arguments fill it in. */
   const t = (key, ...args) => {
-    const value = (UI[state.lang] || UI.en)[key];
+    // A string a table has not caught up with yet reads in English, not as a blank.
+    const table = UI[state.lang] || UI.en;
+    const value = key in table ? table[key] : UI.en[key];
     return typeof value === "function" ? value(...args) : value;
   };
 
@@ -611,7 +730,7 @@
     ].join(" · ");
     // hl puts Google's own words on the form (Submit, Other) in the same language.
     const query = new URLSearchParams({
-      usp: "pp_url", hl: state.lang === "zh" ? "zh-CN" : "en", [FEEDBACK_VIEW]: view,
+      usp: "pp_url", hl: { zh: "zh-CN", es: "es" }[state.lang] || "en", [FEEDBACK_VIEW]: view,
     });
     return `${FEEDBACK}?${query}`;
   }
@@ -666,12 +785,12 @@
     return node;
   };
 
-  const locale = () => (state.lang === "zh" ? "zh-CN" : undefined);
+  const locale = () => ({ zh: "zh-CN", es: "es" }[state.lang]);
 
   const fmtTime = (hhmm) => {
-    // Chinese dining hours are written on a 24-hour clock, which the stored
-    // "17:00" already is.
-    if (state.lang === "zh") return hhmm.replace(/^0/, "");
+    // Chinese and Spanish dining hours are written on a 24-hour clock, which
+    // the stored "17:00" already is.
+    if (state.lang === "zh" || state.lang === "es") return hhmm.replace(/^0/, "");
     const [h, m] = hhmm.split(":").map(Number);
     const suffix = h < 12 || h === 24 ? "am" : "pm";
     const hour = h % 12 === 0 ? 12 : h % 12;
@@ -717,10 +836,33 @@
     return out;
   }
 
-  const ingredientText = (text) => (state.lang === "zh" ? zhIngredients(text) : text);
+  // ---------- Spanish ingredient lists ----------
 
-  /** The Chinese name to lead a dish with, or null to lead with the English. */
-  const zhName = (rec) => (state.lang === "zh" && rec.zh) || null;
+  const ES_TERMS = new Map(Object.entries(DATA.es_terms || {}));
+  const ES_SEPARATORS = new Set([",", "(", ")", "[", "]"]);
+
+  /** Rebuild an ingredient list in Spanish, term by term.
+   *
+   * The same split and the same lookup key as zhIngredients, so it asks only
+   * for terms bsdm/zh.py offered for translation. Spanish punctuates a list the
+   * way the English does, so the separators and the spacing stay as written.
+   */
+  function esIngredients(text) {
+    let out = "";
+    for (const piece of text.split(/([,()\[\]])/)) {
+      const term = ES_SEPARATORS.has(piece) ? "" : piece.replace(/\s+/g, " ").trim();
+      const es = term && ES_TERMS.get(term.toLowerCase());
+      out += es ? piece.replace(/\S(?:[\s\S]*\S)?/, es) : piece;
+    }
+    return out;
+  }
+
+  const ingredientText = (text) => (state.lang === "zh" ? zhIngredients(text)
+    : state.lang === "es" ? esIngredients(text) : text);
+
+  /** The translated name to lead a dish with -- Chinese or Spanish, whichever
+   *  the page is in -- or null to lead with the English. Named for the first. */
+  const zhName = (rec) => (state.lang !== "en" && rec[state.lang]) || null;
 
   /** Resolve a menu entry ("<dishId>.<variantIndex>" or { station, items }) to a display record. */
   function resolve(ref) {
@@ -753,9 +895,11 @@
     return day.notes || [];
   }
 
-  /** Chinese for a notice, or English if it has not been translated yet. */
+  /** A notice in the page's language, or null if it has not been translated yet. */
   function zhSpecial(text) {
-    return state.lang === "zh" ? DATA.zh_specials[text] || null : null;
+    if (state.lang === "zh") return DATA.zh_specials[text] || null;
+    if (state.lang === "es") return (DATA.es_specials || {})[text] || null;
+    return null;
   }
 
   function service(date, hallId, meal) {
@@ -1329,9 +1473,9 @@
     const title = el("div", { className: "col-title" }, [
       el("h2", { className: "col-name" }, [el("span", { textContent: hall.short })]),
     ]);
-    let concept = (state.lang === "zh" && hall.concept_zh) || hall.concept;
+    let concept = (state.lang !== "en" && hall[`concept_${state.lang}`]) || hall.concept;
     if (state.meal === "Late Night" && hall.late_night) {
-      concept = (state.lang === "zh" && hall.late_night.name_zh) || hall.late_night.name;
+      concept = (state.lang !== "en" && hall.late_night[`name_${state.lang}`]) || hall.late_night.name;
     }
     if (concept) {
       title.append(el("p", { className: "col-concept", textContent: concept }));
@@ -1753,7 +1897,7 @@
    *  language rewrites all of it. */
   function renderChrome() {
     // Not just for screen readers: it is what picks the CJK font in app.css.
-    document.documentElement.lang = state.lang === "zh" ? "zh-Hans" : "en";
+    document.documentElement.lang = { zh: "zh-Hans", es: "es" }[state.lang] || "en";
     // A hall's page keeps its own title: it is what a search result shows.
     const pageHall = PAGE.hall && hallById.get(PAGE.hall);
     document.title = pageHall ? t("hallTitle", pageHall.name) : t("docTitle");
@@ -1768,7 +1912,7 @@
 
     const link = (href, text) =>
       el("a", { href, target: "_blank", rel: "noopener", textContent: text });
-    const built = (state.lang === "zh" && DATA.generated_at_zh) || DATA.generated_at;
+    const built = (state.lang !== "en" && DATA[`generated_at_${state.lang}`]) || DATA.generated_at;
     document.getElementById("foot-feedback").replaceChildren(
       ...t("footerFeedback", (text) => reportLink("footer", text)));
     document.getElementById("foot-note").textContent = t("footerNote");
@@ -2151,15 +2295,60 @@
     trackEvent("open_feedback", { method: a.dataset.feedback, app_lang: state.lang, meal: state.meal });
   });
 
-  document.getElementById("lang").addEventListener("click", () => {
+  // Three languages no longer fit one toggle, so the switch opens a short menu
+  // of all of them, each named in its own language.
+  const LANGS = [["en", "English"], ["zh", "中文"], ["es", "Español"]];
+  const langButton = document.getElementById("lang");
+  const langMenu = document.getElementById("lang-menu");
+
+  function closeLangMenu() {
+    langMenu.hidden = true;
+    langButton.setAttribute("aria-expanded", "false");
+  }
+
+  function setLang(next) {
+    closeLangMenu();
+    if (next === state.lang) return;
     const prevLang = state.lang;
-    state.lang = state.lang === "zh" ? "en" : "zh";
+    state.lang = next;
     setUserProperty("app_lang", state.lang);
     trackEvent("toggle_language", {
       from_lang: prevLang,
       to_lang: state.lang,
     });
     render();
+  }
+
+  langButton.addEventListener("click", () => {
+    if (!langMenu.hidden) {
+      closeLangMenu();
+      return;
+    }
+    langMenu.replaceChildren(...LANGS.map(([code, name]) => {
+      const item = el("button", {
+        type: "button", className: "lang-item", textContent: name,
+        lang: code === "zh" ? "zh-Hans" : code,
+      });
+      item.setAttribute("role", "menuitemradio");
+      item.setAttribute("aria-checked", String(code === state.lang));
+      item.addEventListener("click", () => {
+        setLang(code);
+        langButton.focus();
+      });
+      return item;
+    }));
+    langMenu.hidden = false;
+    langButton.setAttribute("aria-expanded", "true");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!langMenu.hidden && !e.target.closest(".lang-wrap")) closeLangMenu();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !langMenu.hidden) {
+      closeLangMenu();
+      langButton.focus();
+    }
   });
 
   document.getElementById("theme").addEventListener("click", () => {
