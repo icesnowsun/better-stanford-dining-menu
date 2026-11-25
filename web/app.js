@@ -379,14 +379,42 @@
     if (hall.dark_wash) node.style.setProperty("--hall-dark-wash", hall.dark_wash);
   }
 
-  // Derived from the viewer's clock, not from build time: the site is rebuilt
-  // daily but a tab left open overnight must not keep calling yesterday "Today".
-  const isoLocal = (d) => d.toLocaleDateString("en-CA");
-  const TODAY = isoLocal(new Date());
-  const TOMORROW = isoLocal(new Date(Date.now() + 86400000));
+  // ---------- the halls' clock ----------
+  //
+  // Every hour on the board is Stanford's: R&DE's "17:00" is 5pm in California,
+  // and "today" is the day the halls are serving. So the page reads the time
+  // in America/Los_Angeles wherever it is opened -- a reader in New York, or in
+  // Shanghai planning tomorrow's lunch, sees the same day, the same meal and
+  // the same Open now as someone standing in the hall. The viewer's own clock
+  // put New York three hours out and Shanghai on the wrong day altogether.
+  // bsdm/menus.py draws the build's days on the same clock.
+  const HALL_TZ = "America/Los_Angeles";
+  const HALL_CLOCK = new Intl.DateTimeFormat("en-CA", {
+    timeZone: HALL_TZ, year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  });
+
+  /** The halls' date ("2026-10-15") and time ("17:30") at a moment, now by default. */
+  function hallClock(at = new Date()) {
+    const part = Object.fromEntries(HALL_CLOCK.formatToParts(at).map((p) => [p.type, p.value]));
+    return { date: `${part.year}-${part.month}-${part.day}`, time: `${part.hour}:${part.minute}` };
+  }
+
+  /** The date n days on from an ISO date, counted in days rather than hours:
+   *  the night the clocks change is 23 or 25 hours long. */
+  const shiftDay = (iso, n) => {
+    const day = new Date(`${iso}T12:00:00Z`);
+    day.setUTCDate(day.getUTCDate() + n);
+    return day.toISOString().slice(0, 10);
+  };
+
+  // Read when the page loads, not at build time: the site is rebuilt daily,
+  // but the week it carries is a week, and today is whichever day of it this is.
+  const TODAY = hallClock().date;
+  const TOMORROW = shiftDay(TODAY, 1);
   // A late night belongs to the evening it opens on, so the one being served
   // at 1am is yesterday's.
-  const YESTERDAY = isoLocal(new Date(Date.now() - 86400000));
+  const YESTERDAY = shiftDay(TODAY, -1);
 
   // ---------- preferences ----------
 
@@ -423,9 +451,7 @@
   // last of the chosen halls stops serving it; a hall with no hours on file
   // for it is read against the usual campus close.
   function upcoming(halls) {
-    const now = new Date();
-    const clock = [now.getHours(), now.getMinutes()]
-      .map((n) => String(n).padStart(2, "0")).join(":");
+    const clock = hallClock().time;
     const usual = { Breakfast: "10:00", Lunch: "14:00", Dinner: "20:00" };
     const offered = (date) => MEALS.filter((meal) =>
       halls.some((id) => meal in ((DATA.menus[date] || {})[id] || {})));
@@ -938,18 +964,17 @@
     return t("unreleased");
   }
 
-  /** open | soon | shut | null, compared against the viewer's clock.
+  /** open | soon | shut | null, compared against the halls' clock.
    *  A span that closes before it opens (21:00-02:00) runs into the next
    *  morning, where it is still `date`'s: open after midnight only when
    *  `date` is yesterday, and not yet open after midnight when it is today. */
   function serviceStatus(date, span) {
     if (!span) return null;
-    const now = new Date();
-    const minutes = now.getHours() * 60 + now.getMinutes();
     const toMin = (s) => {
       const [h, m] = s.split(":").map(Number);
       return h * 60 + m;
     };
+    const minutes = toMin(hallClock().time);
     const [open, close] = [toMin(span[0]), toMin(span[1])];
     const overnight = close < open;
     if (overnight && date === YESTERDAY) return minutes <= close ? "open" : null;
