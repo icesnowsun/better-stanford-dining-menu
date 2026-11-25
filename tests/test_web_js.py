@@ -92,6 +92,40 @@ class TestChineseReassembly:
         assert got == "海盐"
 
 
+class TestSpanishReassembly:
+    """Spanish rebuilds the list the way Chinese does -- same split, same key --
+    but keeps R&DE's own punctuation, which is already the Spanish one."""
+
+    def render(self, text, table, tmp_path):
+        return call(
+            ["ES_SEPARATORS", "esIngredients"],
+            "return esIngredients(INPUT);",
+            payload=text,
+            prelude=f"const ES_TERMS = new Map(Object.entries({json.dumps(table)}));",
+            tmp_path=tmp_path,
+        )
+
+    def test_terms_are_swapped_in_place_and_the_punctuation_kept(self, tmp_path):
+        table = {"rice": "arroz", "beans": "frijoles", "black": "negros"}
+        assert self.render("Rice, beans (black)", table, tmp_path) == "arroz, frijoles (negros)"
+
+    def test_an_untranslated_term_keeps_its_english(self, tmp_path):
+        assert self.render("rice, tamarind paste", {"rice": "arroz"}, tmp_path) == \
+            "arroz, tamarind paste"
+
+    def test_the_page_only_ever_asks_for_a_key_python_offered(self, tmp_path):
+        got = call(
+            ["ES_SEPARATORS", "esIngredients"],
+            "return INPUT.map((text) => { LOOKED_UP.length = 0; esIngredients(text); "
+            "return LOOKED_UP.slice(); });",
+            payload=INGREDIENTS,
+            prelude=("const LOOKED_UP = [];\n"
+                     "const ES_TERMS = { get: (k) => { LOOKED_UP.push(k); return undefined; } };"),
+            tmp_path=tmp_path,
+        )
+        assert got == [zhlib.terms_in(s) for s in INGREDIENTS]
+
+
 class TestPureHelpers:
     def test_hours_read_the_way_each_language_writes_them(self, tmp_path):
         got = call(["fmtTime"], "return INPUT.map((t) => fmtTime(t));",
@@ -104,6 +138,12 @@ class TestPureHelpers:
         got = call(["fmtTime"], "return INPUT.map((t) => fmtTime(t));",
                    payload=["07:30", "17:00"],
                    prelude="const state = { lang: 'zh' };", tmp_path=tmp_path)
+        assert got == ["7:30", "17:00"]
+
+    def test_spanish_keeps_the_twenty_four_hour_clock_too(self, tmp_path):
+        got = call(["fmtTime"], "return INPUT.map((t) => fmtTime(t));",
+                   payload=["07:30", "17:00"],
+                   prelude="const state = { lang: 'es' };", tmp_path=tmp_path)
         assert got == ["7:30", "17:00"]
 
     def test_timing_buckets_break_where_google_grades_lcp(self, tmp_path):
@@ -141,6 +181,16 @@ class TestPureHelpers:
                    prelude="let navigator;\nconst UI = { en: {}, zh: {} };",
                    tmp_path=tmp_path)
         assert got == ["zh", "zh", "zh", "en", "en", "en", "en"]
+
+    def test_a_spanish_browser_opens_in_spanish(self, tmp_path):
+        """A third language is a new key in UI and nothing else."""
+        got = call(["preferredLang"],
+                   "return INPUT.map((asked) => { navigator = { languages: asked, "
+                   "language: asked[0] }; return preferredLang(); });",
+                   payload=[["es-MX", "en-US"], ["es"], ["en-US", "es-ES"], ["zh-CN", "es"]],
+                   prelude="let navigator;\nconst UI = { en: {}, zh: {}, es: {} };",
+                   tmp_path=tmp_path)
+        assert got == ["es", "es", "en", "zh"]
 
     def test_the_pinned_hall_row_shows_only_while_a_board_is_under_it(self, tmp_path):
         """It stands in for the headers, so it appears when they have gone under
@@ -440,12 +490,25 @@ def test_tour_stops_and_translations(tmp_path):
     keys = call(
         ["UI"],
         "return [Object.keys(UI.en).filter((k) => k.startsWith('tour')), "
-        "        Object.keys(UI.zh).filter((k) => k.startsWith('tour'))];",
+        "        Object.keys(UI.zh).filter((k) => k.startsWith('tour')), "
+        "        Object.keys(UI.es).filter((k) => k.startsWith('tour'))];",
         tmp_path=tmp_path,
     )
     expected = ["tourDay", "tourMeal", "tourHalls", "tourShare", "tourLang", "tourTheme", "tourNext", "tourDone", "tourSkip"]
     assert keys[0] == expected
     assert keys[1] == expected
+    assert keys[2] == expected
+
+
+def test_every_language_has_every_string(tmp_path):
+    """t() falls back to English for a missing key, so a string added to one
+    table and forgotten in another would ship half translated without this."""
+    keys = call(["UI"],
+                "return Object.fromEntries(Object.entries(UI).map(([k, v]) => [k, Object.keys(v).sort()]));",
+                tmp_path=tmp_path)
+    assert sorted(keys) == ["en", "es", "zh"]
+    assert keys["zh"] == keys["en"]
+    assert keys["es"] == keys["en"]
 
 
 def test_late_night_tip_translations(tmp_path):
