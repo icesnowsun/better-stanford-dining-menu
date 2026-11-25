@@ -7606,6 +7606,39 @@
   "vessel": "plate",
   "written_at": "2026-09-27T07:39:15+00:00"
  },
+ "337c830c0acb": {
+  "avoid": [
+   "hard taco shell",
+   "corn tortilla",
+   "ground beef",
+   "minced meat",
+   "shrimp",
+   "tortilla chips",
+   "guacamole"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food fish served inside flatbread or taco?",
+    "yes": true
+   },
+   {
+    "q": "Is the filling ground meat like mince?",
+    "yes": false
+   },
+   {
+    "q": "Is the fish served as a whole uncut fish?",
+    "yes": false
+   }
+  ],
+  "dish": "Caribbean fish taco",
+  "look": "flaky golden-brown cajun seasoned cod fish chunks folded inside a warm soft roti wrap, topped with bright diced mango, pineapple, red onion, colorful bell pepper salsa, sprinkled with fresh chopped cilantro",
+  "model": "gemini-3.6-flash",
+  "name": "Caribbean Cod Taco",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-25T10:08:35+00:00"
+ },
  "33950c2cc43a": {
   "avoid": [
    "meat",
@@ -14796,6 +14829,41 @@
   "vessel": "plate",
   "written_at": "2026-10-22T00:48:55+00:00"
  },
+ "5e273f42da30": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "chicharron",
+   "bacon",
+   "fried plantain chips"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food a mound of mashed plantains?",
+    "yes": true
+   },
+   {
+    "q": "Does the dish contain crispy pork skin or bacon?",
+    "yes": false
+   },
+   {
+    "q": "Is the main item sliced raw plantains?",
+    "yes": false
+   }
+  ],
+  "dish": "Puerto Rican plantain mofongo",
+  "look": "a rounded mound of coarsely mashed golden plantains, resting in rich orange-red tomato sofrito sauce, topped with sauteed red bell pepper strips, diced onions, garlic",
+  "model": "gemini-3.6-flash",
+  "name": "Vegan Mofongo",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-25T10:08:35+00:00"
+ },
  "5e5f9a352123": {
   "avoid": [
    "meat",
@@ -21010,6 +21078,38 @@
   "revisions": 0,
   "vessel": "bowl",
   "written_at": "2026-11-18T12:05:30+00:00"
+ },
+ "89b8c82af171": {
+  "avoid": [
+   "plain white rice",
+   "soup",
+   "noodles",
+   "raw shrimp",
+   "skewers",
+   "spring rolls"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food fried rice with visible pork and shrimp?",
+    "yes": true
+   },
+   {
+    "q": "Is the dish a soup or liquid noodles?",
+    "yes": false
+   },
+   {
+    "q": "Does the rice look like plain unseasoned white rice?",
+    "yes": false
+   }
+  ],
+  "dish": "Char siu and shrimp fried rice",
+  "look": "glistening stir-fried jasmine rice with dark tamari sauce, diced reddish char siu roasted pork, juicy curved pink shrimp, fluffy yellow scrambled egg curds, finely minced garlic",
+  "model": "gemini-3.6-flash",
+  "name": "Char Siu & Shrimp Fried Rice",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-25T10:08:35+00:00"
  },
  "89be6958063f": {
   "avoid": [
@@ -33453,6 +33553,41 @@
   "revisions": 0,
   "vessel": "bowl",
   "written_at": "2026-10-16T08:21:02+00:00"
+ },
+ "ce6bad264945": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "taco shell",
+   "chips",
+   "soup"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food a quinoa grain salad with diced mango?",
+    "yes": true
+   },
+   {
+    "q": "Are there pieces of meat or seafood in the bowl?",
+    "yes": false
+   },
+   {
+    "q": "Is the dish a liquid soup?",
+    "yes": false
+   }
+  ],
+  "dish": "Jamaican jerk mango quinoa salad",
+  "look": "cooked fluffy quinoa grains mixed with bright yellow diced mango chunks, dark black beans, diced red tomatoes, red bell peppers, chopped red onions, fresh green cilantro",
+  "model": "gemini-3.6-flash",
+  "name": "Jamaican Jerk Mango Salsa",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-25T10:08:35+00:00"
  },
  "ce961d55a090": {
   "avoid": [
