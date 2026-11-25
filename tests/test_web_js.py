@@ -280,11 +280,11 @@ class TestPureHelpers:
         assert got is False
 
     def test_open_soon_and_shut_are_read_off_the_viewers_clock(self, tmp_path):
-        """A tab left open overnight must not keep calling yesterday "Today",
-        so the comparison is against the browser's own time, not build time."""
+        """Against the time now, not build time -- and the halls' time, not the
+        reader's (see TestTheHallsClock). Each moment carries California's offset."""
         prelude = ("const TODAY = '2026-09-17'; const YESTERDAY = '2026-09-16';\n"
-                   "Date = class extends Date { constructor() { super('2026-09-17T17:30'); } };")
-        got = call(["serviceStatus"],
+                   "Date = class extends Date { constructor() { super('2026-09-17T17:30-07:00'); } };")
+        got = call(["HALL_TZ", "HALL_CLOCK", "hallClock", "serviceStatus"],
                    "return INPUT.map(([d, s]) => serviceStatus(d, s));",
                    payload=[["2026-09-17", ["17:00", "20:00"]],
                             ["2026-09-17", ["18:30", "20:00"]],
@@ -303,12 +303,12 @@ class TestPureHelpers:
                  ["2026-09-17T15:00", "2026-09-17"], ["2026-09-17T01:30", "2026-09-17"],
                  ["2026-09-17T01:30", "2026-09-16"], ["2026-09-17T03:00", "2026-09-16"],
                  ["2026-09-17T22:30", "2026-09-16"]]
-        got = call(["serviceStatus"],
+        got = call(["HALL_TZ", "HALL_CLOCK", "hallClock", "serviceStatus"],
                    "return INPUT.map(([now, d]) => { NOW = now; return serviceStatus(d, SPAN); });",
                    payload=cases,
                    prelude=("const TODAY = '2026-09-17'; const YESTERDAY = '2026-09-16';\n"
                             f"const SPAN = {json.dumps(span)}; let NOW;\n"
-                            "Date = class extends Date { constructor() { super(NOW); } };"),
+                            "Date = class extends Date { constructor() { super(NOW + '-07:00'); } };"),
                    tmp_path=tmp_path)
         assert got == ["open", "soon", "shut", "shut", "open", None, None]
 
@@ -784,11 +784,67 @@ class TestSharedLinks:
         ]
 
 
+class TestTheHallsClock:
+    """Every hour on the board is Stanford's, so today, Open now and the meal the
+    page opens on are read in America/Los_Angeles wherever the page is opened.
+    Each moment here is written with its own offset, so no answer can depend on
+    the time zone of the machine the suite happens to run on."""
+
+    def _clock(self, moments, tmp_path):
+        return call(["HALL_TZ", "HALL_CLOCK", "hallClock"],
+                    "return INPUT.map((s) => hallClock(new Date(s)));",
+                    payload=moments, tmp_path=tmp_path)
+
+    def test_new_york_and_shanghai_read_the_halls_time(self, tmp_path):
+        """5:30pm in the halls is 8:30pm in New York and 8:30am tomorrow in Shanghai."""
+        got = self._clock(["2026-10-15T17:30:00-07:00",
+                           "2026-10-15T20:30:00-04:00",
+                           "2026-10-16T08:30:00+08:00"], tmp_path)
+        assert got == [{"date": "2026-10-15", "time": "17:30"}] * 3
+
+    def test_the_day_turns_at_midnight_in_california(self, tmp_path):
+        got = self._clock(["2026-10-15T06:59:00Z", "2026-10-15T07:00:00Z",
+                           "2026-10-15T09:30:00Z"], tmp_path)
+        assert got == [{"date": "2026-10-14", "time": "23:59"},
+                       {"date": "2026-10-15", "time": "00:00"},
+                       {"date": "2026-10-15", "time": "02:30"}]
+
+    def test_in_winter_the_halls_are_eight_hours_behind_utc(self, tmp_path):
+        got = self._clock(["2026-12-01T01:30:00Z"], tmp_path)
+        assert got == [{"date": "2026-11-30", "time": "17:30"}]
+
+    def test_tomorrow_and_yesterday_count_days_not_hours(self, tmp_path):
+        """The night the clocks go back is 25 hours long: 24 hours on from half
+        past midnight is still the same day."""
+        got = call(["shiftDay"], "return INPUT.map(([d, n]) => shiftDay(d, n));",
+                   payload=[["2026-11-01", 1], ["2026-11-02", -1], ["2026-03-08", 1],
+                            ["2026-12-31", 1], ["2026-03-01", -1]],
+                   tmp_path=tmp_path)
+        assert got == ["2026-11-02", "2026-11-01", "2026-03-09", "2027-01-01", "2026-02-28"]
+
+    def test_open_now_far_from_stanford_is_open_now_in_the_hall(self, tmp_path):
+        """8:30am Friday in Shanghai and 8:30pm Thursday in New York are both
+        5:30pm Thursday at Stanford, so Thursday's dinner is on. 1:30am in the
+        halls is last night's late night. 10pm in Shanghai is 7am at Stanford:
+        breakfast opens soon. Read off the reader's own clock, all four were wrong."""
+        prelude = ("const TODAY = '2026-09-17'; const YESTERDAY = '2026-09-16';\n"
+                   "let NOW;\n"
+                   "Date = class extends Date { constructor() { super(NOW); } };")
+        got = call(["HALL_TZ", "HALL_CLOCK", "hallClock", "serviceStatus"],
+                   "return INPUT.map(([now, d, s]) => { NOW = now; return serviceStatus(d, s); });",
+                   payload=[["2026-09-18T08:30:00+08:00", "2026-09-17", ["17:00", "20:00"]],
+                            ["2026-09-17T20:30:00-04:00", "2026-09-17", ["17:00", "20:00"]],
+                            ["2026-09-17T16:30:00+08:00", "2026-09-16", ["21:00", "02:00"]],
+                            ["2026-09-17T22:00:00+08:00", "2026-09-17", ["07:30", "10:00"]]],
+                   prelude=prelude, tmp_path=tmp_path)
+        assert got == ["open", "open", "open", "soon"]
+
+
 UPCOMING_PRELUDE = (
     "const MEALS = ['Breakfast', 'Lunch', 'Dinner'];\n"
     "const TODAY = '2026-10-15'; const TOMORROW = '2026-10-16'; const YESTERDAY = '2026-10-14';\n"
     "let NOW;\n"
-    "Date = class extends Date { constructor() { super(NOW); } };\n"
+    "Date = class extends Date { constructor() { super(NOW + '-07:00'); } };\n"
     "const all = { Breakfast: {}, Lunch: {}, Dinner: {} };\n"
     "const DATA = {\n"
     "  window: ['2026-10-15', '2026-10-16'],\n"
@@ -803,10 +859,10 @@ UPCOMING_PRELUDE = (
 
 class TestOpeningMeal:
     """The page opens on the next meal the chosen halls are still serving,
-    read off the viewer's clock, and on tomorrow once tonight's is over."""
+    read off the halls' clock, and on tomorrow once tonight's is over."""
 
     def _at(self, tmp_path, cases):
-        return call(["hoursFor", "upcoming"],
+        return call(["HALL_TZ", "HALL_CLOCK", "hallClock", "hoursFor", "upcoming"],
                     "return INPUT.map(([now, halls]) => { NOW = now; return upcoming(halls); });",
                     payload=cases, prelude=UPCOMING_PRELUDE, tmp_path=tmp_path)
 
@@ -847,7 +903,7 @@ class TestOpeningMeal:
         const MEALS = ['Breakfast', 'Lunch', 'Dinner', 'Late Night'];
         const TODAY = '2026-10-15'; const TOMORROW = '2026-10-16'; const YESTERDAY = '2026-10-14';
         let NOW;
-        Date = class extends Date { constructor() { super(NOW); } };
+        Date = class extends Date { constructor() { super(NOW + '-07:00'); } };
         const meals = { Breakfast: {}, Lunch: {}, Dinner: {} };
         const late = { ...meals, 'Late Night': {} };
         const hours = { Breakfast: ['07:30', '10:00'], Lunch: ['11:00', '14:30'], Dinner: ['17:00', '20:30'] };
@@ -861,7 +917,7 @@ class TestOpeningMeal:
                    '2026-10-15': { arrillaga: lateHours, wilbur: hours } },
         };
         """
-        got = call(["hoursFor", "upcoming"],
+        got = call(["HALL_TZ", "HALL_CLOCK", "hallClock", "hoursFor", "upcoming"],
                    "return INPUT.map(([now, halls]) => { NOW = now; return upcoming(halls); });",
                    payload=[["2026-10-15T20:45", ["arrillaga"]],
                             ["2026-10-15T23:30", ["arrillaga", "wilbur"]],
@@ -884,7 +940,7 @@ class TestOpeningMeal:
         const MEALS = ['Breakfast', 'Lunch', 'Dinner', 'Late Night'];
         const TODAY = '2026-10-13'; const TOMORROW = '2026-10-14'; const YESTERDAY = '2026-10-12';
         let NOW;
-        Date = class extends Date { constructor() { super(NOW); } };
+        Date = class extends Date { constructor() { super(NOW + '-07:00'); } };
         const meals = { Breakfast: {}, Lunch: {}, Dinner: {} };
         const DATA = {
           window: ['2026-10-12', '2026-10-13'],
@@ -893,7 +949,7 @@ class TestOpeningMeal:
           hours: {},
         };
         """
-        got = call(["hoursFor", "upcoming"],
+        got = call(["HALL_TZ", "HALL_CLOCK", "hallClock", "hoursFor", "upcoming"],
                    "return INPUT.map(([now, halls]) => { NOW = now; return upcoming(halls); });",
                    payload=[["2026-10-13T01:00", ["arrillaga"]]],
                    prelude=prelude, tmp_path=tmp_path)
