@@ -135,3 +135,24 @@ class TestWanted:
         line = zhlib.summarize(self.stocked(project).root)
         assert line.startswith("Chinese: 0/2 dish names")
         assert "hall concepts" in line and "specials" in line
+
+    def test_summarize_names_the_language(self, project):
+        line = zhlib.summarize(self.stocked(project).root, "es")
+        assert line.startswith("Spanish: 0/2 dish names")
+
+
+class TestSpanish:
+    def test_spanish_lives_in_a_file_of_its_own(self, project):
+        """A Spanish catch-up must never rewrite a line of the Chinese."""
+        zhlib.save(project.root, {"terms": {"salt": "盐"}})
+        zhlib.merge(project.root, "terms", {"salt": ("salt", "sal")}, "es")
+        assert zhlib.path_for(project.root, "es").name == "es.json"
+        assert zhlib.load(project.root, "es")["terms"] == {"salt": "sal"}
+        assert zhlib.load(project.root)["terms"] == {"salt": "盐"}
+
+    def test_a_dish_keeps_its_english_beside_the_spanish(self, project):
+        table = zhlib.load(project.root, "es")
+        zhlib.put(table, "dishes", "abc123", "Roast Chicken", "Pollo asado", "es")
+        assert table["dishes"]["abc123"] == {"en": "Roast Chicken", "es": "Pollo asado"}
+        assert zhlib.get(table, "dishes", "abc123", "es") == "Pollo asado"
+        assert zhlib.get(table, "dishes", "abc123") is None, "no Chinese was given"
