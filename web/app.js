@@ -243,7 +243,7 @@
       staleTitle: "菜单数据可能已过期",
       staleBody: (a, when) => [
         "当前显示的是最近一次获取到的菜单",
-        when ? `（最近一次成功更新：${when}）` : "",
+        when ? `，最近一次成功更新：${when}` : "",
         "。最新信息请查看",
         a("https://rdeapps.stanford.edu/dininghallmenu/", "斯坦福官方食堂菜单"),
         "。",
@@ -352,7 +352,7 @@
       staleTitle: "Los menús pueden estar desactualizados",
       staleBody: (a, when) => [
         "Se muestra el menú más reciente disponible",
-        when ? ` (última actualización correcta: ${when})` : "",
+        when ? `; última actualización correcta: ${when}` : "",
         ". Consulta el ",
         a("https://rdeapps.stanford.edu/dininghallmenu/", "sitio oficial de comedores de Stanford"),
         " para ver la información más reciente.",
