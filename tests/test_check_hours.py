@@ -49,7 +49,7 @@ def test_the_fortnightly_specials_link_is_not_an_hours_change(tmp_path, monkeypa
 
     closed = new.replace("7:30am - 8:00pm", "Closed until Nov 30")
     monkeypatch.setattr(hourslib, "fetch_hours_text", lambda *a, **kw: closed)
-    assert "+Closed until Nov 30" in hourslib.diff(snapshot)
+    assert "+Monday - Friday Closed until Nov 30" in hourslib.diff(snapshot)
 
 
 def test_no_snapshot_yet_is_not_a_finding(monkeypatch):
