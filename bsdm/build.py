@@ -78,11 +78,15 @@ def build_payload(root: Path) -> dict:
     logo_dir = logolib.out_dir(root)
 
     zh_table = zhlib.load(root)
+    # Spanish rides the same way, from its own table: data/es.json.
+    es_table = zhlib.load(root, "es")
     # Only the terms the published menus actually use are shipped. The table
     # keeps every term ever seen, which over a term's worth of menus is a good
     # deal more than any one week puts on the board.
     zh_terms: dict[str, str] = {}
     zh_specials: dict[str, str] = {}
+    es_terms: dict[str, str] = {}
+    es_specials: dict[str, str] = {}
 
     stations_path = root / "data" / "stations.json"
     station_table = json.loads(stations_path.read_text()) if stations_path.exists() else {}
@@ -143,6 +147,8 @@ def build_payload(root: Path) -> dict:
             # images do.
             if name_zh := zhlib.get(zh_table, "dishes", dish_id):
                 record["zh"] = name_zh
+            if name_es := zhlib.get(es_table, "dishes", dish_id, "es"):
+                record["es"] = name_es
             record["v"].append({
                 "ing": d["ingredients"],
                 "tags": d["tags"],
@@ -152,6 +158,8 @@ def build_payload(root: Path) -> dict:
             for term in zhlib.terms_in(d["ingredients"]):
                 if term_zh := zhlib.get(zh_table, "terms", term):
                     zh_terms[term] = term_zh
+                if term_es := zhlib.get(es_table, "terms", term, "es"):
+                    es_terms[term] = term_es
         return f"{dish_id}.{table[key]}"
 
     from bsdm.dishes import dish_id as make_id
@@ -208,6 +216,9 @@ def build_payload(root: Path) -> dict:
                         if "zh" not in record and (
                                 text_zh := zhlib.get(zh_table, "specials", text)):
                             record["zh"] = text_zh
+                        if "es" not in record and (
+                                text_es := zhlib.get(es_table, "specials", text, "es")):
+                            record["es"] = text_es
                 # Shown once, as the special, even where the menu lists it too.
                 led = {make_id(text) for text in on_poster["halls"].get(hall_id, [])} \
                     if specials else set()
@@ -264,6 +275,8 @@ def build_payload(root: Path) -> dict:
             for text in on_poster["notes"]:
                 if text_zh := zhlib.get(zh_table, "specials", text):
                     zh_specials[text] = text_zh
+                if text_es := zhlib.get(es_table, "specials", text, "es"):
+                    es_specials[text] = text_es
 
     def hall_public(h: dict) -> dict:
         out = {
@@ -277,6 +290,8 @@ def build_payload(root: Path) -> dict:
             out["dark_wash"] = h["dark_wash"]
         if concept_zh := zhlib.get(zh_table, "halls", h["id"]):
             out["concept_zh"] = concept_zh
+        if concept_es := zhlib.get(es_table, "halls", h["id"], "es"):
+            out["concept_es"] = concept_es
         # A hall with no logo cut yet falls back to its name alone, the same way
         # a dish with no picture falls back to an icon.
         entry = logo_index.get(h["id"])
@@ -286,6 +301,8 @@ def build_payload(root: Path) -> dict:
             out["late_night"] = dict(h["late_night"])
             if ln_zh := zhlib.get(zh_table, "halls", f"{h['id']}_late_night"):
                 out["late_night"]["name_zh"] = ln_zh
+            if ln_es := zhlib.get(es_table, "halls", f"{h['id']}_late_night", "es"):
+                out["late_night"]["name_es"] = ln_es
             ln_key = f"{h['id']}_late_night"
             ln_entry = logo_index.get(ln_key)
             if ln_entry and (logo_dir / ln_entry["file"]).exists():
@@ -296,6 +313,7 @@ def build_payload(root: Path) -> dict:
     return {
         "generated_at": now.strftime("%b %-d, %Y at %-I:%M %p %Z"),
         "generated_at_zh": now.strftime("%Y年%-m月%-d日 %H:%M"),
+        "generated_at_es": now.strftime("%-d/%-m/%Y, %H:%M"),
         "stations_computed_from": station_table.get("days_analyzed", 0),
         "window": window,
         "halls": [
@@ -307,6 +325,8 @@ def build_payload(root: Path) -> dict:
         "dishes": dishes,
         "zh_terms": zh_terms,
         "zh_specials": zh_specials,
+        "es_terms": es_terms,
+        "es_specials": es_specials,
         "menus": menus,
         "hours": hours,
         "notices": notices,

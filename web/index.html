@@ -56,7 +56,11 @@
   <header class="masthead">
     <h1 class="brand" id="brand">Stanford Dining Hall Menus, <span>Side by Side</span></h1>
     <div class="tools">
-      <button class="tool tool-lang" type="button" id="lang" data-short="中文">中文</button>
+      <div class="lang-wrap">
+        <button class="tool tool-lang" type="button" id="lang" data-short="中文"
+                aria-haspopup="menu" aria-expanded="false" aria-controls="lang-menu">中文 · ES</button>
+        <div class="lang-menu" id="lang-menu" role="menu" hidden></div>
+      </div>
       <button class="tool tool-theme" type="button" id="theme">Auto</button>
     </div>
   </header>

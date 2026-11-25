@@ -1,4 +1,8 @@
-"""The Chinese layer: dish names translated whole, ingredients term by term.
+"""The translated layers: dish names translated whole, ingredients term by term.
+
+Chinese came first, and is what every function here means when no language is
+named. Spanish uses the same machinery with a table of its own, data/es.json, so
+a Spanish catch-up never rewrites a line of the Chinese.
 
 Ingredient text is deliberately not translated as prose. R&DE ingredient strings
 are lists drawn from a small, heavily repeated vocabulary -- one full week is
@@ -36,6 +40,11 @@ _SEPARATORS = frozenset(",()[]")
 # hand.
 SECTIONS = {"dishes": True, "terms": False, "halls": True, "specials": False}
 
+# The languages the site is translated into, beyond the English it is scraped in:
+# {code: the name summarize() prints}. The code is the file name and the key a
+# dish entry keeps its translation under.
+LANGS = {"zh": "Chinese", "es": "Spanish"}
+
 
 def norm(term: str) -> str:
     """The lookup key for one ingredient term. Mirrored in web/app.js."""
@@ -53,39 +62,41 @@ def terms_in(ingredients: str) -> list[str]:
     return out
 
 
-def path_for(root: Path) -> Path:
-    return root / "data" / "zh.json"
+def path_for(root: Path, lang: str = "zh") -> Path:
+    return root / "data" / f"{lang}.json"
 
 
-def load(root: Path) -> dict:
-    path = path_for(root)
+def load(root: Path, lang: str = "zh") -> dict:
+    path = path_for(root, lang)
     table = json.loads(path.read_text()) if path.exists() else {}
     for section in SECTIONS:
         table.setdefault(section, {})
     return table
 
 
-def save(root: Path, table: dict) -> None:
-    path_for(root).write_text(
+def save(root: Path, table: dict, lang: str = "zh") -> None:
+    path_for(root, lang).write_text(
         json.dumps(table, indent=1, ensure_ascii=False, sort_keys=True) + "\n"
     )
 
 
-def get(table: dict, section: str, key: str) -> str | None:
-    """The Chinese for one key, or None if it has not been translated."""
+def get(table: dict, section: str, key: str, lang: str = "zh") -> str | None:
+    """The translation of one key, or None if it has not been translated."""
     entry = table.get(section, {}).get(key)
     if isinstance(entry, str):
         return entry or None
-    return (entry or {}).get("zh") or None
+    return (entry or {}).get(lang) or None
 
 
-def put(table: dict, section: str, key: str, english: str, chinese: str) -> None:
+def put(table: dict, section: str, key: str, english: str, translated: str,
+        lang: str = "zh") -> None:
     table.setdefault(section, {})[key] = (
-        {"en": english, "zh": chinese} if SECTIONS[section] else chinese
+        {"en": english, lang: translated} if SECTIONS[section] else translated
     )
 
 
-def merge(root: Path, section: str, pairs: dict[str, tuple[str, str]]) -> None:
+def merge(root: Path, section: str, pairs: dict[str, tuple[str, str]],
+          lang: str = "zh") -> None:
     """Merge one batch of translations into the table on disk.
 
     The table is re-read before every write rather than held in memory: a first
@@ -93,14 +104,16 @@ def merge(root: Path, section: str, pairs: dict[str, tuple[str, str]]) -> None:
     survive a Ctrl-C, and a wholesale write would drop anything another run --
     or a hand edit -- had added in the meantime.
     """
-    table = load(root)
-    for key, (english, chinese) in pairs.items():
-        put(table, section, key, english, chinese)
-    save(root, table)
+    table = load(root, lang)
+    for key, (english, translated) in pairs.items():
+        put(table, section, key, english, translated, lang)
+    save(root, table, lang)
 
 
 def wanted(root: Path) -> dict[str, dict[str, str]]:
-    """Everything the Chinese site needs, as {section: {key: English source}}.
+    """Everything a translated site needs, as {section: {key: English source}}.
+
+    The same for every language: what needs translating is what the menus say.
 
     Terms are collected from the stored menus rather than from the catalog: the
     catalog keeps one ingredient string per dish, but the site publishes a
@@ -133,22 +146,23 @@ def wanted(root: Path) -> dict[str, dict[str, str]]:
     return {"dishes": names, "terms": terms, "halls": halls, "specials": specials}
 
 
-def missing(root: Path, table: dict | None = None) -> dict[str, dict[str, str]]:
+def missing(root: Path, table: dict | None = None,
+            lang: str = "zh") -> dict[str, dict[str, str]]:
     """The subset of `wanted` that has no translation yet."""
-    table = load(root) if table is None else table
+    table = load(root, lang) if table is None else table
     return {
-        section: {k: en for k, en in entries.items() if not get(table, section, k)}
+        section: {k: en for k, en in entries.items() if not get(table, section, k, lang)}
         for section, entries in wanted(root).items()
     }
 
 
-def summarize(root: Path) -> str:
-    table = load(root)
+def summarize(root: Path, lang: str = "zh") -> str:
+    table = load(root, lang)
     want = wanted(root)
     parts = []
     for section, label in (("dishes", "dish names"), ("terms", "ingredient terms"),
                            ("halls", "hall concepts"), ("specials", "specials")):
         total = len(want[section])
-        have = sum(1 for k in want[section] if get(table, section, k))
+        have = sum(1 for k in want[section] if get(table, section, k, lang))
         parts.append(f"{have}/{total} {label}")
-    return "Chinese: " + " | ".join(parts)
+    return f"{LANGS[lang]}: " + " | ".join(parts)

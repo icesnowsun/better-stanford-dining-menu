@@ -250,14 +250,15 @@ html:lang(zh) .col-concept { font-family: var(--cjk), var(--sans); font-size: 15
    and the share button: one line wants 300px, and from 1280 to 1400px wide
    that row has 240-283 for it ("舌尖上的斯坦福，一站式食…"). So on a laptop it is
    two lines too, split where the English is. */
-html:lang(en) .brand {
+/* Spanish is set the way the English is: it is as long, and in the same face. */
+html:lang(en) .brand, html:lang(es) .brand {
   position: relative;
   padding-left: calc(var(--mark) + 8px);
   font-size: 16px;
   line-height: 1.12;
 }
-html:lang(en) .brand::before { position: absolute; left: 0; top: 50%; translate: 0 -50%; }
-html:lang(en) .brand span { display: block; overflow: hidden; text-overflow: ellipsis; }
+html:lang(en) .brand::before, html:lang(es) .brand::before { position: absolute; left: 0; top: 50%; translate: 0 -50%; }
+html:lang(en) .brand span, html:lang(es) .brand span { display: block; overflow: hidden; text-overflow: ellipsis; }
 @media (min-width: 721px) {
   html:lang(zh) .brand {
     position: relative;
@@ -304,6 +305,48 @@ html:lang(en) .brand span { display: block; overflow: hidden; text-overflow: ell
 }
 .tool-theme[data-mode="light"]::before { background: none; }
 .tool-theme[data-mode="dark"]::before { background: currentColor; }
+
+/* The language switch opens a short menu under it: three languages are one
+   too many for a toggle. Each is named in its own language. */
+.lang-wrap { position: relative; display: flex; }
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  min-width: 148px;
+  padding: 4px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--bg);
+  box-shadow: var(--shadow-3);
+}
+.lang-menu[hidden] { display: none; }
+.lang-item {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--ink-2);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.lang-item[aria-checked="true"] { color: var(--ink); }
+.lang-item[aria-checked="true"]::after { content: "✓"; }
+@media (hover: hover) and (pointer: fine) {
+  .lang-item:hover { background: var(--sunk); color: var(--ink); }
+}
 
 .bar {
   grid-area: bar;

@@ -242,6 +242,33 @@ def test_one_spoilt_reply_costs_only_its_own_item(mock_zh_project, monkeypatch, 
     assert len(calls) <= 2 * len(names)
 
 
+def test_spanish_goes_to_its_own_table_and_leaves_the_chinese_alone(mock_zh_project, monkeypatch):
+    monkeypatch.setattr("scripts.translate.ROOT", mock_zh_project)
+    monkeypatch.setattr("scripts.translate.Gemini", lambda *a, **kw: _NoGemini(available=True))
+    seen = []
+
+    def fake_ask_gemini(items, section, client, lang="zh"):
+        seen.append(lang)
+        return {item: f"es:{item}" for item in items}
+
+    monkeypatch.setattr("scripts.translate.ask_gemini", fake_ask_gemini)
+    assert main(["--lang", "es", "--section", "dishes"]) == 0
+    assert seen == ["es"]
+    es = json.loads((mock_zh_project / "data" / "es.json").read_text())["dishes"]
+    assert es["d1"] == {"en": "Fried Rice", "es": "es:Fried Rice"}
+    zh = json.loads((mock_zh_project / "data" / "zh.json").read_text())
+    assert zh["dishes"] == {}
+
+
+def test_the_spanish_prompt_asks_for_spanish():
+    from scripts.translate import PROMPTS, request
+
+    system, rules, target = PROMPTS["es"]
+    assert "Spanish" in system and set(rules) == set(RULES)
+    assert "to its Spanish translation" in request(["Fried Rice"], "dishes", "es")
+    assert "to its Simplified Chinese translation" in request(["Fried Rice"], "dishes")
+
+
 def test_running_out_of_quota_while_halving_stops_rather_than_splits(mock_zh_project, monkeypatch):
     monkeypatch.setattr("scripts.translate.ROOT", mock_zh_project)
     monkeypatch.setattr("scripts.translate.Gemini", lambda *a, **kw: _NoGemini(available=True))

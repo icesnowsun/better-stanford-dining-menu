@@ -241,11 +241,13 @@ class TestTheCheckoutsOwnData:
         codes = {code for record in payload["dishes"].values() for v in record.get("v", [])
                  for code in (v.get("alg") or []) + (v.get("trace") or [])}
         assert codes, "no allergens anywhere on the board"
-        en, zh = call(["ALLERGEN_EN", "ALLERGEN_ZH"],
-                      "return [Object.keys(ALLERGEN_EN), Object.keys(ALLERGEN_ZH)];",
-                      tmp_path=tmp_path)
+        en, zh, es = call(["ALLERGEN_EN", "ALLERGEN_ZH", "ALLERGEN_ES"],
+                          "return [Object.keys(ALLERGEN_EN), Object.keys(ALLERGEN_ZH), "
+                          "Object.keys(ALLERGEN_ES)];",
+                          tmp_path=tmp_path)
         assert sorted(codes - set(en)) == []
         assert sorted(codes - set(zh)) == []
+        assert sorted(codes - set(es)) == []
 
     def test_plant_forward_is_not_translated_literally(self, repo):
         zh_raw = (repo / "data" / "zh.json").read_text()
