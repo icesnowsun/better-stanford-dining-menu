@@ -18,7 +18,8 @@ on:
     #   15:17 UTC, 08:17 PT: lands before lunch
     #   20:17 UTC, 13:17 PT: lands before dinner
     # Off the hour and the half hour, where GitHub's scheduler is busiest.
-    - cron: "17 3,8,15,20 * * *"
+    # Once a day for this copy of the site: 15:17 UTC, 08:17 PDT / 07:17 PST.
+    - cron: "17 15 * * *"
   workflow_dispatch:
 
 # A late run can start while the next one is still going; two scrapes
@@ -51,6 +52,14 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: uv run python scripts/translate.py
+
+      # The same again into Spanish, data/es.json. Its own step, so a spent
+      # quota on one language is plain in the log and costs the other nothing.
+      - name: Translate missing menu items into Spanish
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: uv run python scripts/translate.py --lang es
 
       # No drawing here: draw.yml does it once this run has finished, on
       # several machines at once, because a picture takes a CPU a quarter of
