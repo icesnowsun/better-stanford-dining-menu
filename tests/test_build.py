@@ -478,6 +478,26 @@ class TestChinese:
         assert payload["zh_specials"] == {"Thanksgiving Day Dinner": "感恩节晚餐"}
 
 
+class TestSpanish:
+    def test_a_translated_dish_carries_its_spanish_beside_its_chinese(self, site):
+        did = dish_id("Roast Chicken")
+        site.write_zh({"dishes": {did: {"en": "Roast Chicken", "zh": "烤鸡"}},
+                       "terms": {}, "halls": {}, "specials": {}})
+        site._write_json("data/es.json", {
+            "dishes": {did: {"en": "Roast Chicken", "es": "Pollo asado"}},
+            "terms": {"chicken": "pollo", "tamarind": "tamarindo"},
+            "halls": {}, "specials": {}})
+        payload = buildlib.build_payload(site.root)
+        record = payload["dishes"][did]
+        assert (record["zh"], record["es"]) == ("烤鸡", "Pollo asado")
+        assert payload["es_terms"] == {"chicken": "pollo"}, "only what this week uses"
+
+    def test_no_spanish_table_is_no_spanish(self, site):
+        payload = buildlib.build_payload(site.root)
+        assert "es" not in payload["dishes"][dish_id("Roast Chicken")]
+        assert payload["es_terms"] == {} and payload["es_specials"] == {}
+
+
 class TestRender:
     def test_the_page_is_one_self_contained_file(self, site, tmp_path):
         site.with_web()
