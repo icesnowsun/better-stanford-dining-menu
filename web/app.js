@@ -715,8 +715,8 @@
   // saying which one. Remake that question and its id changes; the page info
   // then just arrives empty.
   const FEEDBACK = "https://docs.google.com/forms/d/e/" +
-    "1FAIpQLSfyfNV88WrqzPeE1CX2G51WM-iRTr-SHSqo9b5zOe5f9wjmtA/viewform";
-  const FEEDBACK_VIEW = "entry.1018217171";
+    "1FAIpQLSea16AiPpNMzF4jZyZFAY59Gj5fN9Us1bpkdmiZDZGL1XJV7g/viewform";
+  const FEEDBACK_VIEW = "entry.91714194";
 
   /** The form, filled in with what is on screen; `dish` is { name, hall }. */
   function feedbackUrl(dish) {
