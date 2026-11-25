@@ -319,7 +319,7 @@ html:lang(en) .brand span, html:lang(es) .brand span { display: block; overflow:
   min-width: 148px;
   padding: 4px;
   border: 1px solid var(--rule);
-  border-radius: 10px;
+  border-radius: 12px;
   background: var(--bg);
   box-shadow: var(--shadow-3);
 }
@@ -333,7 +333,7 @@ html:lang(en) .brand span, html:lang(es) .brand span { display: block; overflow:
   height: 36px;
   padding: 0 12px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 8px;
   background: none;
   color: var(--ink-2);
   font-size: 15px;
