@@ -1,0 +1,49 @@
+name: Accept the hours page
+
+# Run by hand, from the Actions tab, once config/halls.json has been checked
+# against R&DE's hours page -- and edited to match, if it needed it. It records
+# the page as it is now as the one the config was checked against, which is what
+# turns the nightly "Check the hours page" step green again. The same as
+# `make hours-accept` on a laptop.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# The refresh job commits data/ too; one at a time.
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Show what moved
+        run: uv run python scripts/update.py --show-hours-diff
+
+      - name: Record the page as checked
+        run: uv run python scripts/update.py --accept-hours
+
+      - name: Commit the new baseline
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/hours_snapshot.json
+          if git diff --cached --quiet; then
+            echo "The page already was the baseline."
+            exit 0
+          fi
+          git commit -qm "data: the hours page, checked against config/halls.json"
+          for attempt in 1 2 3; do
+            if git push -q; then exit 0; fi
+            git pull -q --rebase origin main
+          done
+          exit 1
