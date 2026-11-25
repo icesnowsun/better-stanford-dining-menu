@@ -69,8 +69,20 @@ def check(snapshot_path: Path, update: bool = False, html: str | None = None) ->
     }
 
 
+# The one line in the hours section that is not hours: the link to the current
+# fortnight's dinner specials ("View Monday - Friday Dinner Specials at our Dining
+# Halls for Nov 23 - Dec 4"). It changes every two weeks and says nothing about
+# when a hall is open, so it is left out of what a person is asked to re-check --
+# left in, scripts/check_hours.py went red every fortnight for nothing.
+_NOT_HOURS = re.compile(r"^View\b.*\bSpecials\b", re.I)
+
+
+def _hours_only(text: str) -> list[str]:
+    return [ln for ln in text.splitlines() if not _NOT_HOURS.search(ln)]
+
+
 def diff(snapshot_path: Path) -> str:
-    """Unified diff of the stored snapshot against the live page."""
+    """Unified diff of the stored snapshot against the live page, hours only."""
     import difflib
 
     if not snapshot_path.exists():
@@ -79,6 +91,6 @@ def diff(snapshot_path: Path) -> str:
     new = fetch_hours_text()
     return "\n".join(
         difflib.unified_diff(
-            old.splitlines(), new.splitlines(), "snapshot", "live", lineterm="", n=2
+            _hours_only(old), _hours_only(new), "snapshot", "live", lineterm="", n=2
         )
     )
