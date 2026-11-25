@@ -113,6 +113,16 @@ jobs:
       - name: Check what the source is offering
         run: uv run python scripts/check_source.py
 
+      # The hours are typed in by hand from R&DE's hours page (config/halls.json),
+      # so the page moving -- a holiday closure, a new quarter -- is a job for a
+      # person, and the warning update.py prints into a green log is one nobody
+      # reads. This goes red with what moved until the "Accept the hours page"
+      # workflow records the page as checked. Not skipped when the step above
+      # went red: each is news on its own.
+      - name: Check the hours page
+        if: ${{ !cancelled() }}
+        run: uv run python scripts/check_hours.py
+
 
   # Called, not triggered. A push made with GITHUB_TOKEN deliberately does not
   # fire `on: push`, so without this the daily scrape would commit new menus and
