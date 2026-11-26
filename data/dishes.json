@@ -9147,20 +9147,30 @@
   ]
  },
  "389a67c5bcca": {
+  "brief_rev": 6,
   "category": "vegan",
   "first_seen": "2026-11-30",
+  "generated_at": "2026-11-26T00:15:33+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "389a67c5bcca.webp",
   "ingredients": "tofu, hoisin sauce, tamari, brown sugar, cornstarch, garlic, ginger, sesame oil, rice vinegar, green onions, cilantro, toasted sesame seeds, Chinese five spice, white pepper, olive/canola oil, red food coloring, salt, pepper",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:15:32+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "Glazed tofu slabs topped with sesame seeds and cilantro served on a plate with fresh herbs."
+  },
   "last_seen": "2026-11-30",
   "min_order": 1,
+  "model": "sdxl",
   "name": "Tofu Char Siu",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, potato, potatoes, sweet potato, sweet potato cubes, potato cubes, potato chunks, french fries, cheese cubes, yellow cheddar, noodles, pasta, shredded cabbage bed, white sauce base, puree, mash, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 1,
   "prompt": "Tofu Char Siu, crispy golden pan-seared firm tofu cubes with tender curd interior, made with tofu, hoisin sauce, tamari, garlic, ginger, green onions, cilantro, toasted sesame seeds, plant-based, no meat, no dairy, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 949643205,
   "station_only": false,
   "tags": [
    "vegan"
@@ -13680,20 +13690,30 @@
   ]
  },
  "5259b1d9d95b": {
+  "brief_rev": 6,
   "category": "vegan",
   "first_seen": "2026-11-30",
+  "generated_at": "2026-11-26T00:46:57+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "5259b1d9d95b.webp",
   "ingredients": "green beans, canola/olive oil blend, crispy shallots (onions, palm oil, wheat flour, salt), garlic, salt, pepper",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:46:57+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A pile of whole green beans topped with crispy fried shallots."
+  },
   "last_seen": "2026-11-30",
   "min_order": 4,
+  "model": "sdxl",
   "name": "Sauteed Green Beans with Crispy Shallots",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 2,
   "prompt": "Sauteed Green Beans with Crispy Shallots, made with green beans, crispy shallots, garlic, plant-based, no meat, no dairy, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 1381609945,
   "station_only": false,
   "tags": [
    "vegan"
@@ -16214,20 +16234,30 @@
   ]
  },
  "63cbf7cbddcd": {
+  "brief_rev": 6,
   "category": "vegetarian",
   "first_seen": "2026-11-30",
+  "generated_at": "2026-11-26T00:32:40+00:00",
   "icon": "pizza",
-  "image": null,
+  "image": "63cbf7cbddcd.webp",
   "ingredients": "pizza dough (soft wheat flour, soybean flour, durum wheat semolina flour, rice flour, sourdough starter, salt, sunflower oil, sourdough [wheat flour, yeast], natural flavor), mozzarella cheese, canola/olive oil blend, pizza sauce (tomatoes, tomato puree, sugar, salt, spices, extra virgin olive oil, garlic powder, onion powder), garlic oil, basil",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:32:40+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A slice of pizza with tomato sauce, large pieces of white cheese, and fresh basil leaves on a white plate."
+  },
   "last_seen": "2026-11-30",
   "min_order": 9,
+  "model": "sdxl",
   "name": "Margherita Pizza",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 2,
   "prompt": "Margherita Pizza, made with pizza dough, mozzarella cheese, pizza sauce, basil, vegetarian, no meat, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 1674311627,
   "station_only": false,
   "tags": [
    "vegetarian"
@@ -16636,20 +16666,30 @@
   ]
  },
  "66952111e091": {
+  "brief_rev": 6,
   "category": "seafood",
   "first_seen": "2026-11-30",
+  "generated_at": "2026-11-26T00:22:35+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "66952111e091.webp",
   "ingredients": "creole shrimp (shrimp, creole spice [herb de provence, cumin seed, salt, cayenne pepper, black pepper, paprika], canola/olive oil blend, bell peppers, garlic, worcestershire sauce, tomatoes, lettuce, celery, unsalted butter, salt), cheesy grits (grits, white pepper, cream, unsalted butter, cheddar cheese, parmesan cheese, monterey jack cheese, salt)",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:22:35+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "Shrimp served in a reddish sauce over a white creamy base and topped with chopped green onions."
+  },
   "last_seen": "2026-11-30",
   "min_order": 0,
+  "model": "sdxl",
   "name": "Creole Shrimp & Grits",
   "needs_image": true,
   "negative": "pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 0,
   "prompt": "Creole Shrimp & Grits, delicate flaky fish fillet or fresh seafood, glistening glaze, made with creole shrimp, cheesy grits, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 1721049361,
   "station_only": false,
   "tags": [
    "gluten-free"
@@ -22048,20 +22088,30 @@
   ]
  },
  "89b8c82af171": {
+  "brief_rev": 6,
   "category": "seafood",
   "first_seen": "2026-12-01",
+  "generated_at": "2026-11-26T00:14:04+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "89b8c82af171.webp",
   "ingredients": "pork, jasmine rice, eggs, canola/olive oil blend, garlic, mushroom seasoning, tamari sauce, hoisin sauce (sugar, soy bean paste [soy bean, salt, wheat flour], rice vinegar, salted garlic, sesame seed oil, salted chili (chili, water, salt, spices), shrimp, mirepoix mix (carrot, celery, onion), salt, sesame oil",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:14:04+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "Two bowls of reddish-colored fried rice topped with shrimp, with one bowl also featuring two fried eggs."
+  },
   "last_seen": "2026-12-01",
   "min_order": 9,
+  "model": "sdxl",
   "name": "Char Siu & Shrimp Fried Rice",
   "needs_image": true,
   "negative": "beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, raw rice, uncooked rice, dry rice grains, raw grains, sack of rice, paddy, field, raw rice, uncooked rice, dry rice grains, dry grains, uncooked, sack of rice, burlap sack, grain field, paddy, bulk rice, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 0,
   "prompt": "Char Siu & Shrimp Fried Rice, delicate flaky fish fillet or fresh seafood, glistening glaze, made with pork, jasmine rice, eggs, garlic, mushroom seasoning, tamari sauce, hoisin sauce, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 2310588458,
   "station_only": false,
   "tags": []
  },
@@ -25366,20 +25416,30 @@
   ]
  },
  "9be84111137c": {
+  "brief_rev": 6,
   "category": "beef",
   "first_seen": "2026-11-23",
+  "generated_at": "2026-11-26T00:21:12+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "9be84111137c.webp",
   "ingredients": "",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:21:12+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A bowl of dark meat chunks in gravy served with mashed potatoes and a piece of carrot, garnished with fresh parsley."
+  },
   "last_seen": "2026-11-27",
   "min_order": 0,
+  "model": "sdxl",
   "name": "Stewed Beef, Garlic Mashed Potatoes, Roasted Seasonal Vegetables",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, lamb, mutton, chicken, chicken breast, turkey, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 0,
   "prompt": "Stewed Beef, Garlic Mashed Potatoes, Roasted Seasonal Vegetables, tender cooked beef, succulent meat texture, rich caramelized sear, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 2615689489,
   "special": true,
   "station_only": false,
   "tags": []
@@ -28250,20 +28310,30 @@
   ]
  },
  "aaf7dd647531": {
+  "brief_rev": 6,
   "category": "vegetarian",
   "first_seen": "2026-11-30",
+  "generated_at": "2026-11-26T00:43:14+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "aaf7dd647531.webp",
   "ingredients": "French Toast (enriched flour, non fat milk, soybean oil, dry whey, sugar, leavening, eggs, soy lecithin, salt, canola/olive oil blend), Triple Berry Compote (mixed berries, strawberries, sugar, agave syrup)",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-26T00:43:14+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "Two slices of French toast topped with white cream, blackberries, blueberries, and a purple berry sauce, dusted with powdered sugar."
+  },
   "last_seen": "2026-11-30",
   "min_order": 7,
+  "model": "sdxl",
   "name": "French Toast with Berry Compote",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 2,
   "prompt": "French Toast with Berry Compote, made with French Toast, Triple Berry Compote, vegetarian, no meat, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 2868370788,
   "station_only": false,
   "tags": [
    "vegetarian"
