@@ -6332,20 +6332,30 @@
   "tags": []
  },
  "28b37fdad071": {
+  "brief_rev": 6,
   "category": "vegetarian",
   "first_seen": "2026-12-02",
+  "generated_at": "2026-11-27T00:49:47+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "28b37fdad071.webp",
   "ingredients": "mayonnaise (soybean oil, corn syrup, egg yolk, distilled vinegar, salt, mustard seed, calcium disodium edta), green cabbage, apple cider vinegar, sugar, carrot, horseradish (fresh ground horseradish, distilled vinegar, soybean oil, salt, flavoring), garlic, seasoned pepper (black pepper, red bell peppers, sugar, spices, paprika), canola oil, salt, black pepper",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T00:49:47+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A bowl of shredded cabbage and carrot salad with black pepper seasoning."
+  },
   "last_seen": "2026-12-02",
   "min_order": 6,
+  "model": "sdxl",
   "name": "Cole Slaw",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 2,
   "prompt": "Cole Slaw, made with mayonnaise, green cabbage, carrot, horseradish, garlic, seasoned pepper, vegetarian, no meat, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 682852314,
   "station_only": false,
   "tags": [
    "gluten-free",
@@ -8124,20 +8134,30 @@
   ]
  },
  "337c830c0acb": {
+  "brief_rev": 6,
   "category": "seafood",
   "first_seen": "2026-12-01",
+  "generated_at": "2026-11-27T01:09:04+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "337c830c0acb.webp",
   "ingredients": "cod fish, roti (wheat flour, all purpose flour, salt, sugar, vegetable oil), rice flour, corn starch, pineapple, mango, onions, bell peppers, canola/olive oil blend, butter, cilantro, parsley, cajun seasoning, lime juice",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T01:09:04+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A flatbread topped with pieces of white fish, mango chunks, red peppers, red onion, and fresh cilantro."
+  },
   "last_seen": "2026-12-01",
   "min_order": 0,
+  "model": "sdxl",
   "name": "Caribbean Cod Taco",
   "needs_image": true,
   "negative": "pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 0,
   "prompt": "Caribbean Cod Taco, delicate flaky fish fillet or fresh seafood, glistening glaze, made with cod fish, roti, pineapple, mango, onions, bell peppers, butter, cilantro, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 863805947,
   "station_only": false,
   "tags": []
  },
@@ -15439,6 +15459,16 @@
   "placeholder": false,
   "priority": 1,
   "prompt": "Vegan Mofongo, made with plantains, bell peppers, vegetable soup base, tomato puree, sofrito sauce, oregano, paprika, onions, plant-based, no meat, no dairy, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "rejected": {
+   "at": "2026-11-27T02:13:11+00:00",
+   "brief_rev": 6,
+   "failed": [
+    "Is the main food a mound of mashed plantains?"
+   ],
+   "pictures": 2,
+   "seen": "A yellow mound of food topped with red pepper slices and cilantro, sitting in a red sauce on a white plate.",
+   "tries": 1
+  },
   "station_only": false,
   "tags": [
    "gluten-free",
@@ -23214,20 +23244,30 @@
   "tags": []
  },
  "8e11c6e1e4ce": {
+  "brief_rev": 6,
   "category": "poultry",
   "first_seen": "2026-12-02",
+  "generated_at": "2026-11-27T00:32:16+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "8e11c6e1e4ce.webp",
   "ingredients": "chicken, flour, corn starch, salt, black pepper, garlic, tamari sauce, gochugaru chili powder, gochujang paste (sweet rice flour, red pepper, millet malt, sea salt, brown rice syrup), sesame oil, sesame seeds, green onions, garlic, honey, orange juice, fried in canola oil",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T00:32:16+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A plate of dark, glazed chicken wings topped with sesame seeds and chopped green onions."
+  },
   "last_seen": "2026-12-02",
   "min_order": 8,
+  "model": "sdxl",
   "name": "Soy Garlic Chicken Wings",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 0,
   "prompt": "Soy Garlic Chicken Wings, tender cooked chicken, succulent poultry texture, made with chicken, garlic, tamari sauce, gochugaru chili powder, gochujang paste, sesame seeds, green onions, honey, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 2383529697,
   "station_only": false,
   "tags": []
  },
@@ -34373,20 +34413,30 @@
   ]
  },
  "c8d8fcd93726": {
+  "brief_rev": 6,
   "category": "vegan",
   "first_seen": "2026-11-26",
+  "generated_at": "2026-11-27T00:39:31+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "c8d8fcd93726.webp",
   "ingredients": "plant-forward gardein \"chick'n\", veggie soup base, potatoes, bell peppers, carrots, onions, celery, olive, tomatoes, garlic, tomato paste, canola/olive oil blend, bay leaf, cumin, salt, pepper",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T00:39:31+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A bowl of shredded meat stew with carrots, peppers, and green peas, garnished with fresh cilantro."
+  },
   "last_seen": "2026-11-26",
   "min_order": 1,
+  "model": "sdxl",
   "name": "Plant-Forward \"Chick'n\" Ropa Vieja",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 1,
   "prompt": "Plant-Forward \"Chick'n\" Ropa Vieja, made with plant-forward gardein \"chick'n\", veggie soup base, potatoes, bell peppers, carrots, onions, celery, olive, plant-based, no meat, no dairy, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 3369663705,
   "station_only": false,
   "tags": [
    "vegan"
@@ -34540,20 +34590,30 @@
   "tags": []
  },
  "cb617e69f862": {
+  "brief_rev": 6,
   "category": "poultry",
   "first_seen": "2026-12-02",
+  "generated_at": "2026-11-27T00:27:32+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "cb617e69f862.webp",
   "ingredients": "85lb chciken wings Spicy marinade: 20 tablespoons gochujang Korean red chili pepper paste 20 tablespoons barbecue sauce any type 10 tablespoons soy sauce 10 tablespoons rice wine or mirin (or white wine) 5 tablespoon sesame oil 5 tablespoon honey 5 tablespoon minced garlic 5 teaspoon finely grated ginger 1.25 teaspoon pepper",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T00:27:32+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A bowl of glazed chicken wings topped with sesame seeds and green onions."
+  },
   "last_seen": "2026-12-02",
   "min_order": 0,
+  "model": "sdxl",
   "name": "Spicy Gochujang Korean Chicken Wings",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 0,
   "prompt": "Spicy Gochujang Korean Chicken Wings, tender cooked chicken, succulent poultry texture, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 3412164201,
   "station_only": false,
   "tags": []
  },
@@ -34665,20 +34725,30 @@
   ]
  },
  "cbcf9fa63dfc": {
+  "brief_rev": 6,
   "category": "vegan",
   "first_seen": "2026-12-02",
+  "generated_at": "2026-11-27T00:39:27+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "cbcf9fa63dfc.webp",
   "ingredients": "brussels sprouts, paprika, onion powder, oregano, garlic powder, black pepper, cayenne pepper, salt, canola/olive oil blend",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T00:39:27+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A bowl of roasted Brussels sprouts."
+  },
   "last_seen": "2026-12-02",
   "min_order": 4,
+  "model": "sdxl",
   "name": "Cajun Spiced Brussels",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 2,
   "prompt": "Cajun Spiced Brussels, made with brussels sprouts, paprika, oregano, cayenne pepper, plant-based, no meat, no dairy, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 3419381670,
   "station_only": false,
   "tags": [
    "gluten-free",
@@ -38407,20 +38477,30 @@
   ]
  },
  "e1e5e0a6c187": {
+  "brief_rev": 6,
   "category": "vegan",
   "first_seen": "2026-12-02",
+  "generated_at": "2026-11-27T01:03:53+00:00",
   "icon": "plate",
-  "image": null,
+  "image": "e1e5e0a6c187.webp",
   "ingredients": "plant-forward chick'n (soy protein isolate, wheat gluten, natural flavors, yeast extract, cane sugar, canola oil, sea salt, ancient grains flour [kamut, amaranth, millet, quinoa], pea protein, carrot fiber, beetroot fiber, onion powder, paprika, turmeric), onions, guajillo chili, orange juice, achiote paste, garlic, cilantro, pineapple, white vinegar, lime juice, canola/olive oil blend, cumin seeds, salt, pepper",
   "is_station": false,
+  "judge": {
+   "at": "2026-11-27T01:03:53+00:00",
+   "judge": "gemma-4-26b-a4b-it",
+   "seen": "A plate of seasoned reddish-brown chunks with pineapple pieces, served with sliced avocado and fresh cilantro leaves, accompanied by a small bowl of sauce."
+  },
   "last_seen": "2026-12-02",
   "min_order": 12,
+  "model": "sdxl",
   "name": "Plant-Forward Chick'n Al Pastor",
   "needs_image": true,
   "negative": "fish fillet, shrimp, prawns, shellfish, crawfish, crayfish, crab, lobster, pork, bacon, ham, pork belly, beef, sliced steak, ground beef, lamb, mutton, chicken, chicken breast, turkey, meat, text, words, letters, watermark, signature, logo, menu, label, hands, people, person, fingers, cutlery clutter, extra chopsticks, three chopsticks, duplicate spoons, extra spoons, deformed spoons, messy, blurry, lowres, deformed, distorted, oversaturated, cartoon, illustration, 3d render, plastic, fake looking, duplicate plates, multiple dishes, table spread, feast",
   "placeholder": false,
   "priority": 2,
   "prompt": "Plant-Forward Chick'n Al Pastor, made with plant-forward chick'n, onions, guajillo chili, achiote paste, garlic, cilantro, pineapple, cumin seeds, plant-based, no meat, no dairy, appetizing food photography, plated on a simple white ceramic plate, overhead three-quarter view, centered composition with generous empty margin around the plate, soft natural window light, shallow depth of field, clean neutral background, sharp focus, high detail",
+  "prompt_rev": 9,
+  "seed": 3789938854,
   "station_only": false,
   "tags": [
    "vegan"

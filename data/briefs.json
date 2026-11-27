@@ -4986,6 +4986,39 @@
   "vessel": "bowl",
   "written_at": "2026-09-29T00:31:05+00:00"
  },
+ "2355f071dc91": {
+  "avoid": [
+   "tacos",
+   "tortillas",
+   "burrito",
+   "tostada",
+   "skewers",
+   "ground pork",
+   "rice and beans"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food sliced or shaved marinated pork?",
+    "yes": true
+   },
+   {
+    "q": "Is the meat served inside a taco or burrito wrap?",
+    "yes": false
+   },
+   {
+    "q": "Is the meat ground or crumbled like mince?",
+    "yes": false
+   }
+  ],
+  "dish": "pork al pastor",
+  "look": "thin shaved slices of marinated pork, vibrant reddish-orange spiced edges, charred crispy caramelized bits, tender juicy pork ribbons, roasted pineapple tidbits, flecks of fresh chopped cilantro",
+  "model": "gemini-flash-latest",
+  "name": "Pork Pastor",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T00:08:36+00:00"
+ },
  "235d699c7e1b": {
   "avoid": [
    "burger bun",
@@ -5787,6 +5820,42 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-10-27T09:35:42+00:00"
+ },
+ "28b37fdad071": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "bun",
+   "sandwich",
+   "ribs",
+   "whole cabbage"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a creamy shredded cabbage salad?",
+    "yes": true
+   },
+   {
+    "q": "Does the dish contain meat, chicken, or seafood?",
+    "yes": false
+   },
+   {
+    "q": "Is the coleslaw served inside a bun or sandwich?",
+    "yes": false
+   }
+  ],
+  "dish": "coleslaw",
+  "look": "mound of finely shredded pale green cabbage, thin julienned bright orange carrots, creamy off-white dressing coating every strand, specks of coarse black pepper, glossy crisp texture",
+  "model": "gemini-flash-latest",
+  "name": "Cole Slaw",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T00:09:56+00:00"
  },
  "28d26f02e26f": {
   "avoid": [
@@ -14831,6 +14900,42 @@
   "vessel": "bowl",
   "written_at": "2026-10-30T10:23:00+00:00"
  },
+ "5db773a236d6": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "sausage",
+   "rice",
+   "cheese",
+   "pasta"
+  ],
+  "checks": [
+   {
+    "q": "Is the food a chunky vegetable stew with sliced okra?",
+    "yes": true
+   },
+   {
+    "q": "Does the stew contain meat, chicken, or sausage?",
+    "yes": false
+   },
+   {
+    "q": "Are the vegetables served raw and uncooked?",
+    "yes": false
+   }
+  ],
+  "dish": "okra ratatouille",
+  "look": "thick vegetable stew, sliced okra rounds, diced dark purple eggplant, cubed yellow squash, sliced zucchini, chopped red tomatoes, whole white beans, sliced cremini mushrooms, rich reddish-brown herb-flecked tomato sauce, sprinkle of chopped fresh parsley",
+  "model": "gemini-flash-latest",
+  "name": "Okra Ratatouille",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T00:09:56+00:00"
+ },
  "5dc6dacce93e": {
   "avoid": [
    "rice",
@@ -15177,6 +15282,39 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-11-14T11:06:19+00:00"
+ },
+ "5ff5031c46fd": {
+  "avoid": [
+   "chicken wings",
+   "meat",
+   "pork",
+   "beef",
+   "soup",
+   "noodles",
+   "rice bowl"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food glazed fried mushrooms and lotus root?",
+    "yes": true
+   },
+   {
+    "q": "Is there chicken or meat instead of mushrooms?",
+    "yes": false
+   },
+   {
+    "q": "Is the food served as a watery soup or stew?",
+    "yes": false
+   }
+  ],
+  "dish": "Korean glazed fried mushrooms and lotus root",
+  "look": "crispy battered fried mushroom clusters, sliced perforated lotus root rounds, glossy sticky sweet-and-savory soy chili glaze, sliced green peppers, sprinkled toasted white sesame seeds",
+  "model": "gemini-flash-latest",
+  "name": "Korean Mushroom Gangjeong w/ lotus root and pepper",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T00:08:36+00:00"
  },
  "600e9af40dc5": {
   "avoid": [
@@ -22103,6 +22241,39 @@
   "vessel": "bowl",
   "written_at": "2026-10-05T22:15:46+00:00"
  },
+ "8e11c6e1e4ce": {
+  "avoid": [
+   "bright red sauce",
+   "raw chicken",
+   "french fries",
+   "ranch dressing",
+   "blue cheese",
+   "skewers",
+   "rice"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food glazed fried chicken wings?",
+    "yes": true
+   },
+   {
+    "q": "Is the glaze bright red like hot buffalo sauce?",
+    "yes": false
+   },
+   {
+    "q": "Is the meat skewered on sticks?",
+    "yes": false
+   }
+  ],
+  "dish": "soy garlic Korean fried chicken wings",
+  "look": "crispy fried chicken wings and drumettes, coated in a sticky glossy dark amber-brown soy garlic glaze, flecks of minced garlic, sprinkled toasted white sesame seeds, chopped green scallions",
+  "model": "gemini-flash-latest",
+  "name": "Soy Garlic Chicken Wings",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T00:08:36+00:00"
+ },
  "8ec3caf344e0": {
   "avoid": [
    "large meatballs",
@@ -28788,6 +28959,42 @@
   "vessel": "plate",
   "written_at": "2026-09-27T05:36:06+00:00"
  },
+ "b37dde070267": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "cheese",
+   "feta",
+   "croutons",
+   "pasta"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food a green salad with roasted squash cubes?",
+    "yes": true
+   },
+   {
+    "q": "Does the salad contain meat, chicken, or cheese?",
+    "yes": false
+   },
+   {
+    "q": "Is the dish a hot soup or stew?",
+    "yes": false
+   }
+  ],
+  "dish": "butternut squash and arugula salad",
+  "look": "bed of fresh dark green arugula leaves, roasted tender golden-orange butternut squash cubes with charred edges, halved plump red cherry tomatoes, toasted green pumpkin seeds, drizzle of glossy dark brown balsamic dressing",
+  "model": "gemini-flash-latest",
+  "name": "Butternut Squash & Arugula Salad",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T00:09:56+00:00"
+ },
  "b3aed1999d84": {
   "avoid": [
    "meat",
@@ -32885,6 +33092,41 @@
   "vessel": "plate",
   "written_at": "2026-10-15T23:11:09+00:00"
  },
+ "c8d8fcd93726": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "tortilla",
+   "tacos",
+   "rice platter"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food shredded meat-style strips in tomato vegetable stew?",
+    "yes": true
+   },
+   {
+    "q": "Is the protein served as whole intact chicken breasts?",
+    "yes": false
+   },
+   {
+    "q": "Is the stew wrapped inside a tortilla or flatbread?",
+    "yes": false
+   }
+  ],
+  "dish": "vegan chicken ropa vieja",
+  "look": "shredded plant-based chicken strips simmered in rich reddish-brown tomato sauce, sliced red and green bell peppers, diced tender potatoes, sliced carrots, green Spanish olives, tender cooked onions, chopped fresh cilantro",
+  "model": "gemini-flash-latest",
+  "name": "Plant-Forward \"Chick'n\" Ropa Vieja",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T00:08:36+00:00"
+ },
  "c8dd8ea4d1f0": {
   "avoid": [
    "chicken wings",
@@ -33059,6 +33301,39 @@
   "vessel": "bowl",
   "written_at": "2026-10-25T08:51:14+00:00"
  },
+ "cb617e69f862": {
+  "avoid": [
+   "raw chicken",
+   "french fries",
+   "celery sticks",
+   "ranch dressing",
+   "blue cheese",
+   "rice",
+   "platter"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food chicken wings in red sauce?",
+    "yes": true
+   },
+   {
+    "q": "Are the chicken wings uncoated without glaze?",
+    "yes": false
+   },
+   {
+    "q": "Is the meat boneless tenders or nuggets?",
+    "yes": false
+   }
+  ],
+  "dish": "spicy Korean fried chicken wings",
+  "look": "crispy fried chicken wings and drumettes, coated in glossy thick red gochujang chili glaze, scattered toasted white sesame seeds, thinly sliced green scallions",
+  "model": "gemini-flash-latest",
+  "name": "Spicy Gochujang Korean Chicken Wings",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T00:08:36+00:00"
+ },
  "cb6fd035fd15": {
   "avoid": [
    "meat",
@@ -33158,6 +33433,42 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-09-29T17:11:14+00:00"
+ },
+ "cbcf9fa63dfc": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "bacon",
+   "cheese",
+   "creamy sauce",
+   "raw sprouts"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food roasted Brussels sprouts?",
+    "yes": true
+   },
+   {
+    "q": "Are the Brussels sprouts raw and whole?",
+    "yes": false
+   },
+   {
+    "q": "Is there visible bacon or meat mixed in?",
+    "yes": false
+   }
+  ],
+  "dish": "roasted Cajun Brussels sprouts",
+  "look": "roasted halved Brussels sprouts, deeply charred caramelized edges, tender green layers dusted with reddish-brown Cajun spice blend, glistening surface, crispy loose roasted leaves",
+  "model": "gemini-flash-latest",
+  "name": "Cajun Spiced Brussels",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T00:08:36+00:00"
  },
  "cbeaa895acd5": {
   "avoid": [
@@ -34101,6 +34412,71 @@
   "revisions": 0,
   "vessel": "bowl",
   "written_at": "2026-09-27T05:20:07+00:00"
+ },
+ "d0a26b5028a2": {
+  "avoid": [
+   "bright red chili sauce",
+   "spicy gochujang sauce",
+   "soup broth",
+   "ramen noodles",
+   "cheese melt",
+   "fish cake sheets"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food cylindrical rice cakes in dark soy sauce?",
+    "yes": true
+   },
+   {
+    "q": "Are the rice cakes coated in a fiery red chili sauce?",
+    "yes": false
+   },
+   {
+    "q": "Is the food a broth noodle soup?",
+    "yes": false
+   }
+  ],
+  "dish": "gungjung tteokbokki",
+  "look": "chewy cylindrical white Korean rice cakes, thin strips of browned beef, sliced shiitake mushrooms, julienned orange carrots, sliced zucchini, glossy savory dark soy sesame sauce, toasted white sesame seeds",
+  "model": "gemini-flash-latest",
+  "name": "Gungjung Tteokbokki",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T00:08:36+00:00"
+ },
+ "d0c4ce297934": {
+  "avoid": [
+   "bagel",
+   "croissant",
+   "sliced sandwich bread",
+   "bacon",
+   "french fries",
+   "hash browns",
+   "salad"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a breakfast sandwich on an English muffin?",
+    "yes": true
+   },
+   {
+    "q": "Is the sandwich served on sliced loaf bread or a bagel?",
+    "yes": false
+   },
+   {
+    "q": "Is the food a plated scramble without bread?",
+    "yes": false
+   }
+  ],
+  "dish": "sausage, egg, and cheese English muffin sandwich",
+  "look": "toasted English muffin split open, browned savory pork sausage patty, folded yellow egg patty, melted orange cheddar cheese, thick layer of mashed green avocado, cross-section visible",
+  "model": "gemini-flash-latest",
+  "name": "Egg, Sausage, Cheese & Avo Sandwich",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T00:08:36+00:00"
  },
  "d0cf6dc33730": {
   "avoid": [
@@ -36794,6 +37170,42 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-09-27T05:36:06+00:00"
+ },
+ "e1e5e0a6c187": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "tortilla",
+   "tacos",
+   "burrito",
+   "skewers"
+  ],
+  "checks": [
+   {
+    "q": "Is the main item seasoned chicken-style strips with pineapple in red sauce?",
+    "yes": true
+   },
+   {
+    "q": "Is the food served inside tacos, a wrap, or on tortillas?",
+    "yes": false
+   },
+   {
+    "q": "Is the meat served on a vertical spit or skewer?",
+    "yes": false
+   }
+  ],
+  "dish": "vegan chicken al pastor",
+  "look": "tender plant-based chick'n strips, vibrant deep reddish-orange achiote chili sauce glaze, grilled caramelized yellow pineapple chunks, translucent charred white onions, fresh chopped green cilantro leaves",
+  "model": "gemini-flash-latest",
+  "name": "Plant-Forward Chick'n Al Pastor",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T00:09:56+00:00"
  },
  "e1eb5b16e7f8": {
   "avoid": [
