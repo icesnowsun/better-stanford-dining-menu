@@ -784,6 +784,10 @@
    "en": "Tri Color Cheese Tortellini",
    "es": "Tortellini de tres quesos"
   },
+  "2355f071dc91": {
+   "en": "Pork Pastor",
+   "es": "Cerdo al pastor"
+  },
   "235d699c7e1b": {
    "en": "Loco Moco",
    "es": "Loco moco"
@@ -900,6 +904,10 @@
    "en": "Fried Oyster Po Boy",
    "es": "Sándwich Po' boy de ostras fritas"
   },
+  "28b37fdad071": {
+   "en": "Cole Slaw",
+   "es": "Ensalada coleslaw"
+  },
   "28d26f02e26f": {
    "en": "Corn Chowder",
    "es": "Crema de maíz"
@@ -931,6 +939,10 @@
   "29c9e78d37fd": {
    "en": "Creamy Coleslaw",
    "es": "Ensalada de col cremosa"
+  },
+  "29ef8ef93b51": {
+   "en": "Sweet And Sour Braised Chicken, Steamed Jasmine Rice and Roasted Green Beans",
+   "es": "Pollo agridulce con arroz jazmín y ejotes rostizados"
   },
   "2a050dad00b1": {
    "en": "Balsamic Roasted Brussels Sprouts",
@@ -2076,6 +2088,174 @@
    "en": "Hearty Three Bean Stew",
    "es": "Guiso sustancioso de tres frijoles"
   },
+  "58633bcdf2dc": {
+   "en": "Garlic Parmesan Fries",
+   "es": "Papas fritas con ajo y parmesano"
+  },
+  "58a5ca6d41b8": {
+   "en": "Crepe Station",
+   "es": "Estación de crepas"
+  },
+  "58b78ef4c5c4": {
+   "en": "Pommes Lyonnaise",
+   "es": "Papas lyonnaise"
+  },
+  "592169116562": {
+   "en": "BBQ Pork",
+   "es": "Cerdo a la barbacoa"
+  },
+  "594ca166b6a4": {
+   "en": "Aloo Gobi",
+   "es": "Aloo gobi"
+  },
+  "597bc2aeda26": {
+   "en": "Poutine Beef Bulgogi W/Gochuchang Gravy",
+   "es": "Poutine de beef bulgogi con salsa gochujang"
+  },
+  "598deca9b1de": {
+   "en": "Brown Rice",
+   "es": "Arroz integral"
+  },
+  "599c0fe87711": {
+   "en": "Plant-Forward \"Beef\" Teriyaki",
+   "es": "Teriyaki de \"carne\" vegetal"
+  },
+  "5a926099bc93": {
+   "en": "Ras Malai",
+   "es": "Ras malai"
+  },
+  "5ae253d097e4": {
+   "en": "Vietnamese Tofu",
+   "es": "Tofu vietnamita"
+  },
+  "5c23b9039a39": {
+   "en": "Chef's Choice Overnight Oats",
+   "es": "Avena reposada del chef"
+  },
+  "5c3e86b9f7a4": {
+   "en": "Cacciatore Pasta with Spinach",
+   "es": "Pasta cacciatore con espinacas"
+  },
+  "5c910588df5d": {
+   "en": "Champurrado with Pan Dulce",
+   "es": "Champurrado con pan dulce"
+  },
+  "5d107d0e8f99": {
+   "en": "Grilled Corn on the Cob",
+   "es": "Elote asado"
+  },
+  "5d453584666d": {
+   "en": "Toffee Citrus Candied Yams",
+   "es": "Camotes glaseados con cítricos y toffee"
+  },
+  "5d4da710f507": {
+   "en": "Stewed Beef",
+   "es": "Carne de res guisada"
+  },
+  "5d7637cbc1aa": {
+   "en": "Masala Dosa",
+   "es": "Masala dosa"
+  },
+  "5d811882c1b7": {
+   "en": "Breakfast Quesadilla",
+   "es": "Quesadilla de desayuno"
+  },
+  "5da283315d22": {
+   "en": "Mango Chutney",
+   "es": "Chutney de mango"
+  },
+  "5db773a236d6": {
+   "en": "Okra Ratatouille",
+   "es": "Ratatouille de okra"
+  },
+  "5dc6dacce93e": {
+   "en": "Jambalaya Pasta",
+   "es": "Pasta jambalaya"
+  },
+  "5df61256c6f9": {
+   "en": "Chimichurri Roasted Plantains",
+   "es": "Plátanos rostizados con chimichurri"
+  },
+  "5e273f42da30": {
+   "en": "Vegan Mofongo",
+   "es": "Mofongo vegano"
+  },
+  "5e5f9a352123": {
+   "en": "Marry Me Potato Gnocchi & Sauteed Kale",
+   "es": "Gnocchi de papa 'marry me' con col rizada salteada"
+  },
+  "5e60b4b9d07b": {
+   "en": "Churro Bar w/Mexican Hot Chocolate",
+   "es": "Barra de churros con chocolate caliente mexicano"
+  },
+  "5e67d04e8728": {
+   "en": "Linguine Aglio e Olio",
+   "es": "Linguine aglio e olio"
+  },
+  "5e994c052a05": {
+   "en": "Jeweled Basmati Rice",
+   "es": "Arroz basmati decorado"
+  },
+  "5eefdef392a5": {
+   "en": "Hot Dog Bar",
+   "es": "Barra de hot dogs"
+  },
+  "5f78ede6761e": {
+   "en": "JACKFRUIT A LA VERACRUZANA",
+   "es": "Yaca a la veracruzana"
+  },
+  "5fc16db65663": {
+   "en": "Boba Bar",
+   "es": "Barra de boba"
+  },
+  "5fc381ac4cd8": {
+   "en": "Chicken & Andouille Sausage Gumbo",
+   "es": "Gumbo de pollo y salchicha andouille"
+  },
+  "5ff0170039eb": {
+   "en": "Reuben Pastrami Sandwich Bar (FloMo)",
+   "es": "Barra de sándwich Reuben de pastrami (FloMo)"
+  },
+  "5ff5031c46fd": {
+   "en": "Korean Mushroom Gangjeong w/ lotus root and pepper",
+   "es": "Gangjeong de champiñones coreanos con raíz de loto y pimiento"
+  },
+  "600e9af40dc5": {
+   "en": "FloMo's Burrito Bar",
+   "es": "Barra de burritos de FloMo"
+  },
+  "606e8e026338": {
+   "en": "Scrambled Soyrizo & Plant Powered \"Eggs\"",
+   "es": "Soyrizo revuelto con \"huevos\" vegetales"
+  },
+  "6099d136ffd5": {
+   "en": "Caper Beurre Blanc",
+   "es": "Salsa beurre blanc con alcaparras"
+  },
+  "60b04d0f0411": {
+   "en": "Smoked Turkey",
+   "es": "Pavo ahumado"
+  },
+  "60c7caa00da9": {
+   "en": "Roasted Broccolini with Tomatoes",
+   "es": "Broccolini asado con tomates"
+  },
+  "60e31dd804c2": {
+   "en": "jjajang tofu and vegetables rice bowl",
+   "es": "Bol de arroz con tofu jjajang y vegetales"
+  },
+  "61025dfbebf8": {
+   "en": "Red Quinoa with Sundried Tomatoes",
+   "es": "Quinua roja con tomates deshidratados"
+  },
+  "61200815510a": {
+   "en": "Creamy Cajun Chicken",
+   "es": "Pollo cajún cremoso"
+  },
+  "612cbb5525be": {
+   "en": "Braised Herbed Chicken",
+   "es": "Pollo braseado con hierbas"
+  },
   "613a39295421": {
    "en": "Assorted Bread",
    "es": "Pan surtido"
@@ -2396,6 +2576,166 @@
    "en": "Chicken Chile Verde",
    "es": "Pollo en chile verde"
   },
+  "6eabd86ed56e": {
+   "en": "German Chicken Schnitzel",
+   "es": "Schnitzel de pollo alemán"
+  },
+  "6eb8a29a9d68": {
+   "en": "Breakfast Potatoes",
+   "es": "Papas para el desayuno"
+  },
+  "6edc6e707f13": {
+   "en": "Breakfast Burrito",
+   "es": "Burrito de desayuno"
+  },
+  "6f477dbab410": {
+   "en": "Soy Garlic Chicken",
+   "es": "Pollo con ajo y soja"
+  },
+  "6ffc8fd6ef8e": {
+   "en": "Sausage Bar Station",
+   "es": "Estación de salchichas"
+  },
+  "700a7bdb30a4": {
+   "en": "Roasted Pork with Tomato Gravy",
+   "es": "Cerdo asado con salsa de tomate"
+  },
+  "70446c063eaf": {
+   "en": "Seared Cod",
+   "es": "Bacalao sellado"
+  },
+  "70ff9361bd69": {
+   "en": "Thai Pineapple Fried Rice",
+   "es": "Arroz frito tailandés con piña"
+  },
+  "718154ea3e4f": {
+   "en": "Pickled Daikon & Carrot",
+   "es": "Daikon y zanahoria encurtidos"
+  },
+  "72347f8b812e": {
+   "en": "Thai Basil Chicken (Branner)",
+   "es": "Pollo con albahaca tailandesa (Branner)"
+  },
+  "72961ef22b91": {
+   "en": "Sizzlin' Sweet Potatoes",
+   "es": "Camotes salteados"
+  },
+  "72e49702da36": {
+   "en": "Pasta Alfredo",
+   "es": "Pasta Alfredo"
+  },
+  "72e8fdd175fe": {
+   "en": "Japanese Chicken Teriyaki",
+   "es": "Pollo teriyaki japonés"
+  },
+  "736358916b78": {
+   "en": "BBQ Jackfruit",
+   "es": "Yaca a la barbacoa"
+  },
+  "73b84a420023": {
+   "en": "Barbacoa Tofu",
+   "es": "Tofu en barbacoa"
+  },
+  "73b89f1690f0": {
+   "en": "Kale Caesar Salad",
+   "es": "Ensalada Caesar de col rizada"
+  },
+  "73f3ade2bfb7": {
+   "en": "Al Pastor Pork Burrito",
+   "es": "Burrito de cerdo al pastor"
+  },
+  "7414ad8f9f2b": {
+   "en": "Creamy Grits with Cheddar Cheese",
+   "es": "Grits cremosos con queso cheddar"
+  },
+  "7431493b6585": {
+   "en": "Harvest Egg White Scramble",
+   "es": "Revuelto de claras de huevo"
+  },
+  "74787ab83447": {
+   "en": "Creamy Butter Chicken",
+   "es": "Pollo butter cremoso"
+  },
+  "74a43fd0b07f": {
+   "en": "Sauteed Broccoli Decicco",
+   "es": "Brócoli Decicco salteado"
+  },
+  "74e52cfbe05e": {
+   "en": "Frijoles Maneados",
+   "es": "Frijoles maneados"
+  },
+  "7559986e1da1": {
+   "en": "Crispy Skinned Salmon",
+   "es": "Salmón con piel crujiente"
+  },
+  "7596f807e76b": {
+   "en": "Huevos Adelita & Roasted Salsa",
+   "es": "Huevos adalita con salsa asada"
+  },
+  "75c22d675b66": {
+   "en": "Soy Sesame \"Chick'n\" Stir-Fry",
+   "es": "Salteado de \"pollo\" de soja y sésamo"
+  },
+  "75d4e713d8d1": {
+   "en": "Cream of Cauliflower Soup",
+   "es": "Crema de coliflor"
+  },
+  "75f6c9e945a1": {
+   "en": "Carolina Pulled Pork",
+   "es": "Cerdo deshebrado estilo Carolina"
+  },
+  "760711fef890": {
+   "en": "Wakame Salad",
+   "es": "Ensalada de wakame"
+  },
+  "76219807f9c3": {
+   "en": "Korean Sweet and Spicy Fish (FloMo)",
+   "es": "Pescado coreano dulce y picante (FloMo)"
+  },
+  "763665681b5c": {
+   "en": "Halal All-Beef Hot Dogs",
+   "es": "Hot dogs de res halal"
+  },
+  "769bc6de495a": {
+   "en": "Roasted Acorn Squash",
+   "es": "Calabaza de bellota asada"
+  },
+  "76ad28c3529f": {
+   "en": "Cuban Style Ropa Vieja",
+   "es": "Ropa vieja estilo cubano"
+  },
+  "76b5b53a9f9c": {
+   "en": "Poblano Rice",
+   "es": "Arroz poblano"
+  },
+  "76bcbd5fdd9f": {
+   "en": "Butter Chicken and Butter Vegetables with Steamed Basmati Rice and Naan Bread",
+   "es": "Pollo butter con vegetales, arroz basmati y pan naan"
+  },
+  "76de274cd428": {
+   "en": "Mexican Rice",
+   "es": "Arroz mexicano"
+  },
+  "76e925fd257c": {
+   "en": "Tacos de Jamaica y Hongos",
+   "es": "Tacos de jamaica y hongos"
+  },
+  "76f6b18b795a": {
+   "en": "Blue Corn Mush",
+   "es": "Gachas de maíz azul"
+  },
+  "786074cf1eea": {
+   "en": "Italian Sausage Crumble",
+   "es": "Desmenuzado de salchicha italiana"
+  },
+  "786c94a25851": {
+   "en": "Salisbury Steak",
+   "es": "Filete Salisbury"
+  },
+  "7896e25d76ba": {
+   "en": "Caribbean Chicken Curry",
+   "es": "Curry de pollo caribeño"
+  },
   "78a18bad9bae": {
    "en": "Cranberry Kale Salad",
    "es": "Ensalada de col rizada y arándanos"
@@ -2596,6 +2936,10 @@
    "en": "Fried Artichoke Po Boy",
    "es": "Sándwich Po Boy de alcachofas fritas"
   },
+  "830985bfd9e0": {
+   "en": "Beyond Sausage & Wild Rice Stuffed Peppers",
+   "es": "Pimientos rellenos de salchicha Beyond y arroz silvestre"
+  },
   "83d194f65ad7": {
    "en": "Harvest Bean Stew",
    "es": "Estofado de frijoles Harvest"
@@ -2647,6 +2991,10 @@
   "85194199bd6d": {
    "en": "Roasted Summer Squash with Herbs",
    "es": "Calabacín asado con hierbas"
+  },
+  "853fa206ee67": {
+   "en": "Burger Bar Station",
+   "es": "Estación de hamburguesas"
   },
   "856a77743b68": {
    "en": "Beyond Beef & Pumpkin Chili",
@@ -2871,9 +3219,3434 @@
   "8bd04389367f": {
    "en": "Cornbread with Honey Butter",
    "es": "Pan de maíz con mantequilla de miel"
+  },
+  "8c060d05efd8": {
+   "en": "Plant-Forward Picadillo Burrito",
+   "es": "Burrito de picadillo vegetal"
+  },
+  "8c1b4df69b6d": {
+   "en": "Edamame Salad",
+   "es": "Ensalada de edamame"
+  },
+  "8c72657a331c": {
+   "en": "Chicken Saltado",
+   "es": "Pollo saltado"
+  },
+  "8ca9e208e7aa": {
+   "en": "Braised Beef Tibs",
+   "es": "Tibs de res braseada"
+  },
+  "8d0311d969eb": {
+   "en": "Grilled Santa Maria Beef Tri Tip",
+   "es": "Tri tip de res a la parrilla estilo Santa Maria"
+  },
+  "8d099b6e2ada": {
+   "en": "Spicy Glass Noodles with Veggies",
+   "es": "Fideos de cristal picantes con vegetales"
+  },
+  "8d1133014288": {
+   "en": "Homemade Paletas",
+   "es": "Paletas caseras"
+  },
+  "8d273e174ff9": {
+   "en": "Cajun Garlic Butter Pasta",
+   "es": "Pasta con mantequilla de ajo y estilo cajún"
+  },
+  "8d2aa577d0b7": {
+   "en": "Corn Tortilla",
+   "es": "Tortilla de maíz"
+  },
+  "8d446ccc1ec4": {
+   "en": "Craveable Grains",
+   "es": "Granos variados"
+  },
+  "8d769609452a": {
+   "en": "Chef's Choice Breakfast Special",
+   "es": "Especial de desayuno del chef"
+  },
+  "8d84abc63b07": {
+   "en": "Jamaican Curry Lamb",
+   "es": "Cordero al curry jamaiquino"
+  },
+  "8d8cf25e24e2": {
+   "en": "Banana Pancakes",
+   "es": "Panqueques de banana"
+  },
+  "8d953cf2fd44": {
+   "en": "Sautéed Gai Lan with Garlic",
+   "es": "Gai lan salteada con ajo"
+  },
+  "8dbee8587bab": {
+   "en": "Boston Clam Chowder",
+   "es": "Crema de almejas estilo Boston"
+  },
+  "8e11c6e1e4ce": {
+   "en": "Soy Garlic Chicken Wings",
+   "es": "Alitas de pollo con ajo y soja"
+  },
+  "8ebbffcc1ac9": {
+   "en": "Allergen-Friendly Pasta Station",
+   "es": "Estación de pasta sin alérgenos"
+  },
+  "8ec3caf344e0": {
+   "en": "Italian Wedding Soup",
+   "es": "Sopa italiana de boda"
+  },
+  "8ed0b23245c1": {
+   "en": "Rosemary Fried Chicken Wings",
+   "es": "Alitas de pollo fritas con romero"
+  },
+  "8ef2407e1af4": {
+   "en": "Tofu & Green Bean Bistek",
+   "es": "Bistec de tofu y judías verdes"
+  },
+  "8ef9910ec041": {
+   "en": "Lemon Herbed Chicken",
+   "es": "Pollo con hierbas y limón"
+  },
+  "8f09287f1116": {
+   "en": "Panko Crusted Portabello Mushroom-GRILL",
+   "es": "Portobello a la parrilla con costra de panko"
+  },
+  "8f1188bf5910": {
+   "en": "Potstickers",
+   "es": "Potstickers"
+  },
+  "8f132cc2192e": {
+   "en": "Hawaiian Huli Huli Chicken",
+   "es": "Pollo Huli Huli hawaiano"
+  },
+  "8f4c3fdf173a": {
+   "en": "Turmeric Roasted Potatoes",
+   "es": "Papas asadas con cúrcuma"
+  },
+  "8f4cf22b861e": {
+   "en": "Country Potatoes",
+   "es": "Papas rústicas"
+  },
+  "8f57498357f6": {
+   "en": "Tom Ka Gai",
+   "es": "Tom Ka Gai"
+  },
+  "8fb04e81fcd6": {
+   "en": "Mountain Farm GF Hamburger Bun",
+   "es": "Pan de hamburguesa sin gluten Mountain Farm"
+  },
+  "8fb71736a95c": {
+   "en": "Vermicelli Noodles",
+   "es": "Fideos vermicelli"
+  },
+  "8fd24ac44bca": {
+   "en": "Sumac Rice Pilaf",
+   "es": "Pilaf de arroz con sumac"
+  },
+  "8fea081816f3": {
+   "en": "Spam Musubi Bowl",
+   "es": "Bowl de Spam musubi"
+  },
+  "900cb05f2016": {
+   "en": "Pork Sausage Link",
+   "es": "Salchicha de cerdo"
+  },
+  "902380bab976": {
+   "en": "Street Tacos, Beef or Chicken with Salsa, Crema, Pico de Gallo, Guacamole and Pickled Cabbage",
+   "es": "Tacos callejeros de res o pollo con salsa, crema, pico de gallo, guacamole y col encurtida"
+  },
+  "90df5dee67e5": {
+   "en": "Chicken Piccata",
+   "es": "Pollo piccata"
+  },
+  "90fdada42647": {
+   "en": "Pork Chili Colorado",
+   "es": "Chili colorado de cerdo"
+  },
+  "91194c4c2e94": {
+   "en": "Savory Salisbury \"Steak\" Ragout",
+   "es": "Ragú de albóndigas Salisbury"
+  },
+  "911ebf6f19cd": {
+   "en": "Crispy Fried \"Chick'n\" Tenders",
+   "es": "Tiras de pollo vegetal crujientes"
+  },
+  "917bb8ccace7": {
+   "en": "Pulled Pork Rice Bowl",
+   "es": "Bowl de arroz con cerdo deshebrado"
+  },
+  "9186b55035ec": {
+   "en": "Calabasitas",
+   "es": "Calabasitas"
+  },
+  "91d3e24ff544": {
+   "en": "Nuoc Cham",
+   "es": "Nuoc cham"
+  },
+  "920dc6fbccd2": {
+   "en": "Vegetable Farro Pilaf",
+   "es": "Pilaf de farro y vegetales"
+  },
+  "92187c039df7": {
+   "en": "Butter Coconut Rice",
+   "es": "Arroz con coco y mantequilla"
+  },
+  "9239279501ff": {
+   "en": "Coconut Spinach & Chickpea Curry",
+   "es": "Curry de coco con espinacas y garbanzos"
+  },
+  "9269def41b2b": {
+   "en": "Miso Tofu Stir-Fry",
+   "es": "Salteado de tofu con miso"
+  },
+  "9282501c292b": {
+   "en": "Frijoles Con Verduras",
+   "es": "Frijoles con verduras"
+  },
+  "9310285edc99": {
+   "en": "Smothered Chicken Poutine",
+   "es": "Poutine de pollo en salsa"
+  },
+  "932d5d098d44": {
+   "en": "Lemon Herb Rice Pilaf",
+   "es": "Pilaf de arroz con limón y hierbas"
+  },
+  "93695a59d399": {
+   "en": "Thai Red Curry Beyond Ground",
+   "es": "Curry rojo tailandés con carne vegetal"
+  },
+  "938e205a5849": {
+   "en": "BBQ Chicken (Allergy Friendly)",
+   "es": "Pollo BBQ (apto para alérgicos)"
+  },
+  "93900c73e138": {
+   "en": "Herbed Couscous",
+   "es": "Cuscús con hierbas"
+  },
+  "93a94cedbc56": {
+   "en": "Quebec-Style Cheese Curds",
+   "es": "Queso en grano estilo Quebec"
+  },
+  "93b9b5247084": {
+   "en": "Meatball Sub Sandwich",
+   "es": "Sub de albóndigas"
+  },
+  "93d2e7846a94": {
+   "en": "Tortilla Chips",
+   "es": "Totopos"
+  },
+  "93d7f5f7f711": {
+   "en": "Zesty Meatballs in Marinara",
+   "es": "Albóndigas con salsa marinara"
+  },
+  "93e12794bbd0": {
+   "en": "Teriyaki Tofu with Eggplant",
+   "es": "Tofu teriyaki con berenjena"
+  },
+  "9447e7380ead": {
+   "en": "Meatloaf",
+   "es": "Pastel de carne"
+  },
+  "9470b9483845": {
+   "en": "Texas BBQ Tri Tip",
+   "es": "Tri tip BBQ al estilo Texas"
+  },
+  "94913a9b1fb0": {
+   "en": "Ranchera Pork",
+   "es": "Cerdo ranchero"
+  },
+  "9499572cdc10": {
+   "en": "Vegetable Spring Rolls",
+   "es": "Rollitos de primavera vegetales"
+  },
+  "94af4096b626": {
+   "en": "Tandoori Style Naan",
+   "es": "Pan naan estilo tandoori"
+  },
+  "957ca3154d37": {
+   "en": "Pasta Marinara",
+   "es": "Pasta marinara"
+  },
+  "95932d2288db": {
+   "en": "Samosas with Cilantro Chutney",
+   "es": "Samosas con chutney de cilantro"
+  },
+  "95a2c508c134": {
+   "en": "Seasonal Vegetable Pot Pie",
+   "es": "Pastel de vegetales de temporada"
+  },
+  "95db273ed70f": {
+   "en": "Caramelized Onion Gravy",
+   "es": "Salsa de cebolla caramelizada"
+  },
+  "96f238647ae5": {
+   "en": "Seasonal Vegetable Board",
+   "es": "Tabla de vegetales de temporada"
+  },
+  "97394ff5253d": {
+   "en": "Buttered Egg Noodles",
+   "es": "Fideos de huevo con mantequilla"
+  },
+  "97450c83be58": {
+   "en": "Classic Cobb Salad",
+   "es": "Ensalada Cobb clásica"
+  },
+  "9758ac77e9f9": {
+   "en": "Chickpea Afritada Stew",
+   "es": "Estofado de garbanzos a la africana"
+  },
+  "975eadba9dd2": {
+   "en": "Caribbean Lamb Curry",
+   "es": "Curry de cordero caribeño"
+  },
+  "97c7564a87da": {
+   "en": "Honey Glazed Ham",
+   "es": "Jamón glaseado con miel"
+  },
+  "982d1088bd50": {
+   "en": "RSK Dirty Rice",
+   "es": "Dirty rice RSK"
+  },
+  "9848ff4ccce7": {
+   "en": "Vegetable Chow Mein Noodles",
+   "es": "Fideos chow mein vegetales"
+  },
+  "9850ad9a40a4": {
+   "en": "Braised Beef Stew & Potatoes",
+   "es": "Estofado de res con papas"
+  },
+  "987d80c24c73": {
+   "en": "Boudin Bombs",
+   "es": "Bombas de boudin"
+  },
+  "987ff0dcef9a": {
+   "en": "Curried Dal & Onion",
+   "es": "Dal al curry con cebolla"
+  },
+  "9883089b31c8": {
+   "en": "Crispy Fried Mushrooms & Gravy",
+   "es": "Champiñones crujientes con salsa gravy"
+  },
+  "989182184f3a": {
+   "en": "Avo Breakfast Sandwich",
+   "es": "Sándwich de desayuno con aguacate"
+  },
+  "989d4dfbbf03": {
+   "en": "Refried Black Beans",
+   "es": "Frijoles negros refritos"
+  },
+  "98a5794a38d5": {
+   "en": "Birria-Spiced Pinto Beans & Chayote",
+   "es": "Frijoles pintos con especias de birria y chayote"
+  },
+  "98dfb8dcbccc": {
+   "en": "Spiced Cider",
+   "es": "Sidra especiada"
+  },
+  "98e16decff36": {
+   "en": "Rainbow Sesame Slaw",
+   "es": "Ensalada de col con sésamo"
+  },
+  "98eef9154b9b": {
+   "en": "Tomatillo Salsa",
+   "es": "Salsa de tomatillo"
+  },
+  "9916de4fffd2": {
+   "en": "Jackfruit Cioppino",
+   "es": "Cioppino de yaca"
+  },
+  "9924e456e279": {
+   "en": "Creamy Tuscan \"Chick'n\"",
+   "es": "Pollo vegetal cremoso a la toscana"
+  },
+  "996064c87e2f": {
+   "en": "Seasonal Fruit",
+   "es": "Fruta de temporada"
+  },
+  "998e85b27032": {
+   "en": "Charred Squash with Ras el Hanout",
+   "es": "Calabaza asada con ras el hanout"
+  },
+  "99b39994ecb9": {
+   "en": "Cran-Apple Salad",
+   "es": "Ensalada de arándano y manzana"
+  },
+  "99de65322e8a": {
+   "en": "Italian Herb-Crusted Chicken Cutlets",
+   "es": "Milanesas de pollo con hierbas italianas"
+  },
+  "99e47bcf3c0d": {
+   "en": "Pork Vindaloo",
+   "es": "Cerdo vindaloo"
+  },
+  "9a6bfa9465aa": {
+   "en": "Picnic Potato Salad",
+   "es": "Ensalada de papa estilo picnic"
+  },
+  "9a79c341f21a": {
+   "en": "Beef Stroganoff with Egg Noodles",
+   "es": "Stroganoff de res con fideos de huevo"
+  },
+  "9ae90503d4eb": {
+   "en": "Beyond Ground & Gravy",
+   "es": "Carne vegetal Beyond con salsa gravy"
+  },
+  "9b3dbd3ad93a": {
+   "en": "Smoked Mushrooms & Tofu",
+   "es": "Champiñones ahumados y tofu"
+  },
+  "9b798f559507": {
+   "en": "Buñuelos & Piloncillo Syrup",
+   "es": "Buñuelos con almíbar de piloncillo"
+  },
+  "9bd75eeebd27": {
+   "en": "Southern Jalapeño Cornbread",
+   "es": "Pan de maíz al estilo sureño con jalapeño"
+  },
+  "9be84111137c": {
+   "en": "Stewed Beef, Garlic Mashed Potatoes, Roasted Seasonal Vegetables",
+   "es": "Estofado de res, puré de papa con ajo y vegetales de temporada asados"
+  },
+  "9bed9f3e67d7": {
+   "en": "Jambalaya with Fried Okra",
+   "es": "Jambalaya con okra frita"
+  },
+  "9bfd81d42dfc": {
+   "en": "Creamy Marinara",
+   "es": "Salsa marinara cremosa"
+  },
+  "9c2074f141e8": {
+   "en": "Roasted Carrots & Brussel Sprouts",
+   "es": "Zanahorias y coles de Bruselas asadas"
+  },
+  "9c2752f15a0c": {
+   "en": "Honey Glazed Carrots",
+   "es": "Zanahorias glaseadas con miel"
+  },
+  "9c502f89c312": {
+   "en": "Turkey Sausage Patty",
+   "es": "Tortita de salchicha de pavo"
+  },
+  "9c964ebaa493": {
+   "en": "Cranberry Orange Relish",
+   "es": "Relish de arándano y naranja"
+  },
+  "9c9ce45720e7": {
+   "en": "7 Cheesy Mac",
+   "es": "Macarrones con 7 quesos"
+  },
+  "9ccb683a9c46": {
+   "en": "Grilled Portobello with Herb Sauce",
+   "es": "Portobello a la parrilla con salsa de hierbas"
+  },
+  "9cf7695a8a3e": {
+   "en": "Chilaquiles with Tomatillo Salsa",
+   "es": "Chilaquiles con salsa de tomatillo"
+  },
+  "9cfb031aed34": {
+   "en": "Roasted Sweet Potato Wedges",
+   "es": "Gajos de camote asados"
+  },
+  "9d0428707988": {
+   "en": "Beef Bulgogi FloMo",
+   "es": "Bulgogi de res FloMo"
+  },
+  "9d13b542a469": {
+   "en": "Cuban Style Rice",
+   "es": "Arroz estilo cubano"
+  },
+  "9d4fb441b28a": {
+   "en": "Mojo Tofu",
+   "es": "Tofu al mojo"
+  },
+  "9d8e9baf37aa": {
+   "en": "Garlic Herb Spaghetti",
+   "es": "Espagueti con ajo y hierbas"
+  },
+  "9da68fa32279": {
+   "en": "Cacciatore Pasta",
+   "es": "Pasta cacciatore"
+  },
+  "9dcbae95ec5a": {
+   "en": "Salmon Cake",
+   "es": "Pastel de salmón"
+  },
+  "9ddd4512f6ad": {
+   "en": "Blackened Chicken",
+   "es": "Pollo blackened"
+  },
+  "9dfdd17dc665": {
+   "en": "Carne Asada Tacos",
+   "es": "Tacos de carne asada"
+  },
+  "9e26865b042b": {
+   "en": "Scalloped Potatoes",
+   "es": "Papas gratinadas"
+  },
+  "9e75f45dfcfa": {
+   "en": "Quesadilla Bar",
+   "es": "Barra de quesadillas"
+  },
+  "9e9757d28550": {
+   "en": "HONGOS Y GARBANZOS AL PIBIL",
+   "es": "Hongos y garbanzos al pibil"
+  },
+  "9ee470a67590": {
+   "en": "Mushroom Meuniere (Branner)",
+   "es": "Champiñones meunière (Branner)"
+  },
+  "9f4992616d78": {
+   "en": "Roasted Butternut Squash",
+   "es": "Calabaza butternut asada"
+  },
+  "9f7d83df12e8": {
+   "en": "Sour Cream",
+   "es": "Crema agria"
+  },
+  "9f89c4239fd7": {
+   "en": "Miso-Glazed Salmon",
+   "es": "Salmón glaseado con miso"
+  },
+  "9f8b42a54953": {
+   "en": "Mushroom Tinga Chilaquiles",
+   "es": "Chilaquiles de tinga de champiñones"
+  },
+  "9fa367ebfbac": {
+   "en": "Jeera Rice",
+   "es": "Arroz jeera"
+  },
+  "9fbe96b1bc47": {
+   "en": "Garden Salad",
+   "es": "Ensalada de la huerta"
+  },
+  "9fbf83fc6102": {
+   "en": "Beef Nihari",
+   "es": "Nihari de res"
+  },
+  "9fc7014a8431": {
+   "en": "Herb-Marinated Lemon Tofu",
+   "es": "Tofu al limón con hierbas"
+  },
+  "9fea3410efb1": {
+   "en": "Butternut Squash Soup",
+   "es": "Sopa de calabaza butternut"
+  },
+  "a00fb80ddb88": {
+   "en": "Meatless BBQ Chick'n",
+   "es": "Pollo vegetal a la BBQ"
+  },
+  "a01526b0aab4": {
+   "en": "Balsamic Glazed Cheese Pizza",
+   "es": "Pizza de queso con glaseado balsámico"
+  },
+  "a08b6d7f7e66": {
+   "en": "Turkey Power Scramble",
+   "es": "Revuelto de pavo nutritivo"
+  },
+  "a10381ee8278": {
+   "en": "Vietnamese Grilled Pork",
+   "es": "Cerdo a la parrilla vietnamita"
+  },
+  "a120f59312df": {
+   "en": "Macaroni Salad",
+   "es": "Ensalada de macarrones"
+  },
+  "a12e274f854e": {
+   "en": "Rosemary Garlic White Bean Stew",
+   "es": "Estofado de frijoles blancos con ajo y romero"
+  },
+  "a158ac782858": {
+   "en": "Citrus Carrots with Toasted Cumin",
+   "es": "Zanahorias cítricas con comino tostado"
+  },
+  "a15f4b832811": {
+   "en": "Wendy's Pork Posole",
+   "es": "Posole de cerdo de Wendy's"
+  },
+  "a16044ca8279": {
+   "en": "Crispy Korean-Style Tempeh",
+   "es": "Tempeh crujiente estilo coreano"
+  },
+  "a1641ebaa39c": {
+   "en": "Assorted Wings and Fries",
+   "es": "Alitas surtidas y papas fritas"
+  },
+  "a1774e128d54": {
+   "en": "Corn on the Cobb",
+   "es": "Mazorca de maíz"
+  },
+  "a18b04db0aac": {
+   "en": "Louisiana Smoked Ribs",
+   "es": "Costillas ahumadas estilo Louisiana"
+  },
+  "a1b1925eed7a": {
+   "en": "Creole Mushrooms",
+   "es": "Champiñones criollos"
+  },
+  "a1c53200fcbc": {
+   "en": "Maple Glazed Yams with Marshmallows",
+   "es": "Camotes glaseados con arce y malvaviscos"
+  },
+  "a1f1e1b0d3b7": {
+   "en": "Seasoned Potato Wedges",
+   "es": "Gajos de papa sazonados"
+  },
+  "a2332a8c4ed2": {
+   "en": "Tandoori Style Roasted Vegetables",
+   "es": "Vegetales asados estilo tandoori"
+  },
+  "a23a018dd204": {
+   "en": "Garlic Fried Rice",
+   "es": "Arroz frito con ajo"
+  },
+  "a25b69b8859b": {
+   "en": "Steamed Snow Peas",
+   "es": "Chícharos dulces al vapor"
+  },
+  "a28d32135b5f": {
+   "en": "Beef Fajitas",
+   "es": "Fajitas de res"
+  },
+  "a2930e81a842": {
+   "en": "Sesame-Roasted Bok Choy",
+   "es": "Bok choy asado con sésamo"
+  },
+  "a2b72087c3eb": {
+   "en": "Roasted Carrots",
+   "es": "Zanahorias asadas"
+  },
+  "a2f6beb0d3dc": {
+   "en": "Chicken Tortilla Soup",
+   "es": "Sopa de tortilla con pollo"
+  },
+  "a31dfed5abc7": {
+   "en": "Lemon Lentil Soup",
+   "es": "Sopa de lentejas al limón"
+  },
+  "a33896a3346d": {
+   "en": "Corn on the Cob",
+   "es": "Mazorca de maíz"
+  },
+  "a3d85625cb73": {
+   "en": "Steamed Japanese Rice",
+   "es": "Arroz japonés al vapor"
+  },
+  "a44a9171eec0": {
+   "en": "Roasted Chayote Squash",
+   "es": "Chayote asado"
+  },
+  "a4c19062c365": {
+   "en": "Creole Meatloaf",
+   "es": "Pastel de carne criollo"
+  },
+  "a4c4bf761aa0": {
+   "en": "Braised Beef Poutine (Topping)",
+   "es": "Poutine con carne de res braseada"
+  },
+  "a4cd72eb9e61": {
+   "en": "Roasted Brussels Sprouts",
+   "es": "Coles de Bruselas asadas"
+  },
+  "a4dbcab17535": {
+   "en": "Peruvian Fava Bean Stew",
+   "es": "Guiso de habas peruano"
+  },
+  "a4e5a2b1bd5c": {
+   "en": "Roasted Honey Herb Garlic Tofu",
+   "es": "Tofu asado con miel, hierbas y ajo"
+  },
+  "a4eb9b2967ad": {
+   "en": "Caramelized Mushrooms",
+   "es": "Champiñones caramelizados"
+  },
+  "a53af3df10dd": {
+   "en": "Lomo Saltado Portobello",
+   "es": "Lomo saltado de portobello"
+  },
+  "a54254eb0507": {
+   "en": "Citrus Brined Roasted Turkey",
+   "es": "Pavo asado en salmuera de cítricos"
+  },
+  "a55b578ffea6": {
+   "en": "Baked Parmesan Broccolini",
+   "es": "Broccolini al horno con parmesano"
+  },
+  "a585ea9027c0": {
+   "en": "Goan Coconut Rice",
+   "es": "Arroz con coco de Goa"
+  },
+  "a5f2564e62fa": {
+   "en": "BBQ Chicken Sandwich",
+   "es": "Sándwich de pollo BBQ"
+  },
+  "a623e0ed01d8": {
+   "en": "Caprese Pizza",
+   "es": "Pizza caprese"
+  },
+  "a69a0195e536": {
+   "en": "Aji Panca Roasted Potatoes",
+   "es": "Papas asadas con ají panca"
+  },
+  "a6be29d3ec48": {
+   "en": "Sunny California Salad",
+   "es": "Ensalada Sunny California"
+  },
+  "a6be9de8b9e3": {
+   "en": "Seared Salmon",
+   "es": "Salmón sellado"
+  },
+  "a6ce6058209a": {
+   "en": "Braised Bok Choy",
+   "es": "Bok choy braseado"
+  },
+  "a7246fde99a0": {
+   "en": "Shrimp Linguine al Limone",
+   "es": "Linguine con camarones al limón"
+  },
+  "a7a87d3f5638": {
+   "en": "Chickpea Bravas with Veggies",
+   "es": "Garbanzos bravas con vegetales"
+  },
+  "a7bcf1f0eeae": {
+   "en": "Roasted Kabocha Squash",
+   "es": "Calabaza kabocha asada"
+  },
+  "a801901cf2e8": {
+   "en": "Parmesan Crusted Tilapia",
+   "es": "Tilapia con costra de parmesano"
+  },
+  "a8309686f9cc": {
+   "en": "Sunrise Korma",
+   "es": "Korma Sunrise"
+  },
+  "a832d0743861": {
+   "en": "Butter Rice",
+   "es": "Arroz a la mantequilla"
+  },
+  "a872aea50d2f": {
+   "en": "Perfectly Roasted Yams",
+   "es": "Camotes asados"
+  },
+  "a881ea29ef7e": {
+   "en": "Stuffed Garlic Bread",
+   "es": "Pan de ajo relleno"
+  },
+  "a899697f7a78": {
+   "en": "Lentil Tostadas",
+   "es": "Tostadas de lentejas"
+  },
+  "a8b36d596335": {
+   "en": "Tacos Dorados de Papa",
+   "es": "Tacos dorados de papa"
+  },
+  "a8b9b1a7939d": {
+   "en": "Pork Chile Verde",
+   "es": "Cerdo en chile verde"
+  },
+  "a8c6545f0fbd": {
+   "en": "Potato & Sweet Pea Curry with Paneer",
+   "es": "Curry de papa y chícharos con paneer"
+  },
+  "a8de102949dc": {
+   "en": "Soy-Vinegar Braised Chicken Adobo",
+   "es": "Pollo adobo braseado en soja y vinagre"
+  },
+  "a90acc231899": {
+   "en": "Southern Style Potato Salad",
+   "es": "Ensalada de papa estilo sureño"
+  },
+  "a9508821427a": {
+   "en": "Huli Huli Chick’n",
+   "es": "Pollo Huli Huli"
+  },
+  "a9c64bca3f9a": {
+   "en": "Creole Rub Chicken",
+   "es": "Pollo con especias criollas"
+  },
+  "a9e38981d2c0": {
+   "en": "Creole Potato Salad",
+   "es": "Ensalada de papa criolla"
+  },
+  "a9e41a2fb74b": {
+   "en": "Pan Seared Pot Stickers",
+   "es": "Pot stickers sellados al sartén"
+  },
+  "a9f1df9e799f": {
+   "en": "Bread Pudding",
+   "es": "Budín de pan"
+  },
+  "a9f35c3cbb19": {
+   "en": "Chilaquiles with Roasted Tomato Salsa",
+   "es": "Chilaquiles con salsa de tomate asado"
+  },
+  "aa09d16ef65c": {
+   "en": "Stir-Fried Bok Choy with Sesame",
+   "es": "Bok choy salteado con sésamo"
+  },
+  "aa4923fd9336": {
+   "en": "Pasta Florentine",
+   "es": "Pasta Florentine"
+  },
+  "aa521edc539a": {
+   "en": "Thai Basil Chicken, Steamed Jasmine Rice and Garlic Green Beans",
+   "es": "Pollo con albahaca tailandesa, arroz jazmín al vapor y ejotes al ajo"
+  },
+  "aa74a7e84ee7": {
+   "en": "Fried Hash Brown Patties",
+   "es": "Tortitas de papa hash brown fritas"
+  },
+  "aac111afd7e4": {
+   "en": "Vietnamese Lemongrass Beef",
+   "es": "Res con limoncillo vietnamita"
+  },
+  "aade175fcc85": {
+   "en": "Frijoles Charros",
+   "es": "Frijoles charros"
+  },
+  "aaf7dd647531": {
+   "en": "French Toast with Berry Compote",
+   "es": "Pan francés con compota de bayas"
+  },
+  "aaff57904b8c": {
+   "en": "Mushroom Hongos Al Pastor",
+   "es": "Hongos al pastor"
+  },
+  "ab5c8b097ae4": {
+   "en": "The Sauce",
+   "es": "La salsa"
+  },
+  "ab9726c28258": {
+   "en": "Pickled Cabbage Slaw",
+   "es": "Ensalada de col encurtida"
+  },
+  "abd4d61b7f28": {
+   "en": "Refried Beans",
+   "es": "Frijoles refritos"
+  },
+  "abe9ae227eec": {
+   "en": "Chipotle Chickpea Potato Skins",
+   "es": "Pieles de papa con garbanzos al chipotle"
+  },
+  "ac11dd577086": {
+   "en": "Sauteed Haricot Vert with Shallots",
+   "es": "Ejotes salteados con chalotas"
+  },
+  "ac1e0c38ce07": {
+   "en": "Plant-Forward Loco Moco & Gravy",
+   "es": "Loco moco vegetal con salsa"
+  },
+  "ac1eacc0ad2d": {
+   "en": "Spicy Chicken Chipotle Pasta",
+   "es": "Pasta con pollo picante al chipotle"
+  },
+  "ac24f89d952f": {
+   "en": "Italian Sausage",
+   "es": "Salchicha italiana"
+  },
+  "ac3eb85383d6": {
+   "en": "Chicken Philly Sandwich",
+   "es": "Sándwich Philly de pollo"
+  },
+  "ac8192f2ebae": {
+   "en": "Sauteed Haricot Vert",
+   "es": "Ejotes salteados"
+  },
+  "ac9401fb87ff": {
+   "en": "Magnolia Boil",
+   "es": "Magnolia boil"
+  },
+  "ace7d14ae0a3": {
+   "en": "Thai Mushroom Curry with Nori",
+   "es": "Curry de hongos tailandés con nori"
+  },
+  "acfb63cd10c2": {
+   "en": "Beans and Rice",
+   "es": "Arroz con frijoles"
+  },
+  "ad0714b0e820": {
+   "en": "Shredded Oster Mushroom Tinga",
+   "es": "Tinga de hongos oster deshebrados"
+  },
+  "ad0fba594e94": {
+   "en": "Blackened COD",
+   "es": "Bacalao blackened"
+  },
+  "ad2da3cb1404": {
+   "en": "Wild Mushroom with Tarragon Cream",
+   "es": "Hongos silvestres con crema de estragón"
+  },
+  "ad69d51fe11b": {
+   "en": "Teriyaki Glazed Chick'n Strips",
+   "es": "Tiras de pollo teriyaki"
+  },
+  "ad70bdf7192d": {
+   "en": "Chimichurri Cauliflower",
+   "es": "Coliflor al chimichurri"
+  },
+  "ad8965f53377": {
+   "en": "Garlic Noodles",
+   "es": "Fideos al ajo"
+  },
+  "adb94943a034": {
+   "en": "Japanese Cabbage Slaw",
+   "es": "Ensalada de col japonesa"
+  },
+  "adbe86e4f624": {
+   "en": "Pomme Gratin",
+   "es": "Gratín de papas"
+  },
+  "adff4fbcba74": {
+   "en": "Beef Barbacoa",
+   "es": "Barbacoa de res"
+  },
+  "ae22677e5df3": {
+   "en": "Caramelized Cipollini Onions",
+   "es": "Cebollas cipollini caramelizadas"
+  },
+  "ae77b32c45b7": {
+   "en": "Smoky Grilled Portobello Steaks",
+   "es": "Filetes de portobello ahumados a la parrilla"
+  },
+  "ae7c5cf965cd": {
+   "en": "Ghee Basmati Rice (FloMo)",
+   "es": "Arroz basmati con ghee (FloMo)"
+  },
+  "ae95058c86f3": {
+   "en": "Lemony Garlic Green Beans",
+   "es": "Ejotes al limón y ajo"
+  },
+  "ae97ecf5c3ab": {
+   "en": "Chipotle Beef Puntas",
+   "es": "Puntas de res al chipotle"
+  },
+  "aec0bdc5a96f": {
+   "en": "Buttermilk Shrimp Po'Boy",
+   "es": "Sándwich Po'Boy de camarones en suero de leche"
+  },
+  "aed3b5b49e0c": {
+   "en": "Coconut Rice & Peas",
+   "es": "Arroz con coco y guisantes"
+  },
+  "aee7d3c316b9": {
+   "en": "Pesto Pasta Salad",
+   "es": "Ensalada de pasta al pesto"
+  },
+  "af1e5d097a42": {
+   "en": "Pancit Bihon",
+   "es": "Pancit bihon"
+  },
+  "af44a4682069": {
+   "en": "Corn on the Cob with Herb Butter",
+   "es": "Mazorca de maíz con mantequilla de hierbas"
+  },
+  "af65dc78b28a": {
+   "en": "Huevos Rancheros with Chorizo",
+   "es": "Huevos rancheros con chorizo"
+  },
+  "af7e69eb5fb3": {
+   "en": "Muwekma Ohlone Salad",
+   "es": "Ensalada Muwekma Ohlone"
+  },
+  "af83b5e9f7df": {
+   "en": "Beef Chili Colorado",
+   "es": "Chili colorado de res"
+  },
+  "afb12ba934d3": {
+   "en": "Mushroom Teriyaki",
+   "es": "Champiñones teriyaki"
+  },
+  "afc01efd15e8": {
+   "en": "Meatball Sub",
+   "es": "Submarino de albóndigas"
+  },
+  "afec40a321e4": {
+   "en": "Tator Tots",
+   "es": "Tater tots"
+  },
+  "b02f5812d513": {
+   "en": "Cheese Ravioli",
+   "es": "Ravioles de queso"
+  },
+  "b0318fd4539a": {
+   "en": "White Rice",
+   "es": "Arroz blanco"
+  },
+  "b053bab30248": {
+   "en": "Vegetables in Salsa Verde",
+   "es": "Vegetales en salsa verde"
+  },
+  "b058e911d5d2": {
+   "en": "Tamarind Pork Sinigang Stew",
+   "es": "Estofado de cerdo sinigang con tamarindo"
+  },
+  "b081c86e47d2": {
+   "en": "Samosas",
+   "es": "Samosas"
+  },
+  "b0a3cf2bd482": {
+   "en": "Braised Cabbage & Potato Stew",
+   "es": "Estofado de repollo y papa"
+  },
+  "b0a4035eb216": {
+   "en": "Roasted Sweet Potato",
+   "es": "Camote asado"
+  },
+  "b0a751d92fec": {
+   "en": "Charred Broccoli",
+   "es": "Brócoli asado"
+  },
+  "b0ad4a604036": {
+   "en": "Caribbean Vegetable Medley",
+   "es": "Mezcla de vegetales caribeños"
+  },
+  "b0af1687f4aa": {
+   "en": "Dirty Rice",
+   "es": "Dirty rice"
+  },
+  "b133fbce12e0": {
+   "en": "Cilantro Lime Salmon",
+   "es": "Salmón al cilantro y lima"
+  },
+  "b157a334db5b": {
+   "en": "Sizzlin' \"Beef\" Fajita",
+   "es": "Fajitas de \"carne\" salteantes"
+  },
+  "b19f7b5b1977": {
+   "en": "Texas Toast",
+   "es": "Pan tostado estilo Texas"
+  },
+  "b1a54a5f48c6": {
+   "en": "Gluten-Free Pasta with Marinara Sauce",
+   "es": "Pasta sin gluten con salsa marinara"
+  },
+  "b1c4e9299d6e": {
+   "en": "Coconut Rice",
+   "es": "Arroz con coco"
+  },
+  "b21b97379996": {
+   "en": "Huevos Rancheros",
+   "es": "Huevos rancheros"
+  },
+  "b232bafdcd81": {
+   "en": "Honey Citrus Glazed Pork Belly",
+   "es": "Panceta glaseada con miel y cítricos"
+  },
+  "b25317f79275": {
+   "en": "Bacon Wrapped Hot Dogs",
+   "es": "Hot dogs envueltos en tocino"
+  },
+  "b2c33398be8e": {
+   "en": "Orange Chicken",
+   "es": "Pollo a la naranja"
+  },
+  "b2f7abf0820c": {
+   "en": "Plant-Forward Bulgogi “Chicken”",
+   "es": "Bulgogi de \"pollo\" vegetal"
+  },
+  "b30dfb2bc8af": {
+   "en": "BBQ Bourbon Sticky Ribs",
+   "es": "Costillas con salsa BBQ y bourbon"
+  },
+  "b36f53cd81dc": {
+   "en": "San Francisco Cioppino",
+   "es": "Cioppino de San Francisco"
+  },
+  "b370ac27bf0c": {
+   "en": "Supreme Carnitas Nachos",
+   "es": "Nachos con carnitas supremas"
+  },
+  "b37dde070267": {
+   "en": "Butternut Squash & Arugula Salad",
+   "es": "Ensalada de calabaza butternut y rúcula"
+  },
+  "b3aed1999d84": {
+   "en": "Dal Palak",
+   "es": "Dal palak"
+  },
+  "b3bcb759f6a7": {
+   "en": "Aloo Matar Keema",
+   "es": "Aloo matar keema"
+  },
+  "b3c0079295d7": {
+   "en": "Channa Dal",
+   "es": "Channa dal"
+  },
+  "b3e9d632d351": {
+   "en": "Smoked Mashed Yams",
+   "es": "Puré de ñame ahumado"
+  },
+  "b3ea7da0ce10": {
+   "en": "Beyond Keema Aloo (Branner)",
+   "es": "Beyond keema aloo (Branner)"
+  },
+  "b428e75b3d6f": {
+   "en": "Beef Chili",
+   "es": "Chili con carne"
+  },
+  "b4548565ca34": {
+   "en": "Crispy Fish Sandwich",
+   "es": "Sándwich de pescado crujiente"
+  },
+  "b475ab3bada9": {
+   "en": "Sweet & Spicy Chicken",
+   "es": "Pollo dulce y picante"
+  },
+  "b4a518ff504a": {
+   "en": "Udon Noodles",
+   "es": "Fideos udon"
+  },
+  "b4c1fe2bf245": {
+   "en": "Korean-Style Galbi Short Ribs",
+   "es": "Costillas cortas estilo galbi coreano"
+  },
+  "b4d1b7236a26": {
+   "en": "Creamy Tomato Soup",
+   "es": "Sopa de tomate cremosa"
+  },
+  "b4ffb1018dbb": {
+   "en": "Chicken Katsu with Japanese Curry",
+   "es": "Pollo katsu con curry japonés"
+  },
+  "b557064147f6": {
+   "en": "Harvest Quinoa Salad",
+   "es": "Ensalada de quinoa harvest"
+  },
+  "b5c82d78c302": {
+   "en": "Golden Cilantro Rice",
+   "es": "Arroz dorado con cilantro"
+  },
+  "b5dffa31dcd7": {
+   "en": "Eggs, Ham & Cheese on English Muffin",
+   "es": "Huevo, jamón y queso en muffin inglés"
+  },
+  "b5e04fbed525": {
+   "en": "Cilantro Lime Chicken (FloMo)",
+   "es": "Pollo al cilantro y lima (FloMo)"
+  },
+  "b5e89ef54d67": {
+   "en": "Homestyle Beef Stew",
+   "es": "Estofado de res casero"
+  },
+  "b675336aab22": {
+   "en": "LOMO DE CERDO ADOBADO",
+   "es": "Lomo de cerdo adobado"
+  },
+  "b69f1fcc8216": {
+   "en": "Zesty Cilantro Rice Pilaf",
+   "es": "Pilaf de arroz con cilantro"
+  },
+  "b6cf6ab4c1fa": {
+   "en": "BBQ Glazed Gardein Chick'n",
+   "es": "Gardein Chick'n glaseado con BBQ"
+  },
+  "b6dffdd2c7d3": {
+   "en": "Fried Catfish",
+   "es": "Bagre frito"
+  },
+  "b6e8be899245": {
+   "en": "Crispy Falafel",
+   "es": "Falafel crujiente"
+  },
+  "b6fe67731002": {
+   "en": "Shredded Cabbage with Olive Oil",
+   "es": "Repollo rallado con aceite de oliva"
+  },
+  "b7183c8e7b22": {
+   "en": "Cucumber Raita",
+   "es": "Raita de pepino"
+  },
+  "b74942749b68": {
+   "en": "Stir Fried Brocooli",
+   "es": "Brócoli salteado"
+  },
+  "b750bb7d1f62": {
+   "en": "Mediterranean Tomato Cucumber Salad",
+   "es": "Ensalada mediterránea de tomate y pepino"
+  },
+  "b7dda503a49e": {
+   "en": "Totchos - Tatertot Nachos with Cheese Sauce, Chili con Carne, Bacon Bits, Sour Cream and Green Onions",
+   "es": "Totchos - Nachos de papa con salsa de queso, chili con carne, trozos de tocino, crema agria y cebollín"
+  },
+  "b7e00f9bee4b": {
+   "en": "Fried Fish Taco Bar",
+   "es": "Barra de tacos de pescado frito"
+  },
+  "b83eb4dece62": {
+   "en": "Sauteed Garlic Broccolini",
+   "es": "Broccolini salteado con ajo"
+  },
+  "b88c955a6cc0": {
+   "en": "Grilled Flank Steak",
+   "es": "Vacío a la parrilla"
+  },
+  "b8c640958c62": {
+   "en": "Vegetable Egg Roll",
+   "es": "Rollito de huevo vegetal"
+  },
+  "b8deebd0d2e5": {
+   "en": "Lemongrass Pork",
+   "es": "Cerdo con limoncillo"
+  },
+  "b90827bcaedd": {
+   "en": "Mujadara with Tahini Yogurt Sauce: Spiced Lentil and Basmati Rice Dish",
+   "es": "Mujadara con salsa de yogur y tahini: lentejas especiadas y arroz basmati"
+  },
+  "b9171048e5a9": {
+   "en": "Saag Kumbh",
+   "es": "Saag kumbh"
+  },
+  "b91b6ed40a40": {
+   "en": "Chilaquiles",
+   "es": "Chilaquiles"
+  },
+  "b93143b9e965": {
+   "en": "Cornbread Dressing",
+   "es": "Relleno de pan de maíz"
+  },
+  "b93315d706dd": {
+   "en": "Wild Mushroom Pizza",
+   "es": "Pizza de hongos silvestres"
+  },
+  "b9afb2dc455e": {
+   "en": "Roasted Root Vegetable Medley",
+   "es": "Variedad de vegetales de raíz asados"
+  },
+  "b9f9e6f892d4": {
+   "en": "Beef Bolognese Lasagna",
+   "es": "Lasaña boloñesa de res"
+  },
+  "b9fa6e1de1d6": {
+   "en": "Salsa Roja",
+   "es": "Salsa roja"
+  },
+  "ba352d0b24ee": {
+   "en": "Citrus Roasted Root Vegetables",
+   "es": "Vegetales de raíz asados con cítricos"
+  },
+  "ba5bddb7fe05": {
+   "en": "Lemon Garlic Green Beans",
+   "es": "Ejotes con limón y ajo"
+  },
+  "ba6b3c3f7b15": {
+   "en": "Teriyaki Tofu",
+   "es": "Tofu teriyaki"
+  },
+  "ba829a4a4dde": {
+   "en": "BYO Cup O’ Noodles",
+   "es": "Cup O’ Noodles personalizable"
+  },
+  "ba95779a369a": {
+   "en": "Potato Leek Soup",
+   "es": "Sopa de papa y puerro"
+  },
+  "ba9659072afa": {
+   "en": "Grilled Broccoli",
+   "es": "Brócoli a la parrilla"
+  },
+  "babf77c2d9d3": {
+   "en": "Roasted Asparagus & Baby Carrots",
+   "es": "Espárragos y zanahorias baby asados"
+  },
+  "bacbacfbc4f6": {
+   "en": "Battered Fried Fish",
+   "es": "Pescado rebozado y frito"
+  },
+  "bae7c0476438": {
+   "en": "Southern Pimento Mac & Cheese",
+   "es": "Macarrones con queso y pimiento al estilo sureño"
+  },
+  "bb01fa8ab14c": {
+   "en": "Vegetable Tofu Curry",
+   "es": "Curry de tofu y vegetales"
+  },
+  "bb2cc90b58ac": {
+   "en": "Marinara Sauce",
+   "es": "Salsa marinara"
+  },
+  "bb4b84784e8e": {
+   "en": "Huevos con Salchichas",
+   "es": "Huevos con salchichas"
+  },
+  "bb68b9b02633": {
+   "en": "Roasted Chicken",
+   "es": "Pollo asado"
+  },
+  "bb9e74a1aed8": {
+   "en": "Chicken Tenders & Fries",
+   "es": "Tiras de pollo con papas fritas"
+  },
+  "bba74b8ff0fb": {
+   "en": "Sweet & Spicy BBQ Chicken",
+   "es": "Pollo BBQ dulce y picante"
+  },
+  "bba97d40dbf9": {
+   "en": "Chipotle-Lime Crema",
+   "es": "Crema de chipotle y lima"
+  },
+  "bbaf9abff639": {
+   "en": "Chef's Choice Salad",
+   "es": "Ensalada del chef"
+  },
+  "bbb5c1c6718a": {
+   "en": "Crispy Chicken Caesar Wrap",
+   "es": "Wrap de pollo Caesar crujiente"
+  },
+  "bbc0c98b2298": {
+   "en": "Farm-Style Potatoes",
+   "es": "Papas estilo granja"
+  },
+  "bbd95a98d307": {
+   "en": "Miso Salmon",
+   "es": "Salmón al miso"
+  },
+  "bc30f5159611": {
+   "en": "Hard Boiled Eggs",
+   "es": "Huevos duros"
+  },
+  "bc80aa7c5b3f": {
+   "en": "Garlic Herb Roasted Chicken",
+   "es": "Pollo asado con hierbas y ajo"
+  },
+  "bcda517df9b6": {
+   "en": "Shake Smart Shakes",
+   "es": "Batidos Shake Smart"
+  },
+  "bd38b15afa09": {
+   "en": "Beignet Bar",
+   "es": "Barra de beignets"
+  },
+  "bd5ce4300d3a": {
+   "en": "Flour Tortilla",
+   "es": "Tortilla de harina"
+  },
+  "bd79d8bfa683": {
+   "en": "Moroccan Lentil Soup",
+   "es": "Sopa de lentejas marroquí"
+  },
+  "bd819332c3bf": {
+   "en": "Tamales Blanco con Masa Harina",
+   "es": "Tamales blancos con masa harina"
+  },
+  "bdc3480b4ef9": {
+   "en": "Chef's Choice Vegan Breakfast",
+   "es": "Desayuno vegano del chef"
+  },
+  "bdef8f7e01fc": {
+   "en": "Malai Curry Chicken",
+   "es": "Pollo al curry malai"
+  },
+  "be20c6c6f6f0": {
+   "en": "Roasted Potatoes & Quinoa",
+   "es": "Papas asadas con quinoa"
+  },
+  "be46358a0b2e": {
+   "en": "Sweet Potato Garlic Flatbread",
+   "es": "Pan plano de camote y ajo"
+  },
+  "be9e73d80c12": {
+   "en": "Adobong Green Beans",
+   "es": "Ejotes al adobo"
+  },
+  "bed43b2c282e": {
+   "en": "Miso Black Cod",
+   "es": "Bacalao negro al miso"
+  },
+  "bedd274d2220": {
+   "en": "Smashed Red Potatoes",
+   "es": "Papas rojas machacadas"
+  },
+  "bee76dfbf2d2": {
+   "en": "Spicy Sausage Pasta",
+   "es": "Pasta con salchicha picante"
+  },
+  "befb3aa4fe74": {
+   "en": "Char Siu Tofu",
+   "es": "Tofu char siu"
+  },
+  "befe299e6873": {
+   "en": "Garlic French Fries",
+   "es": "Papas fritas con ajo"
+  },
+  "bf1974689202": {
+   "en": "Grilled Tofu Patty",
+   "es": "Medallón de tofu a la parrilla"
+  },
+  "bf2d3e810d6e": {
+   "en": "Pizookie Dessert Bar",
+   "es": "Barra de postres Pizookie"
+  },
+  "bfa7e58d345b": {
+   "en": "Gochujang BBQ Tofu",
+   "es": "Tofu BBQ gochujang"
+  },
+  "bff43f1c593f": {
+   "en": "Omelet Station",
+   "es": "Estación de omelets"
+  },
+  "bffe6aca77a8": {
+   "en": "Dill & Roasted Garlic Mashed Potatoes",
+   "es": "Puré de papas con eneldo y ajo asado"
+  },
+  "bfff08c93298": {
+   "en": "Citrus Herb Yellow Rice",
+   "es": "Arroz amarillo con hierbas cítricas"
+  },
+  "c06bc16b8117": {
+   "en": "Soyrizo Cauliflower Sizzle",
+   "es": "Coliflor salteada con soyrizo"
+  },
+  "c0884894ab43": {
+   "en": "Jackfruit Wellington",
+   "es": "Wellington de yaca"
+  },
+  "c0ba05e5dca5": {
+   "en": "Vegetable Stir-Fry",
+   "es": "Salteado de vegetales"
+  },
+  "c0e9fa6bb841": {
+   "en": "Bacon, chicken and kimchi fried rice",
+   "es": "Arroz frito con tocino, pollo y kimchi"
+  },
+  "c0f4af1d2c60": {
+   "en": "Cornbread",
+   "es": "Pan de maíz"
+  },
+  "c1f05d8afceb": {
+   "en": "Fried Shoestring French Fries",
+   "es": "Papas fritas tipo shoestring"
+  },
+  "c2164188c67e": {
+   "en": "Blistered Cherry Tomatoes",
+   "es": "Tomates cherry asados"
+  },
+  "c21f3133a34d": {
+   "en": "Kung Pao Chicken",
+   "es": "Pollo Kung Pao"
+  },
+  "c2420fa4c57f": {
+   "en": "Grilled Teriyaki Chicken Protein Bowl",
+   "es": "Bowl de proteína con pollo teriyaki a la parrilla"
+  },
+  "c2d23ec7b146": {
+   "en": "Maple Glazed Yams",
+   "es": "Camotes glaseados con arce"
+  },
+  "c2f32f615cee": {
+   "en": "Fire Cornbread",
+   "es": "Pan de maíz picante"
+  },
+  "c2f9186a799f": {
+   "en": "Cuban-Spiced Zucchini & Peppers",
+   "es": "Calabacines y pimientos con especias cubanas"
+  },
+  "c344d1f6c95c": {
+   "en": "Tamil Nadu Fish Curry",
+   "es": "Curry de pescado estilo Tamil Nadu"
+  },
+  "c373b4c6a34b": {
+   "en": "Grilled Persimmon Salad",
+   "es": "Ensalada de caqui a la parrilla"
+  },
+  "c3905b1b2de9": {
+   "en": "Wild Rice & Mushroom Pilaf",
+   "es": "Pilaf de arroz salvaje y champiñones"
+  },
+  "c391bc87a5d0": {
+   "en": "Veggie Jambalaya",
+   "es": "Jambalaya vegetal"
+  },
+  "c393055e50c7": {
+   "en": "Chicken Stir-Fry",
+   "es": "Salteado de pollo"
+  },
+  "c39361a9960f": {
+   "en": "Chick'n Strips",
+   "es": "Tiras de pollo vegetal"
+  },
+  "c3ca3e9658c5": {
+   "en": "Lemongrass Chicken Potsticker",
+   "es": "Potsticker de pollo y limoncillo"
+  },
+  "c3cb7f99d822": {
+   "en": "Fry Bread",
+   "es": "Pan frito"
+  },
+  "c3d4691b2e6c": {
+   "en": "Blueberry Pancakes",
+   "es": "Panqueques de arándanos"
+  },
+  "c41d1f54d8ef": {
+   "en": "Lemongrass Tofu & Mushrooms",
+   "es": "Tofu y champiñones con limoncillo"
+  },
+  "c45a0e56c884": {
+   "en": "Garlic Noodle",
+   "es": "Fideos al ajo"
+  },
+  "c460a09a7385": {
+   "en": "Mini Pulled Pork Sliders",
+   "es": "Mini hamburguesas de cerdo deshebrado"
+  },
+  "c4f68d1824cd": {
+   "en": "Ginger-Glazed Carrots",
+   "es": "Zanahorias glaseadas con jengibre"
+  },
+  "c5203660599d": {
+   "en": "Twice Fried Eggplant",
+   "es": "Berenjena frita doble"
+  },
+  "c534c5bef986": {
+   "en": "Chicken Satay",
+   "es": "Satay de pollo"
+  },
+  "c5528643420c": {
+   "en": "Shrimp Tostadas",
+   "es": "Tostadas de camarón"
+  },
+  "c55dfe6d0c41": {
+   "en": "\"Egg\" & Tofu Frittata",
+   "es": "Frittata de \"huevo\" y tofu"
+  },
+  "c56402bff722": {
+   "en": "Daal Palak",
+   "es": "Daal palak"
+  },
+  "c56e639a46de": {
+   "en": "Assorted Bread & Butter",
+   "es": "Variedad de panes y mantequilla"
+  },
+  "c572b6b661ee": {
+   "en": "Braised Greens",
+   "es": "Verduras estofadas"
+  },
+  "c579474200a3": {
+   "en": "Japchae Glass Noodles",
+   "es": "Fideos de cristal japchae"
+  },
+  "c596a422a08d": {
+   "en": "Plant Powered \"Eggs”",
+   "es": "\"Huevos\" a base de plantas"
+  },
+  "c5a5844a39d6": {
+   "en": "Pulled BBQ Jackfruit & King Oyster Sandwich",
+   "es": "Sándwich de jackfruit deshebrado con BBQ y setas king oyster"
+  },
+  "c5bf59f6f96d": {
+   "en": "Braised Southern-Style Collard Greens",
+   "es": "Col rizada estofada al estilo sureño"
+  },
+  "c5c51b5fd710": {
+   "en": "Balsamic Brussels Sprouts",
+   "es": "Coles de Bruselas al balsámico"
+  },
+  "c5c527846fb2": {
+   "en": "Wild Mushroom Bourguignon",
+   "es": "Bourguignon de champiñones silvestres"
+  },
+  "c5cfb5a114ec": {
+   "en": "Smoked Brisket Slider",
+   "es": "Mini hamburguesa de brisket ahumado"
+  },
+  "c5e6dd7e354d": {
+   "en": "Garlic Rice",
+   "es": "Arroz al ajo"
+  },
+  "c6087ff67bdb": {
+   "en": "Walking Taco",
+   "es": "Walking taco"
+  },
+  "c63cc418b184": {
+   "en": "Lentil Tofu Katsu Curry",
+   "es": "Curry katsu de lentejas y tofu"
+  },
+  "c659130e602e": {
+   "en": "Hearty Minestrone",
+   "es": "Minestrone sustancioso"
+  },
+  "c659350003bb": {
+   "en": "Butternut Squash Lasagna",
+   "es": "Lasaña de calabaza butternut"
+  },
+  "c68fde5b1223": {
+   "en": "Huevos a la Mexicana",
+   "es": "Huevos a la mexicana"
+  },
+  "c6b7d3e01f09": {
+   "en": "Creamy Tofu Tarragon",
+   "es": "Tofu cremoso al estragón"
+  },
+  "c6de0c928041": {
+   "en": "Pozole Rojo",
+   "es": "Pozole rojo"
+  },
+  "c7019b7dab4e": {
+   "en": "Garden Fresh Salad",
+   "es": "Ensalada fresca del huerto"
+  },
+  "c77693105729": {
+   "en": "Balsamic Roasted Peppers & Onions",
+   "es": "Pimientos y cebollas asados al balsámico"
+  },
+  "c78bcd1fc074": {
+   "en": "Creamy Chicken Alfredo Pasta",
+   "es": "Pasta Alfredo cremosa con pollo"
+  },
+  "c7c49319693d": {
+   "en": "Coconut Chicken Curry",
+   "es": "Curry de pollo con coco"
+  },
+  "c7df8cbd433c": {
+   "en": "Pasta with Garlic & Lemon",
+   "es": "Pasta con ajo y limón"
+  },
+  "c7f757efdea2": {
+   "en": "Lentil Stew with Berbere Spices",
+   "es": "Estofado de lentejas con especias berbere"
+  },
+  "c7fe923e3b8e": {
+   "en": "Caribbean-Spiced Carrots",
+   "es": "Zanahorias con especias caribeñas"
+  },
+  "c8537b9ae9c2": {
+   "en": "Tofu Bulgogi",
+   "es": "Tofu bulgogi"
+  },
+  "c85935338a81": {
+   "en": "BBQ Beef Brisket",
+   "es": "Pecho de res a la barbacoa"
+  },
+  "c8a55f477cb4": {
+   "en": "Beef & Broccoli with Rice",
+   "es": "Res con brócoli y arroz"
+  },
+  "c8ad011b6384": {
+   "en": "Cantonese Char Siu Pork",
+   "es": "Cerdo char siu cantonés"
+  },
+  "c8bb9e6f877a": {
+   "en": "Greek Frittata",
+   "es": "Frittata griega"
+  },
+  "c8c0ab0d74b2": {
+   "en": "Greek Lemon Chicken & Potatoes",
+   "es": "Pollo con papas y limón al estilo griego"
+  },
+  "c8d8fcd93726": {
+   "en": "Plant-Forward \"Chick'n\" Ropa Vieja",
+   "es": "Ropa vieja de \"pollo\" vegetal"
+  },
+  "c8dd8ea4d1f0": {
+   "en": "Korean Fried Chicken Cutlet",
+   "es": "Milanesa de pollo frito coreano"
+  },
+  "ca64eebe31c9": {
+   "en": "Brioche Stuffing",
+   "es": "Relleno de brioche"
+  },
+  "cb302502718a": {
+   "en": "Squash Medley Tacos",
+   "es": "Tacos de mezcla de calabaza"
+  },
+  "cb360cc898a2": {
+   "en": "Mushroom Bourguignon",
+   "es": "Bourguignon de champiñones"
+  },
+  "cb4cc6a75ef2": {
+   "en": "Teriyaki Chicken Bowl",
+   "es": "Bowl de pollo teriyaki"
+  },
+  "cb617e69f862": {
+   "en": "Spicy Gochujang Korean Chicken Wings",
+   "es": "Alitas de pollo coreanas picantes con gochujang"
+  },
+  "cb6fd035fd15": {
+   "en": "Eggplant with Black Bean Sauce",
+   "es": "Berenjena con salsa de frijoles negros"
+  },
+  "cb72cee636b4": {
+   "en": "Grilled Vegan/Vegetarian",
+   "es": "Platillo a la parrilla vegano/vegetariano"
+  },
+  "cb7c34004f15": {
+   "en": "Frijoles Negros Refritos",
+   "es": "Frijoles negros refritos"
+  },
+  "cbb23af96975": {
+   "en": "Roasted Fennel and Cherry Tomatoes",
+   "es": "Hinojo y tomates cherry asados"
+  },
+  "cbcf9fa63dfc": {
+   "en": "Cajun Spiced Brussels",
+   "es": "Coles de Bruselas con especias cajún"
+  },
+  "cbeaa895acd5": {
+   "en": "Avocado Toast",
+   "es": "Tostada de aguacate"
+  },
+  "cbeecc7ad9ab": {
+   "en": "Cilantro Lime Cod",
+   "es": "Bacalao con cilantro y lima"
+  },
+  "cc120766dfc9": {
+   "en": "Aji Amarillo Roasted Potatoes",
+   "es": "Papas asadas con ají amarillo"
+  },
+  "cc1fd27ec57a": {
+   "en": "Marinara Meatball Sub",
+   "es": "Sub de albóndigas en salsa marinara"
+  },
+  "cc24323d1acf": {
+   "en": "Baked Beans",
+   "es": "Frijoles horneados"
+  },
+  "cca0f08411d3": {
+   "en": "Kalua Pork",
+   "es": "Cerdo kalua"
+  },
+  "cce77b5c28c2": {
+   "en": "Beef Souvlaki",
+   "es": "Souvlaki de res"
+  },
+  "ccf8b5079c93": {
+   "en": "Beef Bourguignon",
+   "es": "Boeuf bourguignon"
+  },
+  "cd24a7cef6df": {
+   "en": "Buttered Green Beans with Shallots",
+   "es": "Ejotes con mantequilla y chalotas"
+  },
+  "cd274e2a99ba": {
+   "en": "Fried Sweet Plantains",
+   "es": "Plátanos maduros fritos"
+  },
+  "cd5a06885e4d": {
+   "en": "Baked Pasta Marinara",
+   "es": "Pasta horneada en salsa marinara"
+  },
+  "cd60b00ba776": {
+   "en": "BBQ Pork Bahn Mi",
+   "es": "Banh mi de cerdo a la barbacoa"
+  },
+  "cd64254691b5": {
+   "en": "Crispy Chili Soy Green Beans",
+   "es": "Ejotes crujientes con chile y soja"
+  },
+  "cd7bb0fc42af": {
+   "en": "Vegetable Yakisoba",
+   "es": "Yakisoba de vegetales"
+  },
+  "cd96bb37584b": {
+   "en": "Pulled BBQ Jackfruit Sandwich",
+   "es": "Sándwich de jackfruit deshebrado a la barbacoa"
+  },
+  "cdb16a7b2877": {
+   "en": "Fried Catfish Po'Boy",
+   "es": "Po'boy de bagre frito"
+  },
+  "cdbcab53ce36": {
+   "en": "Arroz a la Mexicana",
+   "es": "Arroz a la mexicana"
+  },
+  "cdd17124f066": {
+   "en": "Chicken & Waffles with Apple Syrup",
+   "es": "Pollo con waffles y jarabe de manzana"
+  },
+  "ce5e909d4a4d": {
+   "en": "Burger Station",
+   "es": "Estación de hamburguesas"
+  },
+  "ce6193a5885c": {
+   "en": "Sizzlin \"Beef\" Fajita Bowl",
+   "es": "Bowl de fajitas de \"res\" caliente"
+  },
+  "ce6bad264945": {
+   "en": "Jamaican Jerk Mango Salsa",
+   "es": "Salsa de mango jerk jamaiquino"
+  },
+  "ce961d55a090": {
+   "en": "Korean Chicken Katsu with Spicy Sauce (FloMo)",
+   "es": "Pollo katsu coreano con salsa picante (FloMo)"
+  },
+  "ce9f888db3b4": {
+   "en": "Creamy Mashed Potatoes",
+   "es": "Puré de papas cremoso"
+  },
+  "cea3a82500af": {
+   "en": "Ginger Apple Cider with Assorted Sweets",
+   "es": "Sidra de manzana con jengibre y dulces variados"
+  },
+  "cea3adb65834": {
+   "en": "Miso Honey Glazed Cabbage",
+   "es": "Repollo glaseado con miel y miso"
+  },
+  "ceaf046a7426": {
+   "en": "Homestyle Chicken Soup",
+   "es": "Sopa de pollo casera"
+  },
+  "ced668d6aecc": {
+   "en": "S'mores Bar",
+   "es": "Barra de s'mores"
+  },
+  "cedd744dd3b4": {
+   "en": "Garlicy Green Beans",
+   "es": "Ejotes al ajo"
+  },
+  "cfbec1603e6f": {
+   "en": "Pot Roast with Root Veggies",
+   "es": "Carne asada con vegetales de raíz"
+  },
+  "cfc7a7bda3f4": {
+   "en": "Chilaquiles with Fried Egg",
+   "es": "Chilaquiles con huevo estrellado"
+  },
+  "cfd6ef0cb952": {
+   "en": "Lemongrass Tofu & Shiitake Mushrooms",
+   "es": "Tofu con limoncillo y champiñones shiitake"
+  },
+  "d000c88c3879": {
+   "en": "Pepperoni Pizza",
+   "es": "Pizza de pepperoni"
+  },
+  "d0386d32941a": {
+   "en": "BBQ Spaghetti",
+   "es": "Espagueti con salsa BBQ"
+  },
+  "d0a26b5028a2": {
+   "en": "Gungjung Tteokbokki",
+   "es": "Gungjung tteokbokki"
+  },
+  "d0c4ce297934": {
+   "en": "Egg, Sausage, Cheese & Avo Sandwich",
+   "es": "Sándwich de huevo, salchicha, queso y aguacate"
+  },
+  "d0cf6dc33730": {
+   "en": "Lamb Vindaloo",
+   "es": "Cordero vindaloo"
+  },
+  "d1102c756972": {
+   "en": "Bolognese Sauce",
+   "es": "Salsa boloñesa"
+  },
+  "d1bf15a7c58a": {
+   "en": "Vegetable Jhalfrezi",
+   "es": "Jhalfrezi de vegetales"
+  },
+  "d1eb726162bf": {
+   "en": "Jamaican Jerk Jackfruit",
+   "es": "Yaca jerk jamaiquina"
+  },
+  "d1ef424e95cb": {
+   "en": "Mango Sago",
+   "es": "Mango sago"
+  },
+  "d1f40195e02e": {
+   "en": "Pickled Carrot & Daikon",
+   "es": "Zanahoria y daikon encurtidos"
+  },
+  "d260158ff1bd": {
+   "en": "Pho Noodle Station",
+   "es": "Estación de fideos pho"
+  },
+  "d2c2ebabdbf7": {
+   "en": "Borracho Pinto Beans",
+   "es": "Frijoles pintos borrachos"
+  },
+  "d2e5cd41c668": {
+   "en": "Grilled Sourdough Baguette",
+   "es": "Baguette de masa madre a la parrilla"
+  },
+  "d3119ad31c85": {
+   "en": "Honey Garlic Pork Belly, Steamed Jasmine Rice, Seasonal Steamed Vegetables",
+   "es": "Panceta de cerdo con miel y ajo, arroz jazmín al vapor y vegetales de temporada al vapor"
+  },
+  "d344ff05e453": {
+   "en": "Papas Bravas with Roasted Garlic Mayo",
+   "es": "Papas bravas con mayonesa de ajo rostizado"
+  },
+  "d359eb7b8ba4": {
+   "en": "Impossible Burger",
+   "es": "Hamburguesa Impossible"
+  },
+  "d36dbb63797d": {
+   "en": "Curried Tofu",
+   "es": "Tofu al curry"
+  },
+  "d37896097b34": {
+   "en": "Chicken Tender",
+   "es": "Tira de pollo"
+  },
+  "d3ad2fe14444": {
+   "en": "Pork Carnitas",
+   "es": "Carnitas de cerdo"
+  },
+  "d3cfba7da265": {
+   "en": "Curried Black Eyed Peas",
+   "es": "Frijoles de ojo negro al curry"
+  },
+  "d3f4a7203ca2": {
+   "en": "Beef Taco Station",
+   "es": "Estación de tacos de res"
+  },
+  "d3f6c35987ea": {
+   "en": "Grilled NY Steak with Peppercorn Sauce",
+   "es": "Filete NY a la parrilla con salsa de pimienta"
+  },
+  "d447de85b4fc": {
+   "en": "Mojo Chicken",
+   "es": "Pollo mojo"
+  },
+  "d461b9b9e1be": {
+   "en": "Succotash",
+   "es": "Succotash"
+  },
+  "d4e44082e4cf": {
+   "en": "Zucchini & Corn",
+   "es": "Calabacín y maíz"
+  },
+  "d4f714951021": {
+   "en": "Jerked Pork Belly, Rasta Pasta, and Ripe Fried Plantains",
+   "es": "Panceta de cerdo jerk, rasta pasta y plátanos maduros fritos"
+  },
+  "d4fdae20273f": {
+   "en": "Plant-forward Gumbo",
+   "es": "Gumbo vegetal"
+  },
+  "d505e355af4e": {
+   "en": "Filipino Mushroom Tofu Adobo",
+   "es": "Adobo filipino de tofu y champiñones"
+  },
+  "d50f397b480c": {
+   "en": "Beyond Bolognese Pasta Bake",
+   "es": "Pasta al horno con boloñesa de Beyond"
+  },
+  "d52eb82f4547": {
+   "en": "Southern Seafood Boil",
+   "es": "Hervido de mariscos al estilo sureño"
+  },
+  "d5350ce0369e": {
+   "en": "Sesame Cucumber Salad",
+   "es": "Ensalada de pepino con sésamo"
+  },
+  "d56b30d8d354": {
+   "en": "Chicken Posole Soup",
+   "es": "Sopa de pozole de pollo"
+  },
+  "d598aca314a9": {
+   "en": "Lemongrass Chicken",
+   "es": "Pollo con limoncillo"
+  },
+  "d60ebb2da1ab": {
+   "en": "Mandarin Ginger Tofu Stir-Fry",
+   "es": "Salteado de tofu con jengibre y mandarina"
+  },
+  "d6297b93a5df": {
+   "en": "Blackened Catfish with Spicy Lime Aioli",
+   "es": "Bagre blackened con aioli de lima picante"
+  },
+  "d6a949b9815e": {
+   "en": "Chicken Tikka Masala",
+   "es": "Chicken tikka masala"
+  },
+  "d7136f0eaed2": {
+   "en": "Spicy Cabbage Coleslaw",
+   "es": "Ensalada de col picante"
+  },
+  "d76b600a205c": {
+   "en": "Harissa Braised Chicken",
+   "es": "Pollo braseado con harissa"
+  },
+  "d773f86f39d5": {
+   "en": "Cajun Blackened Chicken",
+   "es": "Pollo blackened cajún"
+  },
+  "d790b6ee5b86": {
+   "en": "Kimchi Braised Pork",
+   "es": "Cerdo braseado con kimchi"
+  },
+  "d7955171b6bd": {
+   "en": "Pepian de Pollo",
+   "es": "Pepian de pollo"
+  },
+  "d7b0b5df40ae": {
+   "en": "Sweet Potato Mash",
+   "es": "Puré de camote"
+  },
+  "d7bd5cc28d8f": {
+   "en": "Beef Stroganoff",
+   "es": "Stroganoff de res"
+  },
+  "d7f707929b44": {
+   "en": "Pesto Sauce",
+   "es": "Salsa pesto"
+  },
+  "d81c466fbdb5": {
+   "en": "Chicken Dumpling Soup",
+   "es": "Sopa de dumplings de pollo"
+  },
+  "d862a42ccb5e": {
+   "en": "Maple Roasted Root Vegetables",
+   "es": "Vegetales de raíz asados con arce"
+  },
+  "d898c33f40e9": {
+   "en": "Coconut & Lime Chicken Curry",
+   "es": "Curry de pollo con coco y lima"
+  },
+  "d8dd507c1e92": {
+   "en": "Fall Harvest Salad",
+   "es": "Ensalada de cosecha de otoño"
+  },
+  "d9196af0a77a": {
+   "en": "Garlic Breadstick",
+   "es": "Palitroque de ajo"
+  },
+  "d9520ffeae92": {
+   "en": "Mushroom & Just Egg Gyudon",
+   "es": "Gyudon de champiñones y Just Egg"
+  },
+  "d96bd4c63a09": {
+   "en": "Creole Okra Ratatouille",
+   "es": "Ratatouille de quimbombó criollo"
+  },
+  "d9a0c85e05b2": {
+   "en": "Chocolate Chip Pancakes",
+   "es": "Panqueques con chispas de chocolate"
+  },
+  "d9a3f416baa8": {
+   "en": "Harissa Tofu",
+   "es": "Tofu con harissa"
+  },
+  "d9be58decf35": {
+   "en": "Hush Puppies",
+   "es": "Hush puppies"
+  },
+  "d9f617f657fc": {
+   "en": "Maple Glazed Turkey Plate",
+   "es": "Plato de pavo glaseado con arce"
+  },
+  "d9f7ce1410a9": {
+   "en": "Malaysian Inspired Laksa",
+   "es": "Laksa de inspiración malasia"
+  },
+  "da2b28adcc57": {
+   "en": "Southern Pork Stew",
+   "es": "Estofado de cerdo al estilo sureño"
+  },
+  "da312fc70633": {
+   "en": "Cauliflower Tacos",
+   "es": "Tacos de coliflor"
+  },
+  "da469b376374": {
+   "en": "Elote",
+   "es": "Elote"
+  },
+  "da48c9dfa5ad": {
+   "en": "Five Spice Chicken",
+   "es": "Pollo con cinco especias"
+  },
+  "da4943a847b4": {
+   "en": "Butter Chicken",
+   "es": "Butter chicken"
+  },
+  "dab26acddafd": {
+   "en": "Chef's Choice Smoothie",
+   "es": "Smoothie de elección del chef"
+  },
+  "dafe912216f1": {
+   "en": "Gochujang Potatoes, Chickpeas & Quinoa Stew",
+   "es": "Estofado de papas, garbanzos y quinoa con gochujang"
+  },
+  "db7492bad28d": {
+   "en": "Szechuan Green Beans",
+   "es": "Ejotes estilo Szechuan"
+  },
+  "dc03cf3caa74": {
+   "en": "BBQ Pork Rib",
+   "es": "Costilla de cerdo a la barbacoa"
+  },
+  "dc4d570a41e1": {
+   "en": "Black Bean Burger with Bun",
+   "es": "Hamburguesa de frijoles negros en pan"
+  },
+  "dc5e1403d970": {
+   "en": "Imitation Crab Louis Lettuce Cups",
+   "es": "Hojas de lechuga con imitación de cangrejo estilo Louis"
+  },
+  "dc80a7c19291": {
+   "en": "Carnitas",
+   "es": "Carnitas"
+  },
+  "dc84500374b2": {
+   "en": "Fall Trifle",
+   "es": "Trifle de otoño"
+  },
+  "dc91f8649711": {
+   "en": "BBQ Baked Beans",
+   "es": "Frijoles horneados con BBQ"
+  },
+  "dc9ea5f39a91": {
+   "en": "Rasta Pasta",
+   "es": "Rasta pasta"
+  },
+  "dcbbf938d2ca": {
+   "en": "Shredded Oyster Mushroom Tinga",
+   "es": "Tinga de setas ostra deshebradas"
+  },
+  "dcccf92d99b0": {
+   "en": "Eggplant Schnitzel",
+   "es": "Schnitzel de berenjena"
+  },
+  "dd075a809709": {
+   "en": "Jasmine Rice",
+   "es": "Arroz jazmín"
+  },
+  "dd3bf5d9dd78": {
+   "en": "Gyūdon",
+   "es": "Gyūdon"
+  },
+  "ddab1abc69fe": {
+   "en": "Chicken Apple Sausage",
+   "es": "Salchicha de pollo y manzana"
+  },
+  "ddb06a05e2f5": {
+   "en": "Pepperoni Pizza (Branner)",
+   "es": "Pizza de pepperoni (Branner)"
+  },
+  "de146e293600": {
+   "en": "Black Bean Burger",
+   "es": "Hamburguesa de frijoles negros"
+  },
+  "de365e9377c3": {
+   "en": "Fagioli Pasta",
+   "es": "Pasta fagioli"
+  },
+  "de3bf65eb138": {
+   "en": "Wilbur Udon Station",
+   "es": "Estación de udon Wilbur"
+  },
+  "de812546212b": {
+   "en": "Hoppin’ John Black-Eyed Peas & Rice",
+   "es": "Arroz con frijoles de ojo negro (Hoppin’ John)"
+  },
+  "de8ec4b71ee7": {
+   "en": "Sauteed Kale",
+   "es": "Col rizada salteada"
+  },
+  "dec90394a60e": {
+   "en": "Spicy Aji Panca Tofu",
+   "es": "Tofu picante con ají panca"
+  },
+  "def6e21bb9a3": {
+   "en": "Braised Green Beans & Caramelized Onions",
+   "es": "Ejotes braseados con cebollas caramelizadas"
+  },
+  "df135f9226ef": {
+   "en": "Creamy Pasta with Vegetables",
+   "es": "Pasta cremosa con vegetales"
+  },
+  "df18d10146b5": {
+   "en": "Mongolian Chicken Stir-Fry",
+   "es": "Pollo mongol salteado"
+  },
+  "df2e88852ace": {
+   "en": "Cioppino",
+   "es": "Cioppino"
+  },
+  "df418a74e349": {
+   "en": "Chive Mashed Potatoes",
+   "es": "Puré de papas con cebollín"
+  },
+  "df4ae881f436": {
+   "en": "Hot Honey BBQ Chicken",
+   "es": "Pollo BBQ con miel picante"
+  },
+  "df699166fba7": {
+   "en": "Butternut Squash Ravioli",
+   "es": "Ravioles de calabaza butternut"
+  },
+  "df8b3ae39ea8": {
+   "en": "Morisqueta",
+   "es": "Morisqueta"
+  },
+  "e0636d4775e1": {
+   "en": "Jamaican \"Gardein\" Vegetable Curry",
+   "es": "Curry vegetal jamaiquino \"Gardein\""
+  },
+  "e09aed9e8ee8": {
+   "en": "Pickled Red Onions",
+   "es": "Cebollas rojas encurtidas"
+  },
+  "e0d529a207bf": {
+   "en": "Tamales",
+   "es": "Tamales"
+  },
+  "e1203d92de6c": {
+   "en": "Kimchi Tofu",
+   "es": "Tofu con kimchi"
+  },
+  "e1611d88f6bf": {
+   "en": "Taco Veggie Crumbles",
+   "es": "Tacos con migas vegetales"
+  },
+  "e1ac48cf172f": {
+   "en": "Spinach Pesto Pasta",
+   "es": "Pasta con pesto de espinacas"
+  },
+  "e1b4760c09f9": {
+   "en": "Crispy Gochujang Tofu & Shiitake Mushrooms",
+   "es": "Tofu crujiente con gochujang y hongos shiitake"
+  },
+  "e1d8a103351a": {
+   "en": "Turkey Bacon",
+   "es": "Tocino de pavo"
+  },
+  "e1e5e0a6c187": {
+   "en": "Plant-Forward Chick'n Al Pastor",
+   "es": "Pollo vegetal al pastor"
+  },
+  "e1eb5b16e7f8": {
+   "en": "Chimichurri Steak",
+   "es": "Filete con chimichurri"
+  },
+  "e1fe6b22ac4c": {
+   "en": "Stir-Fried Korean Vegetables",
+   "es": "Vegetales coreanos salteados"
+  },
+  "e200fce5a44e": {
+   "en": "Crimson Fire Sauce",
+   "es": "Salsa Crimson Fire"
+  },
+  "e23a09a5e994": {
+   "en": "Parmesan Herb Risotto",
+   "es": "Risotto de parmesano y hierbas"
+  },
+  "e28dc36b3fa8": {
+   "en": "Thai Basil Fried Rice w/ JustEgg",
+   "es": "Arroz frito con albahaca tailandesa y JustEgg"
+  },
+  "e2b0aa79026e": {
+   "en": "NorKale Salad",
+   "es": "Ensalada de norkale"
+  },
+  "e2f28d26cb8a": {
+   "en": "Allergy Friendly Burger Bar",
+   "es": "Bar de hamburguesas para alérgicos"
+  },
+  "e303dd1f31c3": {
+   "en": "Creamed Corn and Pasilla Pepper",
+   "es": "Maíz cremoso con chile pasilla"
+  },
+  "e36586673323": {
+   "en": "Creamy Tarragon Chicken",
+   "es": "Pollo cremoso al estragón"
+  },
+  "e36668490315": {
+   "en": "Lemony Charred Cabbage",
+   "es": "Repollo asado al limón"
+  },
+  "e37b74759d0e": {
+   "en": "Charred Broccolini",
+   "es": "Broccolini asado"
+  },
+  "e3afa051d9bb": {
+   "en": "Grilled Chicken Tocino",
+   "es": "Pollo a la parrilla con tocino"
+  },
+  "e3b9c5f2de7d": {
+   "en": "Lemon Herb Asparagus",
+   "es": "Espárragos al limón y hierbas"
+  },
+  "e3c4c7463e72": {
+   "en": "Citrus Cuban Chicken",
+   "es": "Pollo cubano cítrico"
+  },
+  "e3dfe5658090": {
+   "en": "Sweet & Sour Braised Chicken",
+   "es": "Pollo estofado agridulce"
+  },
+  "e3f94b0624ca": {
+   "en": "Roasted Broccoli",
+   "es": "Brócoli asado"
+  },
+  "e43164b1eed6": {
+   "en": "Chicken Wing Bar",
+   "es": "Barra de alitas de pollo"
+  },
+  "e4c6b0a336df": {
+   "en": "Barley, Arugula & Goat Cheese Salad",
+   "es": "Ensalada de cebada, rúcula y queso de cabra"
+  },
+  "e506cf52d5ef": {
+   "en": "Creole Shrimp",
+   "es": "Camarones criollos"
+  },
+  "e5b335e732a5": {
+   "en": "Honey Thyme Glazed Carrots",
+   "es": "Zanahorias glaseadas con miel y tomillo"
+  },
+  "e5b8f9728ec1": {
+   "en": "Grilled Cajun Steak Protein Bowl",
+   "es": "Bowl de proteína con bistec cajún a la parrilla"
+  },
+  "e60eac5a3ff5": {
+   "en": "Totopos (Fried Tortilla Chips)",
+   "es": "Totopos (chips de tortilla)"
+  },
+  "e6394ffa4195": {
+   "en": "Beef Breakfast Sausage",
+   "es": "Salchicha de res para el desayuno"
+  },
+  "e639cae5d3c2": {
+   "en": "Chickpea & Spinach Stew",
+   "es": "Estofado de garbanzos y espinacas"
+  },
+  "e68397e4c346": {
+   "en": "Chorizo Tostada",
+   "es": "Tostada de chorizo"
+  },
+  "e6876edfcd5a": {
+   "en": "Chicken Cacciatore",
+   "es": "Pollo cacciatore"
+  },
+  "e6bbd372d8bd": {
+   "en": "Five Happiness Fried Rice",
+   "es": "Arroz frito de la felicidad"
+  },
+  "e6c75c131ad4": {
+   "en": "Seared King Oyster Mushroom",
+   "es": "Setas king oyster selladas"
+  },
+  "e72d5c7283c4": {
+   "en": "Au Jus",
+   "es": "Au jus"
+  },
+  "e73e962de194": {
+   "en": "Kahlua Pork",
+   "es": "Cerdo con Kahlua"
+  },
+  "e74e8a439e1a": {
+   "en": "Lemon Beurre Blanc",
+   "es": "Salsa beurre blanc al limón"
+  },
+  "e7579de20495": {
+   "en": "Assorted Allergy-Friendly Items",
+   "es": "Variedad de alimentos para alérgicos"
+  },
+  "e777fc70b498": {
+   "en": "Spicy Black Beans",
+   "es": "Frijoles negros picantes"
+  },
+  "e799bf6421d6": {
+   "en": "Soyrizo Hash",
+   "es": "Hash de soyrizo"
+  },
+  "e7f69acf1c33": {
+   "en": "Peruvian Aji Chicken",
+   "es": "Pollo al ají peruano"
+  },
+  "e8692de3d391": {
+   "en": "Roasted Garlic Alfredo sauce",
+   "es": "Salsa Alfredo con ajo asado"
+  },
+  "e927cf3b32dd": {
+   "en": "Eggplant Caponata",
+   "es": "Caponata de berenjena"
+  },
+  "e98a1914f2cc": {
+   "en": "Korean Gochujang Chicken",
+   "es": "Pollo coreano con gochujang"
+  },
+  "e9eab263bba4": {
+   "en": "Grilled Portobello Panini",
+   "es": "Panini de portobello a la parrilla"
+  },
+  "ea062de9c248": {
+   "en": "Warm Roti",
+   "es": "Roti caliente"
+  },
+  "ea9d407fd68d": {
+   "en": "Garlic Green Peas",
+   "es": "Guisantes al ajo"
+  },
+  "eaa8f7d6da84": {
+   "en": "Spanish-Style Garlic Mushroom Tofu",
+   "es": "Tofu con champiñones al ajo estilo español"
+  },
+  "eb13cc0ddf29": {
+   "en": "Simmered Onions",
+   "es": "Cebollas guisadas"
+  },
+  "eb2932382f79": {
+   "en": "Vegetable Burrito",
+   "es": "Burrito vegetal"
+  },
+  "eb2b0b0c3ca7": {
+   "en": "French Fries",
+   "es": "Papas fritas"
+  },
+  "eb87abae29c4": {
+   "en": "Herb Roasted Potatoes",
+   "es": "Papas asadas con hierbas"
+  },
+  "ebcdf2ad17f0": {
+   "en": "Chipotle Aioli",
+   "es": "Alioli de chipotle"
+  },
+  "ebcf48a11348": {
+   "en": "Cold Noodles with Chicken Satay",
+   "es": "Fideos fríos con satay de pollo"
+  },
+  "ec25d8202aa3": {
+   "en": "Miso Glazed Eggplant",
+   "es": "Berenjena con glaseado de miso"
+  },
+  "ec35f62fcf30": {
+   "en": "Mushroom Etouffee",
+   "es": "Etouffee de champiñones"
+  },
+  "ec4072989281": {
+   "en": "Cajun Tofu",
+   "es": "Tofu cajún"
+  },
+  "ec9c54c0c627": {
+   "en": "Aji Amarillo Sweet Potatoes",
+   "es": "Camotes con ají amarillo"
+  },
+  "ecbc2cfda5cb": {
+   "en": "Oxtail Stew",
+   "es": "Estofado de rabo de buey"
+  },
+  "ecbebfcdae1d": {
+   "en": "Buffalo Cauliflower",
+   "es": "Coliflor buffalo"
+  },
+  "ecdea9d085c0": {
+   "en": "Dill Pickles",
+   "es": "Pepinillos al eneldo"
+  },
+  "ece18e08630f": {
+   "en": "Smoky BBQ Jackfruit & Pinto Bean",
+   "es": "Jackfruit y frijoles pintos a la barbacoa ahumada"
+  },
+  "ece49123c740": {
+   "en": "Fried Okra",
+   "es": "Okra frita"
+  },
+  "ecf46cf1a2ee": {
+   "en": "Vegetable Pad Thai with Tofu",
+   "es": "Pad Thai vegetal con tofu"
+  },
+  "ed130a4cf5ea": {
+   "en": "Creamed Spinach",
+   "es": "Espinacas a la crema"
+  },
+  "ed2da2304f1b": {
+   "en": "Seasoned Rice Noodles with Veggies",
+   "es": "Fideos de arroz sazonados con vegetales"
+  },
+  "ed3c2e233e44": {
+   "en": "Smoked Bacon",
+   "es": "Tocino ahumado"
+  },
+  "ed5c4e45a6ce": {
+   "en": "Tofu Sofritas",
+   "es": "Sofritas de tofu"
+  },
+  "ed783545bb7c": {
+   "en": "Creamy Mushroom Gravy",
+   "es": "Salsa de champiñones cremosa"
+  },
+  "ed92eb2c228b": {
+   "en": "Charred Corn & Okra Succotash",
+   "es": "Succotash de maíz asado y okra"
+  },
+  "ee2aeee45b10": {
+   "en": "Roasted Sweet Potatoes with Chili & Lime",
+   "es": "Camotes asados con chile y lima"
+  },
+  "ee33d2f59f86": {
+   "en": "Yakamein",
+   "es": "Yakamein"
+  },
+  "ee515471e589": {
+   "en": "Southern Fried Chicken",
+   "es": "Pollo frito al estilo sureño"
+  },
+  "ee9362bf61ac": {
+   "en": "Strawberries",
+   "es": "Fresas"
+  },
+  "eeacd36d0fe8": {
+   "en": "Corn Dogs",
+   "es": "Corn dogs"
+  },
+  "eeb2f0c1cb8b": {
+   "en": "Soft Shell Crab Sando BLT",
+   "es": "Sándwich de cangrejo de caparazón blando BLT"
+  },
+  "eec3df6f2213": {
+   "en": "Orecchiette Pasta",
+   "es": "Pasta orecchiette"
+  },
+  "eec8f44cbaad": {
+   "en": "Classic Lasagna",
+   "es": "Lasaña clásica"
+  },
+  "eecde495ccdd": {
+   "en": "Seasonal Roasted Vegetables",
+   "es": "Vegetales asados de temporada"
+  },
+  "ef1552985343": {
+   "en": "Chipotle Chicken",
+   "es": "Pollo al chipotle"
+  },
+  "ef2983e7e21e": {
+   "en": "Gochujang-Glazed Tofu",
+   "es": "Tofu con glaseado de gochujang"
+  },
+  "ef46fa384f8f": {
+   "en": "Chicken Gyros",
+   "es": "Gyros de pollo"
+  },
+  "ef64e03d926e": {
+   "en": "Chipotle Black Bean Patty",
+   "es": "Hamburguesa de frijoles negros al chipotle"
+  },
+  "ef7ddc09261a": {
+   "en": "Shrimp, Chicken & Pork Sausage Jambalaya",
+   "es": "Jambalaya de camarones, pollo y salchicha de cerdo"
+  },
+  "ef8013c54058": {
+   "en": "Mushroom & Jack Quesadilla",
+   "es": "Quesadilla de champiñones y jack"
+  },
+  "ef88fcfdbc5e": {
+   "en": "Spätzle",
+   "es": "Spätzle"
+  },
+  "efa6cc2f7a15": {
+   "en": "Mexican Pizza",
+   "es": "Pizza mexicana"
+  },
+  "efbf6f0822af": {
+   "en": "Moroccan Roasted Potatoes",
+   "es": "Papas asadas marroquíes"
+  },
+  "efc78115feff": {
+   "en": "Wheat Tortilla",
+   "es": "Tortilla de trigo"
+  },
+  "efce58b117d8": {
+   "en": "Mediterranean Salad",
+   "es": "Ensalada mediterránea"
+  },
+  "efe63b23db6f": {
+   "en": "Oyster Mushroom & Jackfruit Taquitos",
+   "es": "Taquitos de setas ostra y jackfruit"
+  },
+  "f0173d429d11": {
+   "en": "Caprese Focaccia Pizza",
+   "es": "Pizza focaccia caprese"
+  },
+  "f04685e641a5": {
+   "en": "Filipino Chicken Adobo",
+   "es": "Pollo adobo filipino"
+  },
+  "f0504a187e00": {
+   "en": "Creamy Garlic Chicken over Rice",
+   "es": "Pollo cremoso al ajo sobre arroz"
+  },
+  "f052a7b77693": {
+   "en": "Cantonese-Style Char Siu Pork",
+   "es": "Cerdo char siu estilo cantonés"
+  },
+  "f05c4f259f50": {
+   "en": "Roasted Spanish-Style Chicken",
+   "es": "Pollo asado al estilo español"
+  },
+  "f05db4e4239a": {
+   "en": "Huli Huli Jackfruit (Branner)",
+   "es": "Jackfruit huli huli (Branner)"
+  },
+  "f05ddad1b1af": {
+   "en": "Herb Mustard Glazed Cabbage",
+   "es": "Repollo glaseado con mostaza y hierbas"
+  },
+  "f06ba0b42af8": {
+   "en": "Crispy Cod Fish Tacos",
+   "es": "Tacos de bacalao crujiente"
+  },
+  "f0b7be2923da": {
+   "en": "Alfredo Sauce (Branner)",
+   "es": "Salsa alfredo (Branner)"
+  },
+  "f0f0364d4ce9": {
+   "en": "Hamburger Potato Bun",
+   "es": "Pan de papa para hamburguesa"
+  },
+  "f11feb189299": {
+   "en": "Chicken Tinga Tostada",
+   "es": "Tostada de tinga de pollo"
+  },
+  "f13bc4e91841": {
+   "en": "Sizzlin' Refried Beans",
+   "es": "Frijoles refritos"
+  },
+  "f14ca63e30fd": {
+   "en": "Herb Roasted Rotisserie Chicken",
+   "es": "Pollo a la brasa con hierbas"
+  },
+  "f153a611a96e": {
+   "en": "Plant-Forward Philly Cheesesteak",
+   "es": "Philly cheesesteak vegetal"
+  },
+  "f15b493ec5f1": {
+   "en": "Seasonal Vegetable & Brie Frittata",
+   "es": "Frittata de vegetales de temporada y brie"
+  },
+  "f19ef3f4af91": {
+   "en": "Meatless Chick’n Fajita",
+   "es": "Fajitas de pollo vegetal"
+  },
+  "f1bc883947a7": {
+   "en": "Lentejas Con Calabaza",
+   "es": "Lentejas con calabaza"
+  },
+  "f2470cebcbb4": {
+   "en": "Haricot Verts with Brown Butter",
+   "es": "Ejotes con mantequilla avellanada"
+  },
+  "f25a996017a9": {
+   "en": "Huli Huli Chicken",
+   "es": "Pollo huli huli"
+  },
+  "f287ea84d41d": {
+   "en": "Burrito Bar",
+   "es": "Barra de burritos"
+  },
+  "f2e44104442f": {
+   "en": "Beyond Sloppy Joes",
+   "es": "Sloppy joes de Beyond"
+  },
+  "f2f9dada2bb7": {
+   "en": "Twisted Citrus Glazed Carrots",
+   "es": "Zanahorias glaseadas con cítricos"
+  },
+  "f337c3568e54": {
+   "en": "Fish & Chips with Remoulade",
+   "es": "Pescado con papas y salsa remoulade"
+  },
+  "f34b8e50e4dd": {
+   "en": "Build Your Own Chipotle Bar (Mag)",
+   "es": "Barra de chipotle personalizada (Mag)"
+  },
+  "f3ffbdb5a529": {
+   "en": "Santa Maria-Style Tri-Tip",
+   "es": "Tri-tip al estilo Santa Maria"
+  },
+  "f42cd4381b5b": {
+   "en": "Boba Tea Bar",
+   "es": "Barra de té boba"
+  },
+  "f4331a402970": {
+   "en": "Saag Paneer",
+   "es": "Saag paneer"
+  },
+  "f459ceae3e6c": {
+   "en": "Bacon Egg & Sausage Quiche Slab",
+   "es": "Quiche de tocino, huevo y salchicha"
+  },
+  "f48a457eda09": {
+   "en": "Lemongrass Tempeh & Shiitake Mushroom",
+   "es": "Tempeh con limoncillo y champiñones shiitake"
+  },
+  "f502288a267b": {
+   "en": "Citrus Scented Basmati Rice",
+   "es": "Arroz basmati con aroma a cítricos"
+  },
+  "f5149612a0c2": {
+   "en": "Broccoli and Cheddar Soup",
+   "es": "Sopa de brócoli y cheddar"
+  },
+  "f55f9422c873": {
+   "en": "Tater Tots",
+   "es": "Tater tots"
+  },
+  "f56cf6339e5c": {
+   "en": "Beyond Jackfruit Tourtiere",
+   "es": "Tourtiere de jackfruit y Beyond"
+  },
+  "f56fa8c01e3f": {
+   "en": "Grilled Cheese & Tomato Basil Soup",
+   "es": "Sándwich de queso a la plancha y sopa de tomate con albahaca"
+  },
+  "f585929bbc39": {
+   "en": "Jackfruit Gyro Fries",
+   "es": "Papas con gyro de jackfruit"
+  },
+  "f5ae57e18c42": {
+   "en": "Steamed Rice",
+   "es": "Arroz al vapor"
+  },
+  "f5e04336cbc3": {
+   "en": "Thai Curry Seafood",
+   "es": "Mariscos al curry tailandés"
+  },
+  "f60efcf18f22": {
+   "en": "Warm Southern Bacon Potato Salad",
+   "es": "Ensalada de papa con tocino al estilo sureño"
+  },
+  "f660fc6c212e": {
+   "en": "Seasoned Black Beans",
+   "es": "Frijoles negros sazonados"
+  },
+  "f6808bc06035": {
+   "en": "North Carolina BBQ Chicken",
+   "es": "Pollo BBQ de Carolina del Norte"
+  },
+  "f6eddc20dde0": {
+   "en": "Jook & Toppings Station",
+   "es": "Estación de jook y complementos"
+  },
+  "f6f9528f14c8": {
+   "en": "Japanese Curry Vegetables",
+   "es": "Vegetales al curry japonés"
+  },
+  "f74a40c6915f": {
+   "en": "Jamaican Oxtail Stew",
+   "es": "Estofado de rabo de buey jamaiquino"
+  },
+  "f7745a6ea56d": {
+   "en": "Homestyle Waffles",
+   "es": "Waffles caseros"
+  },
+  "f7b6d5499609": {
+   "en": "Artichoke & Shiitake Mushroom Taco",
+   "es": "Taco de alcachofa y champiñones shiitake"
+  },
+  "f7dce61b9b39": {
+   "en": "Mongolian Beef & Broccoli Bowl",
+   "es": "Bowl de res mongola con brócoli"
+  },
+  "f80bbe65754e": {
+   "en": "Dal Makhani",
+   "es": "Dal makhani"
+  },
+  "f82b67e85167": {
+   "en": "Jamaican-Style Braised Cabbage & Carrots",
+   "es": "Repollo y zanahorias estofados al estilo jamaiquino"
+  },
+  "f849d1f2dad1": {
+   "en": "Pork Sausage Power Scramble",
+   "es": "Revuelto de salchicha de cerdo"
+  },
+  "f84c1c1de3e9": {
+   "en": "Braised Beef Brisket",
+   "es": "Pecho de res estofado"
+  },
+  "f88b2185e9f0": {
+   "en": "Waffles",
+   "es": "Waffles"
+  },
+  "f89ab2c469cd": {
+   "en": "Chickpea & Cauliflower Tagine",
+   "es": "Tagine de garbanzos y coliflor"
+  },
+  "f8ad3d515e7e": {
+   "en": "Lemon Herb Roasted Potatoes",
+   "es": "Papas asadas con limón y hierbas"
+  },
+  "f8de5415306f": {
+   "en": "Arroz Rojo",
+   "es": "Arroz rojo"
+  },
+  "f8fcd4c63ef5": {
+   "en": "Thai Red Curry Beef",
+   "es": "Res al curry rojo tailandés"
+  },
+  "f95733897f23": {
+   "en": "Palak Paneer",
+   "es": "Palak paneer"
+  },
+  "f97bd50646a5": {
+   "en": "Beef Teriyaki & Noodle Bowl",
+   "es": "Bowl de fideos con teriyaki de res"
+  },
+  "fa040cad1d6e": {
+   "en": "Chha Trob - Cambodian Minced Pork and Eggplant Stir-Fry Over Turmeric Rice",
+   "es": "Chha Trob - Salteado camboyano de cerdo picado y berenjena con arroz de cúrcuma"
+  },
+  "fa26f48a8eac": {
+   "en": "Chicken Shawarma with Pita",
+   "es": "Shawarma de pollo con pita"
+  },
+  "fa38633fd9bb": {
+   "en": "Popcorn Tofu",
+   "es": "Tofu crujiente"
+  },
+  "fab9663f41ee": {
+   "en": "Ghormeh Sabzi",
+   "es": "Ghormeh sabzi"
+  },
+  "facf4a71e6b0": {
+   "en": "Chicken & Wild Rice Soup",
+   "es": "Sopa de pollo y arroz silvestre"
+  },
+  "fae6e9edfe5f": {
+   "en": "Star Ginger Teriyaki Chicken",
+   "es": "Pollo teriyaki con jengibre"
+  },
+  "faed1595d080": {
+   "en": "Spicy Coleslaw",
+   "es": "Ensalada de col picante"
+  },
+  "fb08f332a205": {
+   "en": "Mexicali Chicken Bowl",
+   "es": "Bowl de pollo mexicali"
+  },
+  "fb63f0f4bcf5": {
+   "en": "Frijoles Pintos",
+   "es": "Frijoles pintos"
+  },
+  "fb8f22254c19": {
+   "en": "Performance Bar",
+   "es": "Barra de rendimiento"
+  },
+  "fb93c230dce5": {
+   "en": "Chicken Noodle Soup",
+   "es": "Sopa de pollo con fideos"
+  },
+  "fbbcd78bd682": {
+   "en": "Jerk Pork Belly",
+   "es": "Panceta de cerdo jerk"
+  },
+  "fbcd1f3c0bf9": {
+   "en": "Cheesy Ramen with Chili Crisp and Egg",
+   "es": "Ramen con queso, chili crisp y huevo"
+  },
+  "fc2f8e08a917": {
+   "en": "Vegetarian Japchae",
+   "es": "Japchae vegetal"
+  },
+  "fc32b8d28777": {
+   "en": "Crispy Cod",
+   "es": "Bacalao crujiente"
+  },
+  "fc542e687e43": {
+   "en": "Tacos de Papa",
+   "es": "Tacos de papa"
+  },
+  "fc857dc2c40c": {
+   "en": "Okonomiyaki",
+   "es": "Okonomiyaki"
+  },
+  "fc96c54a3594": {
+   "en": "Crunchy Miso Sesame Ginger Salad",
+   "es": "Ensalada crujiente de miso, sésamo y jengibre"
+  },
+  "fc99ba1397b2": {
+   "en": "Cheesy Vegan Grits",
+   "es": "Grits veganos con queso"
+  },
+  "fca06521888c": {
+   "en": "Crispy Tofu Katsu with Japanese Curry",
+   "es": "Tofu katsu crujiente con curry japonés"
+  },
+  "fcde52ae06cb": {
+   "en": "Greek Lemon Roasted Potatoes",
+   "es": "Papas asadas al estilo griego con limón"
+  },
+  "fcea5f672718": {
+   "en": "Roasted Garlic Potatoes",
+   "es": "Papas asadas al ajo"
+  },
+  "fd0eea6f082a": {
+   "en": "All Beef Hot Dog",
+   "es": "Hot dog de pura res"
+  },
+  "fd6502cd7003": {
+   "en": "Philly Cheesesteak Station",
+   "es": "Estación de Philly cheesesteak"
+  },
+  "fd8bda42233f": {
+   "en": "Goan Beef Vindaloo",
+   "es": "Vindaloo de res de Goa"
+  },
+  "fd9b1e4fd483": {
+   "en": "Mediterranean Bar",
+   "es": "Barra mediterránea"
+  },
+  "fdbe712294e0": {
+   "en": "Furikake-Crusted Tofu",
+   "es": "Tofu con costra de furikake"
+  },
+  "fdbf897dfc17": {
+   "en": "Char Siu Sauce",
+   "es": "Salsa char siu"
+  },
+  "fdc6d46ff7e9": {
+   "en": "BBQ Meatloaf Sandwich",
+   "es": "Sándwich de pastel de carne a la barbacoa"
+  },
+  "fde4c2b19b59": {
+   "en": "Teriyaki Chicken",
+   "es": "Pollo teriyaki"
+  },
+  "fdeefb326415": {
+   "en": "Tteokbokki",
+   "es": "Tteokbokki"
+  },
+  "fe123c379617": {
+   "en": "Hot Dog",
+   "es": "Hot dog"
+  },
+  "fe2b360b9660": {
+   "en": "Makrut Lime Jasmine Rice",
+   "es": "Arroz jazmín con lima makrut"
+  },
+  "fe3fc34c6795": {
+   "en": "Herb Crusted Salmon with Remoulade",
+   "es": "Salmón con costra de hierbas y salsa remoulade"
+  },
+  "fead3e292f02": {
+   "en": "Turkey Burger with Bun",
+   "es": "Hamburguesa de pavo con pan"
+  },
+  "ff852043fefe": {
+   "en": "Plain French Roll",
+   "es": "Pan francés simple"
+  },
+  "ff8905bca216": {
+   "en": "Ginger Jook Bar with Chicken and Tofu",
+   "es": "Barra de jook de jengibre con pollo y tofu"
+  },
+  "ffaa271f2b1f": {
+   "en": "Creole Succotash",
+   "es": "Succotash criollo"
+  },
+  "ffbc671ba6f6": {
+   "en": "Nola Dirty Rice",
+   "es": "Arroz dirty estilo Nola"
   }
  },
  "halls": {},
  "specials": {},
- "terms": {}
+ "terms": {
+  "** no alliums: this includes garlic": "** sin aliums: esto incluye el ajo",
+  "a-1 steak sauce": "A-1 steak sauce",
+  "adobo sauce": "salsa adobo",
+  "agave syrup": "jarabe de agave",
+  "aji amarillo paste": "pasta de ají amarillo",
+  "aji panca paste": "pasta de ají panca",
+  "aji panka paste": "pasta de ají panka",
+  "all purpose flour": "harina de trigo todo uso",
+  "allergen free teriyaki sauce": "salsa teriyaki libre de alérgenos",
+  "allspice": "pimienta gorda",
+  "alternative milk": "leche vegetal",
+  "amaranth": "amaranto",
+  "ammonium sulfate": "sulfato de amonio",
+  "ancho chili powder": "chile ancho en polvo",
+  "anchovies": "anchoas",
+  "anchovy": "anchoa",
+  "ancient grains flour": "harina de granos ancestrales",
+  "and any similar wild varieties": "y cualquier variedad silvestre similar",
+  "and fresh turmeric root. ** no mushrooms/fungi of any kind.": "y raíz de cúrcuma fresca. ** sin ningún tipo de hongos/setas.",
+  "and pepper": "y pimienta",
+  "and red pepper": "y pimiento rojo",
+  "and/or condiments": "y/o condimentos",
+  "and/or olive oil": "y/o aceite de oliva",
+  "andouille sausage": "salchicha andouille",
+  "apple cider vinegar": "vinagre de sidra de manzana",
+  "apples": "manzanas",
+  "artichokes": "alcachofas",
+  "artificial flavor": "sabor artificial",
+  "artificial flavors": "sabores artificiales",
+  "arugula": "rúcula",
+  "ascorbic acid": "ácido ascórbico",
+  "asparagus": "espárragos",
+  "assorted mushrooms": "champiñones surtidos",
+  "baby corn": "maíz tierno",
+  "baked chicken": "pollo al horno",
+  "baking powder": "polvo para hornear",
+  "baking soda": "bicarbonato de sodio",
+  "balsamic vinaigrette": "vinagreta balsámica",
+  "balsamic vinegar": "vinagre balsámico",
+  "bamboo shoots": "brotes de bambú",
+  "barbecue sauce": "salsa barbacoa",
+  "basil": "albahaca",
+  "beans": "frijoles",
+  "beef": "res",
+  "beef pork salami": "salami de res y cerdo",
+  "beef pork sausage": "salchicha de res y cerdo",
+  "beetroot fiber": "fibra de remolacha",
+  "beets": "betabeles",
+  "bell pepper": "pimiento",
+  "bell peppers": "pimientos",
+  "beta carotene": "beta caroteno",
+  "bha": "BHA",
+  "bht": "BHT",
+  "black bean patty": "medallón de frijol negro",
+  "black beans": "frijoles negros",
+  "black pepper": "pimienta negra",
+  "blackening spice": "especias para sazonar (blackening spice)",
+  "bleached enriched flour": "harina enriquecida blanqueada",
+  "bok choy": "bok choy",
+  "bratwurst sausage": "salchicha bratwurst",
+  "bread roll": "panecillo",
+  "breadcrumbs": "pan molido",
+  "broccoli": "brócoli",
+  "broccolini": "broccolini",
+  "brown rice": "arroz integral",
+  "brown sugar": "azúcar morena",
+  "brussels sprouts": "coles de Bruselas",
+  "buckwheat flour": "harina de trigo sarraceno",
+  "bulgur wheat": "trigo burgol",
+  "butter": "mantequilla",
+  "buttermilk": "suero de leche",
+  "buttermilk fried chicken": "pollo frito con suero de leche",
+  "buttermilk marinade": "marinado de suero de leche",
+  "cabbage": "repollo",
+  "caesar dressing": "aderezo césar",
+  "cajun seasoning": "condimento cajún",
+  "calcium caseinate milk": "leche con caseinato de calcio",
+  "calcium chloride": "cloruro de calcio",
+  "calcium disodium edta": "EDTA disódico cálcico",
+  "calcium propionate": "propionato de calcio",
+  "calcium sulfate": "sulfato de calcio",
+  "cane sugar": "azúcar de caña",
+  "canola": "canola",
+  "canola and/or sunflower oil": "aceite de canola y/o de girasol",
+  "canola oil": "aceite de canola",
+  "canola oil blend": "mezcla de aceite de canola",
+  "canola/olive oil blend": "mezcla de aceite de canola y de oliva",
+  "capers": "alcaparras",
+  "caramel color": "color caramelo",
+  "carne asada": "carne asada",
+  "carrageenan": "carragenina",
+  "carrot": "zanahoria",
+  "carrot concentrate": "concentrado de zanahoria",
+  "carrot extractives": "extractos de zanahoria",
+  "carrot fiber": "fibra de zanahoria",
+  "carrot juice": "jugo de zanahoria",
+  "carrots": "zanahorias",
+  "catfish": "bagre",
+  "cauliflower": "coliflor",
+  "cayenne pepper": "pimienta de cayena",
+  "celery": "apio",
+  "chala bread": "pan chala",
+  "chamomile extract": "extracto de manzanilla",
+  "cheddar cheese": "queso cheddar",
+  "cheese": "queso",
+  "cheese sauce": "salsa de queso",
+  "chef's choice composed salad": "ensalada compuesta a elección del chef",
+  "chef's choice grilled vegan or vegetarian option": "opción a la parrilla vegana o vegetariana a elección del chef",
+  "chef's choice soup of the day": "sopa del día a elección del chef",
+  "chef's line gluten-free bread": "pan sin gluten Chef's Line",
+  "chia seed puddings": "pudines de semillas de chía",
+  "chicken": "pollo",
+  "chicken base": "base de pollo",
+  "chicken fat": "grasa de pollo",
+  "chicken meat": "carne de pollo",
+  "chicken meat including chicken juices": "carne de pollo incluyendo jugos de pollo",
+  "chicken stock": "caldo de pollo",
+  "chicken wings": "alitas de pollo",
+  "chile peppers": "chiles",
+  "chili paste": "pasta de chile",
+  "chili pepper extract": "extracto de chile",
+  "chili powder": "chile en polvo",
+  "chipotle": "chipotle",
+  "chipotle aioli": "aioli de chipotle",
+  "chipotle peppers": "chiles chipotles",
+  "chive": "cebollín",
+  "chives": "cebollín",
+  "cilantro": "cilantro",
+  "cinnamon": "canela",
+  "citric acid": "ácido cítrico",
+  "clams": "almejas",
+  "cloves": "clavos de olor",
+  "cocoa powder": "cacao en polvo",
+  "coconut": "coco",
+  "coconut aminos": "aminoácidos de coco",
+  "coconut liquid aminos": "aminoácidos líquidos de coco",
+  "coconut milk": "leche de coco",
+  "collard greens": "col rizada",
+  "coloring": "colorante",
+  "contains carrots": "contiene zanahorias",
+  "contains celery": "contiene apio",
+  "coriander": "cilantro",
+  "corn": "maíz",
+  "corn oil": "aceite de maíz",
+  "corn starch": "fécula de maíz",
+  "corn syrup": "jarabe de maíz",
+  "cornstarch": "fécula de maíz",
+  "cotton seed oil": "aceite de semilla de algodón",
+  "cottonseed oil": "aceite de semilla de algodón",
+  "crab": "cangrejo",
+  "crawfish": "cangrejo de río",
+  "cream": "crema",
+  "croutons": "crutones",
+  "cucumbers": "pepinos",
+  "cultured wheat": "trigo fermentado",
+  "cultured whey": "suero de leche cultivado",
+  "cumin": "comino",
+  "curry powder": "curry en polvo",
+  "daiya sliced cheddar cheese": "queso cheddar rebanado Daiya",
+  "dark rye flour": "harina de centeno oscuro",
+  "datem": "datem",
+  "de arbol chili pepper": "chile de árbol",
+  "degerminated corn flour": "harina de maíz desgerminado",
+  "dehydrated chicken": "pollo deshidratado",
+  "dehydrated whey": "suero de leche deshidratado",
+  "dextrin": "dextrina",
+  "dextrose": "dextrosa",
+  "diced garlic": "ajo picado",
+  "diced tomatoes": "tomates en cubos",
+  "dijon mustard": "mostaza Dijon",
+  "dill": "eneldo",
+  "dill pickles": "pepinillos con eneldo",
+  "disodium dihydrogen pyrophosphate": "pirofosfato disódico dihidrógeno",
+  "distilled vinegar": "vinagre destilado",
+  "dried chipotle peppers": "chiles chipotles deshidratados",
+  "dried garlic": "ajo deshidratado",
+  "dried onion": "cebolla deshidratada",
+  "dried onions": "cebollas deshidratadas",
+  "dried orange peel": "cáscara de naranja deshidratada",
+  "dried oregano": "orégano deshidratado",
+  "edamame": "edamame",
+  "edible vegetable fat": "grasa vegetal comestible",
+  "egg": "huevo",
+  "egg yolks": "yemas de huevo",
+  "eggs": "huevos",
+  "english muffin": "muffin inglés",
+  "enriched egg noodles": "fideos de huevo enriquecidos",
+  "enriched flour": "harina enriquecida",
+  "enriched wheat flour": "harina de trigo enriquecida",
+  "enzymes": "enzimas",
+  "expeller pressed/canola oil": "aceite de canola prensado en frío",
+  "extra virgin olive oil": "aceite de oliva virgen extra",
+  "farro": "farro",
+  "flaky salt": "sal en escamas",
+  "flour": "harina",
+  "flour tortilla": "tortilla de harina",
+  "fontina": "queso fontina",
+  "fontina cheese": "queso fontina",
+  "food starch": "fécula de maíz",
+  "free from the top food allergens. please refer to packaging for ingredient information": "libre de los principales alérgenos alimentarios. consulte el empaque para obtener información sobre los ingredientes",
+  "french baguette": "baguette francesa",
+  "french bean": "ejote",
+  "fresh garlic": "ajo fresco",
+  "fresh ginger": "jengibre fresco",
+  "fresh herbs": "hierbas frescas",
+  "fresh onions": "cebollas frescas",
+  "fresh thyme": "tomillo fresco",
+  "fried in canola oil": "frito en aceite de canola",
+  "fruit pectin": "pectina de fruta",
+  "furikake seasoning": "sazonador furikake",
+  "galangal": "galanga",
+  "garbanzo beans": "garbanzos",
+  "garbanzo flour": "harina de garbanzo",
+  "garlic": "ajo",
+  "garlic powder": "ajo en polvo",
+  "gellan gum": "goma gellan",
+  "ginger": "jengibre",
+  "ginger scallion oil": "aceite de jengibre y cebollín",
+  "gluten": "gluten",
+  "granola": "granola",
+  "grape juice": "jugo de uva",
+  "green beans": "ejotes",
+  "green chiles": "chiles verdes",
+  "green onion": "cebollín",
+  "green onions": "cebolletas",
+  "guar gum": "goma guar",
+  "gum arabic": "goma arábiga",
+  "habanero pepper": "chile habanero",
+  "hard boiled eggs": "huevos duros",
+  "herbs": "hierbas",
+  "high fructose corn syrup": "jarabe de maíz de alta fructosa",
+  "honey": "miel",
+  "hot dog bun": "pan para hot dog",
+  "hot sauce": "salsa picante",
+  "hummus": "hummus",
+  "hydrolyzed corn protein": "proteína de maíz hidrolizada",
+  "hydrolyzed soy protein": "proteína de soja hidrolizada",
+  "italian tomatoes": "tomates italianos",
+  "jackfruit marinade": "marinado de yaca",
+  "jackfruit sauce": "salsa de yaca",
+  "jalapeno": "jalapeño",
+  "jalapeno chili": "chile jalapeño",
+  "jalapeno chilis": "chiles jalapeños",
+  "jalapeno peppers": "chiles jalapeños",
+  "jasmine rice": "arroz jazmín",
+  "kaffir lime leaves": "hojas de lima kaffir",
+  "kaffir lime peel": "cáscara de lima kaffir",
+  "kale": "col rizada",
+  "kamut": "kamut",
+  "ketchup": "ketchup",
+  "king oyster mushrooms": "setas king oyster",
+  "kombu": "kombu",
+  "korean red pepper": "chile rojo coreano",
+  "kosher salt": "sal kosher",
+  "l-cysteine hydrochloride": "clorhidrato de L-cisteína",
+  "lactic acid": "ácido láctico",
+  "leavening": "leudante",
+  "leavings": "sobras",
+  "leeks": "puerros",
+  "lemon": "limón",
+  "lemon juice": "jugo de limón",
+  "lemon juice concentrate": "concentrado de jugo de limón",
+  "lemon pepper seasoning": "sazonador de limón y pimienta",
+  "lemon zest": "ralladura de limón",
+  "lemongrass": "limoncillo",
+  "lettuce": "lechuga",
+  "lime": "limón",
+  "lime juice": "jugo de lima",
+  "lime zest": "ralladura de lima",
+  "liquid egg substitute": "sustituto de huevo líquido",
+  "long grain rice": "arroz de grano largo",
+  "macaroni pasta": "pasta de macarrones",
+  "malt powder": "malta en polvo",
+  "malted barley flour": "harina de cebada malteada",
+  "maltodextrin": "maltodextrina",
+  "marinara sauce": "salsa marinara",
+  "mayonnaise": "mayonesa",
+  "methylcellulose": "metilcelulosa",
+  "milk": "leche",
+  "milk powder": "leche en polvo",
+  "milk solids": "sólidos de leche",
+  "millet": "mijo",
+  "miso paste": "pasta de miso",
+  "modified food starch": "almidón modificado",
+  "molasses": "melaza",
+  "monocalcium phosphate": "fosfato monocálcico",
+  "monoglycerides": "monoglicéridos",
+  "monterey jack cheese": "queso monterey jack",
+  "mozzarella cheese": "queso mozzarella",
+  "mung bean protein": "proteína de frijol mungo",
+  "mushroom": "champiñón",
+  "mushroom gravy": "salsa de champiñones",
+  "mushrooms": "champiñones",
+  "mussels": "mejillones",
+  "mustard": "mostaza",
+  "mustard flour": "harina de mostaza",
+  "mustard seed": "semilla de mostaza",
+  "mustard seeds": "semillas de mostaza",
+  "napa cabbage": "col china",
+  "natural and artificial mushroom flavor": "sabor natural y artificial a champiñón",
+  "natural flavor": "sabor natural",
+  "natural flavors": "sabores naturales",
+  "nisin": "nisina",
+  "non allergen plant based butter tomato": "mantequilla de tomate a base de plantas sin alérgenos",
+  "non allergen vegan butter": "mantequilla vegana libre de alérgenos",
+  "nori furikake": "furikake de nori",
+  "nori seaweed": "alga nori",
+  "nutmeg": "nuez moscada",
+  "nutritional yeast": "levadura nutricional",
+  "oat milk": "leche de avena",
+  "oil": "aceite",
+  "okra": "okra",
+  "olive oil": "aceite de oliva",
+  "olive/canola oil blend": "mezcla de aceite de oliva y canola",
+  "onion": "cebolla",
+  "onion concentrate": "concentrado de cebolla",
+  "onion powder": "cebolla en polvo",
+  "onions": "cebollas",
+  "or corn oil": "o aceite de maíz",
+  "or soybean oil": "o aceite de soja",
+  "or sunflower oil": "o aceite de girasol",
+  "or thyme": "o tomillo",
+  "or tomatoes": "o tomates",
+  "orange juice": "jugo de naranja",
+  "orange zest": "ralladura de naranja",
+  "oregano": "orégano",
+  "overnight oats": "avena reposada",
+  "oyster sauce": "salsa de ostión",
+  "palm oil": "aceite de palma",
+  "panko": "panko",
+  "paprika": "pimentón",
+  "parmesan": "queso parmesano",
+  "parmesan cheese": "queso parmesano",
+  "parsley": "perejil",
+  "pasta": "pasta",
+  "pea protein": "proteína de chícharo",
+  "peas": "guisantes",
+  "pepper": "pimienta",
+  "peppercorns": "granos de pimienta",
+  "pepperoni": "pepperoni",
+  "pesto sauce": "salsa pesto",
+  "pickle relish": "relish de pepinillo",
+  "pickled ginger": "jengibre encurtido",
+  "pineapple": "piña",
+  "pinto beans": "frijoles pintos",
+  "pizza dough": "masa para pizza",
+  "plant-forward italian hot link": "salchicha italiana a base de plantas",
+  "poblano chili": "chile poblano",
+  "poppy seeds": "semillas de amapola",
+  "pork": "cerdo",
+  "portabello mushroom": "champiñón portobello",
+  "potassium citrate": "citrato de potasio",
+  "potassium iodate": "yodato de potasio",
+  "potassium sorbate": "sorbato de potasio",
+  "potato hot dog bun": "pan para hot dog de papa",
+  "potatoes": "papas",
+  "powdered sugar": "azúcar glass",
+  "pretzels": "pretzels",
+  "provolone cheese": "queso provolone",
+  "puya chili pepper": "chile puya",
+  "queso fresco": "queso fresco",
+  "queso panela": "queso panela",
+  "quinoa": "quinua",
+  "radish": "rábano",
+  "radishes": "rábanos",
+  "ramen noodles": "fideos ramen",
+  "red and green bell pepper": "pimiento morrón rojo y verde",
+  "red bell pepper": "pimiento morrón rojo",
+  "red chilies": "chiles rojos",
+  "red chilis": "chiles rojos",
+  "red chilli": "chile rojo",
+  "red curry paste": "pasta de curry rojo",
+  "red onion": "cebolla morada",
+  "red pepper flakes": "hojuelas de chile rojo",
+  "red wine vinegar": "vinagre de vino tinto",
+  "refried beans": "frijoles refritos",
+  "rice bran": "salvado de arroz",
+  "rice flour": "harina de arroz",
+  "rice vinegar": "vinagre de arroz",
+  "ricotta cheese": "queso ricotta",
+  "roasted corn": "maíz rostizado",
+  "roasted red salsa": "salsa roja asada",
+  "romaine lettuce": "lechuga romana",
+  "rosemary": "romero",
+  "rosemary extract": "extracto de romero",
+  "roux": "roux",
+  "sage": "salvia",
+  "sage extract": "extracto de salvia",
+  "sage oil": "aceite de salvia",
+  "salads": "ensaladas",
+  "salmon": "salmón",
+  "salsa roja": "salsa roja",
+  "salt": "sal",
+  "salt and black pepper": "sal y pimienta negra",
+  "salt and pepper": "sal y pimienta",
+  "salt tarragon": "sal, estragón",
+  "sauerkraut": "chucrut",
+  "scallions/ green onions": "cebollines/cebollas verdes",
+  "scotch bonnet peppers": "chiles scotch bonnet",
+  "sea salt": "sal marina",
+  "seasonal assortment of fresh vegetables": "variedad de vegetales frescos de temporada",
+  "seasonal fresh fruit": "fruta fresca de temporada",
+  "seasonal vegetables": "vegetales de temporada",
+  "seed bars": "barras de semillas",
+  "semolina": "sémola",
+  "sesame oil": "aceite de sésamo",
+  "sesame seeds": "semillas de sésamo",
+  "shallot": "chalota",
+  "shallots": "chalotas",
+  "sheep casing": "tripa de cordero",
+  "sherry vinegar": "vinagre de jerez",
+  "shiitake mushrooms": "hongos shiitake",
+  "shrimp": "camarón",
+  "shrimp paste": "pasta de camarón",
+  "sliced bread": "pan de caja",
+  "sliced chicken": "pollo rebanado",
+  "sliced onion": "cebolla rebanada",
+  "sliced potatoes": "papas rebanadas",
+  "smoke flavoring": "saborizante a humo",
+  "smoked paprika": "pimentón ahumado",
+  "smoky aioli sauce": "salsa aioli ahumada",
+  "snow peas": "guisantes dulces",
+  "sodium ascorbate": "ascorbato de sodio",
+  "sodium bicarbonate": "bicarbonato de sodio",
+  "sodium nitrite": "nitrito de sodio",
+  "sour culture": "cultivo ácido",
+  "soy flour": "harina de soya",
+  "soy lecithin": "lecitina de soja",
+  "soy protein": "proteína de soya",
+  "soy protein concentrate": "concentrado de proteína de soya",
+  "soy protein isolate": "aislado de proteína de soya",
+  "soy sauce": "salsa de soya",
+  "soy sauce powder": "salsa de soya en polvo",
+  "soybean oi": "aceite de soja",
+  "soybean oil": "aceite de soja",
+  "soybeans": "soya",
+  "spice": "especia",
+  "spices": "especias",
+  "spinach": "espinacas",
+  "squash": "calabaza",
+  "starch": "almidón",
+  "steel cut oats": "avena cortada en trozos",
+  "such as ramps. ** no root vegetables/tubers: this includes potatoes of any variety": "como los ramps. ** sin vegetales de raíz/tubérculos: esto incluye papas de cualquier variedad",
+  "sugar": "azúcar",
+  "sumac powder": "sumac en polvo",
+  "sunchokes": "topinambur",
+  "sundried tomato garlic and pesto sauce": "salsa de pesto con ajo y tomate deshidratado al sol",
+  "sundried tomato pesto sauce": "salsa pesto de tomate deshidratado al sol",
+  "sunflower oil": "aceite de girasol",
+  "sunflower seed oil": "aceite de semilla de girasol",
+  "sweet potato noodles": "fideos de camote",
+  "sweet potatoes": "camotes",
+  "tabasco sauce": "salsa tabasco",
+  "tamari": "tamari",
+  "tamari sauce": "salsa tamari",
+  "tamarind concentrate": "concentrado de tamarindo",
+  "tamarind puree": "puré de tamarindo",
+  "tapioca syrup": "jarabe de tapioca",
+  "tarragon": "estragón",
+  "telera roll": "pan telera",
+  "tetrasodium pyrophosphate": "pirofosfato tetrasódico",
+  "thai basil": "albahaca tailandesa",
+  "thai red curry paste": "pasta de curry rojo tailandés",
+  "thyme": "tomillo",
+  "toasted sesame oil": "aceite de sésamo tostado",
+  "toasted sesame seeds": "semillas de sésamo tostadas",
+  "tofu": "tofu",
+  "tomatillos": "tomatillos",
+  "tomato": "tomate",
+  "tomato juice": "jugo de tomate",
+  "tomato paste": "pasta de tomate",
+  "tomato powder": "tomate en polvo",
+  "tomato sauce": "salsa de tomate",
+  "tomatoes": "tomates",
+  "transglutaminase": "transglutaminasa",
+  "turbinado sugar": "azúcar turbinado",
+  "turmeric": "cúrcuma",
+  "turmeric extractives": "extractos de cúrcuma",
+  "turnips": "nabos",
+  "unbleached wheat flour": "harina de trigo sin blanquear",
+  "unsalted butter": "mantequilla sin sal",
+  "veg broth": "caldo de vegetales",
+  "vegan butter": "mantequilla vegana",
+  "vegan pesto sauce": "salsa pesto vegana",
+  "vegan yogurt": "yogur vegano",
+  "vegetable dashi": "dashi de vegetales",
+  "vegetable oil": "aceite vegetal",
+  "vegetable soup base": "base para sopa de vegetales",
+  "vegetable stock": "caldo de verduras",
+  "vegetables": "vegetales",
+  "vegetarian oyster sauce": "salsa de ostión vegetariana",
+  "vinegar": "vinagre",
+  "vital wheat gluten": "gluten de trigo vital",
+  "water": "agua",
+  "wheat bran": "salvado de trigo",
+  "wheat flour": "harina de trigo",
+  "wheat germ": "germen de trigo",
+  "wheat gluten": "gluten de trigo",
+  "wheat starch": "fécula de trigo",
+  "whey": "suero de leche",
+  "white beans": "frijoles blancos",
+  "white corn meal": "harina de maíz blanco",
+  "white onion": "cebolla blanca",
+  "white pepper": "pimienta blanca",
+  "white rice": "arroz blanco",
+  "white rice flour": "harina de arroz blanco",
+  "white sauce": "salsa blanca",
+  "white wine": "vino blanco",
+  "whole egg": "huevo entero",
+  "whole grains": "granos enteros",
+  "whole milk": "leche entera",
+  "whole oat flour": "harina de avena integral",
+  "whole wheat flour": "harina de trigo integral",
+  "wine vinegar": "vinagre de vino",
+  "worcestershire sauce": "salsa Worcestershire",
+  "xanthan gum": "goma xantana",
+  "yeast": "levadura",
+  "yeast extract": "extracto de levadura",
+  "yellow corn flour": "harina de maíz amarillo",
+  "yukon gold potatoes": "papas yukon gold"
+ }
 }
