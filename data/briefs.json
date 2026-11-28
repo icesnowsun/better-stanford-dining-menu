@@ -1846,6 +1846,79 @@
   "vessel": "plate",
   "written_at": "2026-09-27T14:22:11+00:00"
  },
+ "0eac334f3886": {
+  "avoid": [
+   "chicken",
+   "pork",
+   "beef",
+   "meat",
+   "fish",
+   "shrimp",
+   "skewers",
+   "white rice",
+   "macaroni salad",
+   "raw tofu"
+  ],
+  "checks": [
+   {
+    "q": "Is the main item glazed tofu?",
+    "yes": true
+   },
+   {
+    "q": "Does the dish contain chicken or meat?",
+    "yes": false
+   },
+   {
+    "q": "Is the food served on wooden skewers?",
+    "yes": false
+   }
+  ],
+  "dish": "Hawaiian glazed tofu",
+  "look": "thick grilled tofu slabs, glossy caramelized dark reddish-brown sweet glaze, charred grill marks, roasted pineapple chunks, blistered red bell pepper chunks, tender sweet onion wedges, glistening sauce pooling slightly",
+  "model": "gemini-flash-latest",
+  "name": "Huli Huli Tofu",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:40:00+00:00"
+ },
+ "0ecf1f3fb2a5": {
+  "avoid": [
+   "tortilla wrap",
+   "burrito",
+   "tacos",
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "cheese",
+   "sour cream"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a mix of sautéed or grilled sliced peppers and vegetables?",
+    "yes": true
+   },
+   {
+    "q": "Is the food rolled or folded inside a tortilla or wrap?",
+    "yes": false
+   },
+   {
+    "q": "Does the dish contain meat or melted cheese?",
+    "yes": false
+   }
+  ],
+  "dish": "fajita vegetables",
+  "look": "sautéed sliced red and green bell peppers, charred sliced yellow onions, grilled zucchini half-moons, sliced cremini mushrooms, charred yellow corn kernels, plump white gigandes beans, reddish-brown taco spice coating, light char marks",
+  "model": "gemini-flash-latest",
+  "name": "Vegan Fajitas",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:40:00+00:00"
+ },
  "0ef2f8b208ea": {
   "avoid": [
    "meat",
@@ -3866,6 +3939,39 @@
   "vessel": "plate",
   "written_at": "2026-09-26T23:09:57+00:00"
  },
+ "1c002468b278": {
+  "avoid": [
+   "fried chicken",
+   "raw chicken",
+   "chicken nuggets",
+   "sandwich",
+   "bun",
+   "shredded meat",
+   "skewers"
+  ],
+  "checks": [
+   {
+    "q": "Is the main item a cut of roasted rotisserie chicken?",
+    "yes": true
+   },
+   {
+    "q": "Is the chicken heavily breaded and deep-fried?",
+    "yes": false
+   },
+   {
+    "q": "Is the chicken shredded or ground?",
+    "yes": false
+   }
+  ],
+  "dish": "rotisserie chicken",
+  "look": "quarter rotisserie chicken, crispy deep reddish-brown seasoned skin, paprika dusted, juicy white and dark meat, light sprinkle of chopped fresh green parsley",
+  "model": "gemini-flash-latest",
+  "name": "Smoked Rotisserie Chicken",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:39:26+00:00"
+ },
  "1c54506537c3": {
   "avoid": [
    "meat",
@@ -4269,6 +4375,39 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-09-26T20:19:36+00:00"
+ },
+ "1e6b104d560b": {
+  "avoid": [
+   "red broth",
+   "beef",
+   "pork ribs",
+   "dry rice",
+   "tortilla chips",
+   "tacos",
+   "burrito"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a green soup or stew with hominy kernels?",
+    "yes": true
+   },
+   {
+    "q": "Is the broth red like pozole rojo?",
+    "yes": false
+   },
+   {
+    "q": "Is this a dry dish without broth?",
+    "yes": false
+   }
+  ],
+  "dish": "chicken pozole verde",
+  "look": "rich green tomatillo and serrano broth, tender shredded chicken, plump white hominy corn kernels, diced white onion, fresh cilantro leaves, pinch of dried oregano",
+  "model": "gemini-flash-latest",
+  "name": "Cardinal Sage Chicken Pozole Verde",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:39:26+00:00"
  },
  "1e721d735295": {
   "avoid": [
@@ -4986,19 +5125,56 @@
   "vessel": "bowl",
   "written_at": "2026-09-29T00:31:05+00:00"
  },
- "2355f071dc91": {
+ "22dbda843eae": {
   "avoid": [
-   "tacos",
-   "tortillas",
-   "burrito",
-   "tostada",
-   "skewers",
-   "ground pork",
-   "rice and beans"
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "broth",
+   "soup",
+   "raw noodles"
   ],
   "checks": [
    {
-    "q": "Is the main food sliced or shaved marinated pork?",
+    "q": "Is the dish stir-fried noodles with mixed vegetables?",
+    "yes": true
+   },
+   {
+    "q": "Are the noodles submerged in soup broth?",
+    "yes": false
+   },
+   {
+    "q": "Does the dish contain meat, chicken, or shrimp?",
+    "yes": false
+   }
+  ],
+  "dish": "vegetable chow mein",
+  "look": "stir-fried golden yellow chow mein noodles, bright green snow peas, tender broccoli florets, matchstick carrots, sliced red bell peppers, crisp white water chestnut slices, fresh bean sprouts, light glistening sesame oil sheen",
+  "model": "gemini-flash-latest",
+  "name": "Chow Mein Noodles with Vegetables",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:40:00+00:00"
+ },
+ "2355f071dc91": {
+  "avoid": [
+   "pineapple",
+   "fruit",
+   "meat chunks",
+   "side bowl",
+   "tacos",
+   "tortillas",
+   "burrito",
+   "skewers",
+   "ground meat"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food sliced meat?",
     "yes": true
    },
    {
@@ -5011,13 +5187,13 @@
    }
   ],
   "dish": "pork al pastor",
-  "look": "thin shaved slices of marinated pork, vibrant reddish-orange spiced edges, charred crispy caramelized bits, tender juicy pork ribbons, roasted pineapple tidbits, flecks of fresh chopped cilantro",
+  "look": "thinly sliced shaved pork ribbons coated in vibrant red-orange adobo sauce, dark charred crispy edges, red-tinted meat slices loosely heaped, glistening reddish marinade glaze, finely chopped fresh green cilantro garnish",
   "model": "gemini-flash-latest",
   "name": "Pork Pastor",
   "rev": 6,
-  "revisions": 0,
+  "revisions": 1,
   "vessel": "plate",
-  "written_at": "2026-11-27T00:08:36+00:00"
+  "written_at": "2026-11-28T00:28:56+00:00"
  },
  "235d699c7e1b": {
   "avoid": [
@@ -8051,6 +8227,40 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-10-01T00:08:26+00:00"
+ },
+ "3441e3644791": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "white raw tofu",
+   "soup"
+  ],
+  "checks": [
+   {
+    "q": "Is the main item grilled glazed tofu slabs?",
+    "yes": true
+   },
+   {
+    "q": "Is there meat, poultry, or seafood on the plate?",
+    "yes": false
+   },
+   {
+    "q": "Is the tofu raw, white, and ungrilled?",
+    "yes": false
+   }
+  ],
+  "dish": "grilled glazed tofu",
+  "look": "thick rectangular slabs of firm tofu, charred dark grill marks, glossy golden-amber honey glaze, sprinkled with finely chopped green parsley",
+  "model": "gemini-flash-latest",
+  "name": "Honey Grilled Tofu",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:39:26+00:00"
  },
  "348bec54f2b0": {
   "avoid": [
@@ -14936,6 +15146,40 @@
   "vessel": "bowl",
   "written_at": "2026-11-27T00:09:56+00:00"
  },
+ "5dc624387e8b": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "pork",
+   "ribs",
+   "rice",
+   "skewers",
+   "french fries",
+   "salad"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a bowl of dark sauce?",
+    "yes": true
+   },
+   {
+    "q": "Are there pieces of meat or chicken in the bowl?",
+    "yes": false
+   },
+   {
+    "q": "Is the sauce clear like broth?",
+    "yes": false
+   }
+  ],
+  "dish": "Huli Huli barbecue sauce",
+  "look": "deep reddish-brown glossy barbecue sauce, thick pouring consistency, flecks of grated ginger and minced garlic, smooth reflective sheen",
+  "model": "gemini-flash-latest",
+  "name": "Huli Huli Sauce",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:39:26+00:00"
+ },
  "5dc6dacce93e": {
   "avoid": [
    "rice",
@@ -15014,13 +15258,14 @@
    "pork",
    "fish",
    "shrimp",
-   "chicharron",
-   "bacon",
-   "fried plantain chips"
+   "cheese",
+   "white crumbles",
+   "rice",
+   "smooth puree"
   ],
   "checks": [
    {
-    "q": "Is the main food a mound of mashed plantains?",
+    "q": "Is the main food a mound of mashed food?",
     "yes": true
    },
    {
@@ -15032,14 +15277,14 @@
     "yes": false
    }
   ],
-  "dish": "Puerto Rican plantain mofongo",
-  "look": "a rounded mound of coarsely mashed golden plantains, resting in rich orange-red tomato sofrito sauce, topped with sauteed red bell pepper strips, diced onions, garlic",
-  "model": "gemini-3.6-flash",
+  "dish": "Plantain mofongo",
+  "look": "dense rustic mound of coarsely mashed golden-green fried plantains with visible garlic bits and browned crust, surrounded by orange-red tomato sofrito sauce, topped with sauteed red bell pepper strips and diced onions",
+  "model": "gemini-flash-latest",
   "name": "Vegan Mofongo",
   "rev": 6,
-  "revisions": 0,
+  "revisions": 1,
   "vessel": "bowl",
-  "written_at": "2026-11-25T10:08:35+00:00"
+  "written_at": "2026-11-28T00:30:51+00:00"
  },
  "5e5f9a352123": {
   "avoid": [
@@ -15289,9 +15534,12 @@
    "meat",
    "pork",
    "beef",
+   "onion rings",
+   "calamari",
+   "peanuts",
+   "nuts",
    "soup",
-   "noodles",
-   "rice bowl"
+   "noodles"
   ],
   "checks": [
    {
@@ -15308,13 +15556,13 @@
    }
   ],
   "dish": "Korean glazed fried mushrooms and lotus root",
-  "look": "crispy battered fried mushroom clusters, sliced perforated lotus root rounds, glossy sticky sweet-and-savory soy chili glaze, sliced green peppers, sprinkled toasted white sesame seeds",
+  "look": "crisp battered fried shiitake and king oyster mushroom chunks, sliced wheel-shaped perforated lotus root rounds, fully tossed in glossy sticky dark reddish-brown sweet chili glaze, sliced fresh green chili peppers, sprinkled toasted white sesame seeds",
   "model": "gemini-flash-latest",
   "name": "Korean Mushroom Gangjeong w/ lotus root and pepper",
   "rev": 6,
-  "revisions": 0,
+  "revisions": 1,
   "vessel": "plate",
-  "written_at": "2026-11-27T00:08:36+00:00"
+  "written_at": "2026-11-28T01:06:22+00:00"
  },
  "600e9af40dc5": {
   "avoid": [
@@ -19393,6 +19641,42 @@
   "vessel": "bowl",
   "written_at": "2026-10-01T00:09:14+00:00"
  },
+ "7ced14a5dd5c": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "white rice",
+   "noodles",
+   "raw tofu",
+   "steamer basket"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a stir-fry featuring cubes or pieces of tofu with vegetables?",
+    "yes": true
+   },
+   {
+    "q": "Does the dish contain meat, poultry, or seafood?",
+    "yes": false
+   },
+   {
+    "q": "Is it served over or mixed with noodles?",
+    "yes": false
+   }
+  ],
+  "dish": "tofu vegetable stir-fry",
+  "look": "cubes of golden seared firm tofu, tossed with sliced green cabbage, sliced button mushrooms, red bell pepper strips, matchstick carrots, sliced daikon radish, glossy dark brown ginger stir-fry sauce, sprinkle of sliced green onions and red pepper flakes",
+  "model": "gemini-flash-latest",
+  "name": "Sesame Ginger Tofu Stir Fry",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:40:00+00:00"
+ },
  "7cedd476fb44": {
   "avoid": [
    "meat",
@@ -19607,6 +19891,42 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-10-08T10:50:06+00:00"
+ },
+ "7d56afb6dd1c": {
+  "avoid": [
+   "meat",
+   "bacon",
+   "sausage",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "gravy",
+   "biscuit sandwich",
+   "egg sandwich"
+  ],
+  "checks": [
+   {
+    "q": "Is the item a golden baked cheese biscuit?",
+    "yes": true
+   },
+   {
+    "q": "Is the biscuit filled with meat or sandwich fillings?",
+    "yes": false
+   },
+   {
+    "q": "Is the biscuit covered in white gravy?",
+    "yes": false
+   }
+  ],
+  "dish": "cheddar chive biscuit",
+  "look": "a golden brown drop biscuit, craggy rustic crust, melted orange cheddar cheese pockets, visible bits of melted jack cheese, chopped fresh green chives throughout, shiny golden butter-brushed top",
+  "model": "gemini-flash-latest",
+  "name": "Cheesy Chive Biscuit",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:40:00+00:00"
  },
  "7d73d641d8dd": {
   "avoid": [
@@ -22414,6 +22734,39 @@
   "vessel": "plate",
   "written_at": "2026-10-30T12:56:00+00:00"
  },
+ "8f0329f6beea": {
+  "avoid": [
+   "raw fish",
+   "salmon",
+   "french fries",
+   "burger bun",
+   "soup",
+   "tacos",
+   "tortilla chips"
+  ],
+  "checks": [
+   {
+    "q": "Is the main item a piece of fried fish?",
+    "yes": true
+   },
+   {
+    "q": "Is the fish raw like sashimi?",
+    "yes": false
+   },
+   {
+    "q": "Is the fish served as pre-assembled tacos?",
+    "yes": false
+   }
+  ],
+  "dish": "fried fish platter with rice and slaw",
+  "look": "golden-brown crispy breaded fish fillet, scoop of reddish-orange Mexican rice, shredded cabbage slaw with lime dressing, warm folded corn tortillas on the side",
+  "model": "gemini-flash-latest",
+  "name": "Fried Fish Plate",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:39:26+00:00"
+ },
  "8f1188bf5910": {
   "avoid": [
    "meat",
@@ -23854,6 +24207,42 @@
   "vessel": "bowl",
   "written_at": "2026-10-15T19:30:40+00:00"
  },
+ "98643d4c9883": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "bacon",
+   "fish",
+   "shrimp",
+   "soup",
+   "pasta",
+   "raw broccoli"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a baked rice and broccoli casserole with melted cheese?",
+    "yes": true
+   },
+   {
+    "q": "Is it a liquid soup rather than a baked casserole?",
+    "yes": false
+   },
+   {
+    "q": "Does the dish contain meat or bacon bits?",
+    "yes": false
+   }
+  ],
+  "dish": "broccoli cheddar rice casserole",
+  "look": "a scoop of baked creamy broccoli rice casserole, tender green broccoli florets, wilted spinach flecks, fluffy white rice bound in thick creamy melted cheddar sauce, golden-brown baked cheese crust on top",
+  "model": "gemini-flash-latest",
+  "name": "Broccoli Cheddar Casserole",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:40:00+00:00"
+ },
  "987d80c24c73": {
   "avoid": [
    "sausage links",
@@ -24026,6 +24415,38 @@
   "revisions": 0,
   "vessel": "bowl",
   "written_at": "2026-11-24T02:22:33+00:00"
+ },
+ "98ec7f6b62d6": {
+  "avoid": [
+   "burger patty",
+   "ground beef",
+   "sliced ham",
+   "hot dog",
+   "ribs",
+   "tortilla wrap"
+  ],
+  "checks": [
+   {
+    "q": "Is the main item a shredded meat sandwich in a bun?",
+    "yes": true
+   },
+   {
+    "q": "Is the meat a solid burger patty?",
+    "yes": false
+   },
+   {
+    "q": "Is the meat served loose without a bun?",
+    "yes": false
+   }
+  ],
+  "dish": "pulled pork sandwich",
+  "look": "toasted brioche bun filled with shredded smoked pork shoulder, dark glossy barbecue sauce glaze, crisp creamy coleslaw piled directly on top of the meat, under the top bun",
+  "model": "gemini-flash-latest",
+  "name": "Smoked Pulled Pork Sandwich",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:39:26+00:00"
  },
  "98eef9154b9b": {
   "avoid": [
@@ -24915,6 +25336,42 @@
   "revisions": 0,
   "vessel": "plate",
   "written_at": "2026-09-27T05:30:31+00:00"
+ },
+ "9e47a9ff9557": {
+  "avoid": [
+   "meat",
+   "bacon",
+   "pork",
+   "ham",
+   "chicken",
+   "beef",
+   "fish",
+   "raw salad",
+   "creamed sauce",
+   "cheese"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish cooked dark leafy greens?",
+    "yes": true
+   },
+   {
+    "q": "Does the dish appear to be an uncooked leafy salad?",
+    "yes": false
+   },
+   {
+    "q": "Are there pieces of bacon, ham, or meat mixed into the greens?",
+    "yes": false
+   }
+  ],
+  "dish": "sautéed kale and swiss chard",
+  "look": "tender sautéed dark green curly kale, wilted deep green swiss chard leaves, colorful ruby-red and yellow chard stem slices, slivered golden sautéed garlic cloves, glistening tender wilted greens",
+  "model": "gemini-flash-latest",
+  "name": "Sauteed Swiss Chard & Kale",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:40:00+00:00"
  },
  "9e75f45dfcfa": {
   "avoid": [
@@ -29444,6 +29901,42 @@
   "revisions": 0,
   "vessel": "bowl",
   "written_at": "2026-10-17T07:55:50+00:00"
+ },
+ "b66036face1c": {
+  "avoid": [
+   "meat",
+   "chicken",
+   "beef",
+   "pork",
+   "fish",
+   "shrimp",
+   "cheese",
+   "tortilla chips",
+   "creamy dressing",
+   "mayonnaise"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a fresh salad made of lettuce, black beans, and vegetables?",
+    "yes": true
+   },
+   {
+    "q": "Does the salad contain chicken, meat, or seafood?",
+    "yes": false
+   },
+   {
+    "q": "Is the salad coated in a thick opaque creamy dressing?",
+    "yes": false
+   }
+  ],
+  "dish": "Southwestern chopped salad",
+  "look": "chopped crisp green romaine lettuce, whole black beans, golden sweet corn kernels, halved red cherry tomatoes, diced orange and red bell peppers, chopped fresh cilantro, lightly tossed in translucent herb vinaigrette",
+  "model": "gemini-flash-latest",
+  "name": "Italian Southwestern Salad",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "bowl",
+  "written_at": "2026-11-27T23:40:00+00:00"
  },
  "b675336aab22": {
   "avoid": [
@@ -35100,6 +35593,40 @@
   "vessel": "bowl",
   "written_at": "2026-11-16T22:27:51+00:00"
  },
+ "d4888b7e9416": {
+  "avoid": [
+   "chicken wings",
+   "drumsticks",
+   "bone-in chicken",
+   "bun",
+   "sandwich",
+   "wrap",
+   "salad",
+   "pizza"
+  ],
+  "checks": [
+   {
+    "q": "Is the main food shredded or pulled chicken?",
+    "yes": true
+   },
+   {
+    "q": "Are there bone-in chicken wings or drumsticks?",
+    "yes": false
+   },
+   {
+    "q": "Is the chicken served in a bun as a sandwich?",
+    "yes": false
+   }
+  ],
+  "dish": "pulled buffalo chicken",
+  "look": "shredded chicken breast meat, glossy bright orange-red buffalo hot sauce coating every strand, tender pulled meat shreds, sprinkle of cracked black pepper",
+  "model": "gemini-flash-latest",
+  "name": "Pulled Buffalo Chicken",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:39:26+00:00"
+ },
  "d4e44082e4cf": {
   "avoid": [
    "meat",
@@ -40628,6 +41155,39 @@
   "revisions": 0,
   "vessel": "bowl",
   "written_at": "2026-09-27T06:53:41+00:00"
+ },
+ "f72e95e3573a": {
+  "avoid": [
+   "ground beef",
+   "burger",
+   "stew",
+   "tortilla",
+   "tacos",
+   "noodles",
+   "skewer"
+  ],
+  "checks": [
+   {
+    "q": "Is the dish a stir-fry of beef strips with french fries?",
+    "yes": true
+   },
+   {
+    "q": "Is the meat ground like mince?",
+    "yes": false
+   },
+   {
+    "q": "Is the food served inside a sandwich bun or wrap?",
+    "yes": false
+   }
+  ],
+  "dish": "lomo saltado",
+  "look": "stir-fried beef strips, thick-cut french fries tossed through, glossy dark brown sauce, thick wedges of red onion and red tomato, slivers of green bell pepper, chopped fresh cilantro",
+  "model": "gemini-flash-latest",
+  "name": "Lomo Saltado",
+  "rev": 6,
+  "revisions": 0,
+  "vessel": "plate",
+  "written_at": "2026-11-27T23:39:26+00:00"
  },
  "f74a40c6915f": {
   "avoid": [
